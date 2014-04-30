@@ -1,1 +1,17 @@
-../../../.git/annex/objects/JF/Jv/SHA256E-s956--515198b3bdf14f30e50cfb98ab1ebba757a2cc215e7efb35d725762dd4d7e9b6/SHA256E-s956--515198b3bdf14f30e50cfb98ab1ebba757a2cc215e7efb35d725762dd4d7e9b6
+<file duration="1801000000000" frame-detection="0" uri="http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8" seekable="true">
+  <streams caps="application/x-hls">
+    <stream type="video" caps="video/x-h264, stream-format=(string)byte-stream, alignment=(string)nal" id="9d9a01929724f00552a7ef59dec65a6abc939f862ab5b3bb38eee9d1b4e89099/00000101">
+      <tags>
+        <tag content="taglist, video-codec=(string)H.264;"/>
+      </tags>
+    </stream>
+    <stream type="audio" caps="audio/mpeg, framed=(boolean)true, mpegversion=(int)4, rate=(int)22050, channels=(int)1, stream-format=(string)adts" id="9d9a01929724f00552a7ef59dec65a6abc939f862ab5b3bb38eee9d1b4e89099/00000102">
+      <tags>
+        <tag content="taglist, audio-codec=(string)&quot;MPEG-4\ AAC&quot;;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, audio-codec=(string)&quot;MPEG-4\ AAC&quot;, video-codec=(string)H.264;"/>
+  </tags>
+</file>
