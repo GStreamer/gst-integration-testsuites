@@ -1,1 +1,12 @@
-../../.git/annex/objects/8F/72/SHA256E-s531--7e4a9949ddea4caa935d7b9b25be2dcb95d999df83003539f7767e749a9b462c/SHA256E-s531--7e4a9949ddea4caa935d7b9b25be2dcb95d999df83003539f7767e749a9b462c
+<file duration="0" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/png.png" seekable="true">
+  <streams caps="image/png, width=(int)320, height=(int)240">
+    <stream type="image" caps="image/png, width=(int)320, height=(int)240" id="3f800e62bda6206a2643b5fe377ec80e5ad4c91b57c53d07d06653f1c658719a">
+      <tags>
+        <tag content="taglist, video-codec=(string)PNG;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, video-codec=(string)PNG;"/>
+  </tags>
+</file>

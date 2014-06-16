@@ -1,1 +1,12 @@
-../../../.git/annex/objects/0p/16/SHA256E-s963--5af5cf3cc0cdc686ca2a65ba19c406f7b738a867c67c8eebe749d282fd2b00da/SHA256E-s963--5af5cf3cc0cdc686ca2a65ba19c406f7b738a867c67c8eebe749d282fd2b00da
+<file duration="3333000000" frame-detection="0" uri="http://127.0.0.1:8079/mp4/raw_video.mov" seekable="true">
+  <streams caps="video/quicktime">
+    <stream type="video" caps="video/x-raw, format=(string)UYVY, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, framerate=(fraction)30/1" id="2fcfe3420984b49bbc876db1adcea1843e1b9695081f5eb048cec3aa3bc51f51/001">
+      <tags>
+        <tag content="taglist, video-codec=(string)&quot;Uncompressed\ packed\ YUV\ &quot;, language-code=(string)en, bitrate=(uint)36867725, datetime=(datetime)2013-11-14T20:00:20Z, container-format=(string)Quicktime;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, video-codec=(string)&quot;Uncompressed\ packed\ YUV\ &quot;, language-code=(string)en, bitrate=(uint)36867725, datetime=(datetime)2013-11-14T20:00:20Z, container-format=(string)Quicktime;"/>
+  </tags>
+</file>

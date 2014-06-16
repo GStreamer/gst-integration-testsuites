@@ -1,1 +1,22 @@
-../../.git/annex/objects/Q5/8X/SHA256E-s1355--9bec5002983227e23eee988d7ad39756c18d2b1bc5d1069914a01b88cefd647b/SHA256E-s1355--9bec5002983227e23eee988d7ad39756c18d2b1bc5d1069914a01b88cefd647b
+<file duration="45635695740" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/tron_en_ge_aac_h264.ts" seekable="true">
+  <streams caps="video/mpegts, systemstream=(boolean)true, packetsize=(int)188">
+    <stream type="audio" caps="audio/mpeg, framed=(boolean)true, mpegversion=(int)4, rate=(int)48000, channels=(int)2, stream-format=(string)adts" id="735637f736ffe4b151bf5faa1922e0275067faaadc3bfa27020ad5817c395a68/00000042">
+      <tags>
+        <tag content="taglist, audio-codec=(string)&quot;MPEG-4\ AAC&quot;;"/>
+      </tags>
+    </stream>
+    <stream type="audio" caps="audio/mpeg, framed=(boolean)true, mpegversion=(int)4, rate=(int)48000, channels=(int)2, stream-format=(string)adts" id="735637f736ffe4b151bf5faa1922e0275067faaadc3bfa27020ad5817c395a68/00000043">
+      <tags>
+        <tag content="taglist, audio-codec=(string)&quot;MPEG-4\ AAC&quot;;"/>
+      </tags>
+    </stream>
+    <stream type="video" caps="video/x-h264, stream-format=(string)byte-stream, alignment=(string)nal" id="735637f736ffe4b151bf5faa1922e0275067faaadc3bfa27020ad5817c395a68/00000041">
+      <tags>
+        <tag content="taglist, video-codec=(string)H.264;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, audio-codec=(string)&quot;MPEG-4\ AAC&quot;, video-codec=(string)H.264;"/>
+  </tags>
+</file>

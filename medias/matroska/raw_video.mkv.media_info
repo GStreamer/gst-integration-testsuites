@@ -1,1 +1,12 @@
-../../.git/annex/objects/q0/jw/SHA256E-s838--9821a93cb25e7b58476e3524c9c37851ab0e3516d2acac9d9999e77bbee4969d/SHA256E-s838--9821a93cb25e7b58476e3524c9c37851ab0e3516d2acac9d9999e77bbee4969d
+<file duration="3333333333" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/raw_video.mkv" seekable="true">
+  <streams caps="video/x-matroska">
+    <stream type="video" caps="video/x-raw, format=(string)I420, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, colorimetry=(string)bt601, framerate=(fraction)30/1" id="cce4b79d0e873cfd1c202f559163ca4ab0d8175d8b84fd4ec2947fd9f924a958/16024164111892462553">
+      <tags>
+        <tag content="taglist, video-codec=(string)&quot;Uncompressed\ planar\ YUV\ 4:4:4&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, video-codec=(string)&quot;Uncompressed\ planar\ YUV\ 4:4:4&quot;, container-format=(string)Matroska;"/>
+  </tags>
+</file>
