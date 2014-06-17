@@ -1,0 +1,16 @@
+<file duration="5478414222" frame-detection="0" uri="file:////home/thiblahute/gst-validate/gst-qa-assets/medias/mpegts/GH1_00094_1920x1280.MTS" seekable="true">
+  <streams caps="video/mpegts, systemstream=(boolean)true, packetsize=(int)192">    <stream type="audio" caps="audio/x-ac3" id="3f0a412257bfada944e0270f2f0f1b4027d0e1c80f9809da8d6229b6419c98aa/00001100">
+      <tags>
+        <tag content="taglist, audio-codec=(string)&quot;AC-3\ \(ATSC\ A/52\)&quot;, bitrate=(uint)192000;"/>
+      </tags>
+    </stream>
+    <stream type="video" caps="video/x-h264, stream-format=(string)byte-stream, alignment=(string)nal" id="3f0a412257bfada944e0270f2f0f1b4027d0e1c80f9809da8d6229b6419c98aa/00001011">
+      <tags>
+        <tag content="taglist, video-codec=(string)H.264;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, audio-codec=(string)&quot;AC-3\ \(ATSC\ A/52\)&quot;, bitrate=(uint)192000, video-codec=(string)H.264;"/>
+  </tags>
+</file>
