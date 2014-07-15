@@ -1,0 +1,16 @@
+<file duration="47416477000" frame-detection="0" uri="file:///home/thiblahute/Downloads/gst-qa-assets/medias/avi/samples.multimedia.cx_testsuite_iv31.avi" seekable="true">
+  <streams caps="video/x-msvideo">    <stream type="video" caps="video/x-indeo, indeoversion=(int)3, framerate=(fraction)1000000/83333, width=(int)160, height=(int)120" id="f85ff05236dadd22e1fc7af98c43912e8bd7949a7a86ab7857c5a076687448a5/001">
+      <tags>
+        <tag content="taglist, container-format=(string)AVI, video-codec=(string)&quot;Intel\ Video\ 3&quot;;"/>
+      </tags>
+    </stream>
+    <stream type="audio" caps="audio/x-raw, format=(string)U8, layout=(string)interleaved, channels=(int)1, rate=(int)11025" id="f85ff05236dadd22e1fc7af98c43912e8bd7949a7a86ab7857c5a076687448a5/002">
+      <tags>
+        <tag content="taglist, audio-codec=(string)&quot;Uncompressed\ 8-bit\ PCM\ audio&quot;, container-format=(string)AVI;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, audio-codec=(string)&quot;Uncompressed\ 8-bit\ PCM\ audio&quot;, container-format=(string)AVI, video-codec=(string)&quot;Intel\ Video\ 3&quot;;"/>
+  </tags>
+</file>
