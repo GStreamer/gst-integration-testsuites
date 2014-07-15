@@ -1,0 +1,16 @@
+<file duration="107136000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/wmv-asf/samples.multimedia.cx_asf_wmv_low_fps_cheaterlow.wmv" seekable="true">
+  <streams caps="video/x-ms-asf">    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)64040, depth=(int)16, rate=(int)44100, channels=(int)2, block_align=(int)1487, codec_data=(buffer)009000000f00cf050000" id="ad111c8dfa05fa2204a2ab8674eed332113a88ee7a77645b6b6478dee80445bb/001">
+      <tags>
+        <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;;"/>
+      </tags>
+    </stream>
+    <stream type="video" caps="video/x-wmv, wmvversion=(int)1, width=(int)360, height=(int)240, format=(string)WMV1" id="ad111c8dfa05fa2204a2ab8674eed332113a88ee7a77645b6b6478dee80445bb/002">
+      <tags>
+        <tag content="taglist, container-format=(string)ASF, video-codec=(string)&quot;Microsoft\ Windows\ Media\ 7&quot;;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, video-codec=(string)&quot;Microsoft\ Windows\ Media\ 7&quot;;"/>
+  </tags>
+</file>
