@@ -1,0 +1,16 @@
+<file duration="27699000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/wmv-asf/samples.multimedia.cx_asf_wmv_elephant.asf" seekable="true">
+  <streams caps="video/x-ms-asf">    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)128, depth=(int)16, rate=(int)8000, channels=(int)1, block_align=(int)1, codec_data=(buffer)00020000000001000000" id="27dfc1b759ae67084e8ab4727c71f5dad3747d6de3bfe95200e8813a019dd285/001">
+      <tags>
+        <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;;"/>
+      </tags>
+    </stream>
+    <stream type="video" caps="video/x-msmpeg, msmpegversion=(int)43, width=(int)160, height=(int)120" id="27dfc1b759ae67084e8ab4727c71f5dad3747d6de3bfe95200e8813a019dd285/002">
+      <tags>
+        <tag content="taglist, container-format=(string)ASF, video-codec=(string)&quot;Microsoft\ MPEG-4\ 4.3&quot;;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, video-codec=(string)&quot;Microsoft\ MPEG-4\ 4.3&quot;;"/>
+  </tags>
+</file>
