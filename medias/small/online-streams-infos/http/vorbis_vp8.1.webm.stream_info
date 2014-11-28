@@ -1,4 +1,4 @@
-<file duration="10000000000" frame-detection="0" uri="http://127.0.0.1:8079/webm/vorbis_vp8.1.webm" seekable="true">
+<file duration="10000000000" frame-detection="0" uri="http://127.0.0.1:8079/small/webm/vorbis_vp8.1.webm" seekable="true">
   <streams caps="video/webm">
     <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)25/1" id="fd2306b4644c08021f7d21cb2c206014f104795e239f2addb05e92f4def57499/450728571605371062">
       <tags>
