@@ -18,12 +18,19 @@
 # Boston, MA 02110-1301, USA.
 
 """
-The GES GstValidate default testsuite
+The GES GstValidate testsuite with bigger and more complex projects
 """
+import os
 
 TEST_MANAGER  = "ges"
 
 def setup_tests(test_manager, options):
-    print("Setting up GES default tests")
-    test_manager.register_defaults()
+    print("Setting up GES extra tests")
+
+    extra_projects_path = os.path.join(os.path.dirname(__file__),
+                                       "..",
+                                       "ges",
+                                       "ges-extra-projects")
+    test_manager.register_defaults(extra_projects_path)
     return True
+

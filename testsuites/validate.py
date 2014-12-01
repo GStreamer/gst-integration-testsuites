@@ -24,8 +24,7 @@ The GstValidate default testsuite
 TEST_MANAGER  = "validate"
 
 def setup_tests(test_manager, options):
-    if test_manager.name != "validate":
-        return False
+    print("Setting up GstValidate default tests")
 
     test_manager.register_defaults()
 
