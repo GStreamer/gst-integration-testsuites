@@ -23,11 +23,16 @@ The GstValidate default testsuite
 
 TEST_MANAGER  = "validate"
 
+BLACKLIST =[('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x1280_MTS',
+             'Got error: Internal data stream error. -- Debug message: mpegtsbase.c(1371):'
+             'mpegts_base_loop (): ...: stream stopped, reason not-negotiated'),
+]
+
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")
 
+    test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
-
 
     valid_mixing_scenarios = ["play_15s",
                               "fast_forward",

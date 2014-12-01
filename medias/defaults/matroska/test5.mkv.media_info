@@ -1,0 +1,61 @@
+<file duration="46665000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-qa-assets/medias/defaults/matroska/test5.mkv" seekable="true">
+  <streams caps="video/x-matroska">    <stream type="video" caps="video/x-h264, level=(string)3.1, profile=(string)main, codec_data=(buffer)014d401fffe10014274d401fa918080093600d418041adb0ad7bdf0101000428ce09c8, stream-format=(string)avc, alignment=(string)au, width=(int)1024, height=(int)576, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)24/1" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/1258329745">
+      <tags>
+        <tag content="taglist, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska, video-codec=(string)H.264, language-code=(string)und;"/>
+      </tags>
+    </stream>
+    <stream type="audio" caps="audio/mpeg, mpegversion=(int)4, framed=(boolean)true, stream-format=(string)raw, codec_data=(buffer)1190, level=(string)2, base-profile=(string)lc, profile=(string)lc, channels=(int)2, rate=(int)48000" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/3452711582">
+      <tags>
+        <tag content="taglist, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska, audio-codec=(string)&quot;MPEG-4\ AAC&quot;, language-code=(string)und;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/368310685">
+      <tags>
+        <tag content="taglist, language-code=(string)en, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/77489046">
+      <tags>
+        <tag content="taglist, language-code=(string)hu, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/3554194305">
+      <tags>
+        <tag content="taglist, language-code=(string)de, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/3601783439">
+      <tags>
+        <tag content="taglist, language-code=(string)fr, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/637820071">
+      <tags>
+        <tag content="taglist, language-code=(string)es, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/2328328329">
+      <tags>
+        <tag content="taglist, language-code=(string)it, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="audio" caps="audio/mpeg, mpegversion=(int)4, framed=(boolean)true, stream-format=(string)raw, codec_data=(buffer)1388, level=(string)1, base-profile=(string)lc, profile=(string)lc, channels=(int)1, rate=(int)22050" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/215750297">
+      <tags>
+        <tag content="taglist, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska, audio-codec=(string)&quot;MPEG-4\ AAC&quot;, language-code=(string)en;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/652628868">
+      <tags>
+        <tag content="taglist, language-code=(string)ja, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+    <stream type="subtitle" caps="text/x-raw, format=(string)pango-markup" id="cde99cffe8de5317f574f4e864495b03d87493986c61f01ad57e947f711a6dce/131186099">
+      <tags>
+        <tag content="taglist, language-code=(string)und, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, language-code=(string)und, album=(string)&quot;Big\ Buck\ Bunny\ -\ test\ 8&quot;, date=(date)2010-01-01, comment=(string)&quot;Matroska\ Validation\ File\ 8\,\ secondary\ audio\ commentary\ track\,\ misc\ subtitle\ tracks&quot;, container-format=(string)Matroska, audio-codec=(string)&quot;MPEG-4\ AAC&quot;, video-codec=(string)H.264;"/>
+  </tags>
+</file>
