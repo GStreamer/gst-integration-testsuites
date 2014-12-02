@@ -27,10 +27,13 @@ TEST_MANAGER  = "ges"
 def setup_tests(test_manager, options):
     print("Setting up GES extra tests")
 
-    extra_projects_path = os.path.join(os.path.dirname(__file__),
-                                       "..",
-                                       "ges",
-                                       "ges-extra-projects")
+    extra_projects_path = os.path.abspath(os.path.join(
+                                          os.path.dirname(__file__),
+                                                          "..",
+                                                          "ges",
+                                                          "ges-extra-projects"))
+    options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                      "..", "medias")))
     test_manager.register_defaults(extra_projects_path)
     return True
 
