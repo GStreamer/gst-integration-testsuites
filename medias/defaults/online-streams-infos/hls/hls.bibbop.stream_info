@@ -1,4 +1,4 @@
-<file duration="1801000000000" frame-detection="0" uri="http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8" seekable="true">
+<file duration="1801000000000" frame-detection="0" uri="http://127.0.0.1:8079/defaults/bipbop/bipbopall.m3u8" seekable="true">
   <streams caps="application/x-hls">
     <stream type="video" caps="video/x-h264, stream-format=(string)byte-stream, alignment=(string)nal" id="9d9a01929724f00552a7ef59dec65a6abc939f862ab5b3bb38eee9d1b4e89099/00000101">
       <tags>

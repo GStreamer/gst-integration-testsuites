@@ -239,6 +239,9 @@ validate.file.transcode.to_vorbis_and_vp8_in_webm.samples_multimedia_cx_asf_wmv_
 validate.file.transcode.to_vorbis_and_vp8_in_webm.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_0_ogg
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_0_webm
+validate.hls.media_check.bipbopall_m3u8
+validate.hls.playback.change_state_intensive.hls_bibbop
+validate.hls.playback.play_15s.hls_bibbop
 validate.http.media_check.mp3_h264_1_mp4
 validate.http.media_check.raw_h264_1_mp4
 validate.http.media_check.raw_video_mkv
