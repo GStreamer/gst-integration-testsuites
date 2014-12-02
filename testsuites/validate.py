@@ -21,6 +21,9 @@
 The GstValidate default testsuite
 """
 
+import os
+
+
 TEST_MANAGER  = "validate"
 
 BLACKLIST =[('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x1280_MTS',
@@ -31,6 +34,8 @@ BLACKLIST =[('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x1
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")
 
+    options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                      "..", "medias", "defaults")))
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
 
