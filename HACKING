@@ -1,0 +1,25 @@
+testsuites:
+-----------
+
+The testsuites implemented in testsuites/ should follow the PEP8 coding style.
+
+Git annex usage:
+----------------
+
+We should never use git annex sync to make sure we always keep a clean history.
+So to add new annexed files that are not available online, you should follow
+the following steps:
+
+    $ git annex add medias/some/file/to.annex
+    $ git commit
+    $ git copy medias/some/file/to.annex --to gstqaassets # You could use any archive.org backend you want
+    $ git push origin master # Considering  those new medias should go to master
+    $ git push origin git-annex # So that information about how to retrieve those medias are shared with others!
+
+If you just want to add files that are already available on the web (and that
+you **know** will keep being available), you can just do
+
+    $ git annex addurl http://some/url
+    $ git mv url medias/where/it/should/go # You could cd first too.
+    $ git annex fix # Make sure git annex fixes its symlinks
+    $ git commit
