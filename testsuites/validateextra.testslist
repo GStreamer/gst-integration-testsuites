@@ -1,0 +1,12 @@
+validate.file.media_check.Sintel_2010_720p_mkv
+validate.file.playback.change_state_intensive.Sintel_2010_720p_mkv
+validate.file.playback.disable_subtitle_track_while_paused.Sintel_2010_720p_mkv
+validate.file.playback.fast_forward.Sintel_2010_720p_mkv
+validate.file.playback.play_15s.Sintel_2010_720p_mkv
+validate.file.playback.scrub_forward_seeking.Sintel_2010_720p_mkv
+validate.file.playback.seek_backward.Sintel_2010_720p_mkv
+validate.file.playback.seek_forward.Sintel_2010_720p_mkv
+validate.file.playback.seek_with_stop.Sintel_2010_720p_mkv
+validate.file.playback.set_subtitles.Sintel_2010_720p_mkv
+validate.file.playback.switch_subtitle_track_while_paused.Sintel_2010_720p_mkv
+validate.file.playback.switch_subtitles.Sintel_2010_720p_mkv
