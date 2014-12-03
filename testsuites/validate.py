@@ -36,6 +36,8 @@ def setup_tests(test_manager, options):
 
     options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
                       "..", "medias", "defaults")))
+    options.set_http_server_dir(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                      "..", "medias")))
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
 
