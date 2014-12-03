@@ -1,0 +1,12 @@
+<file duration="19400000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/avi/bowlerhatdancer.sleepytom.SGP.mjpeg.avi" seekable="true">
+  <streams caps="video/x-msvideo">
+    <stream type="video" caps="image/jpeg, framerate=(fraction)25/1, width=(int)384, height=(int)288, codec_data=(buffer)2c000000180000000000000002000000080000000200000001000000" id="eab9e142c67dd011ff16aced25cc0693d74c610cdd4dce1756e15efddeb060a3/001">
+      <tags>
+        <tag content="taglist, container-format=(string)AVI, video-codec=(string)&quot;Motion\ JPEG&quot;;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, container-format=(string)AVI, video-codec=(string)&quot;Motion\ JPEG&quot;;"/>
+  </tags>
+</file>
