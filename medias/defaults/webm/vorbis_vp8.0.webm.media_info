@@ -1,5 +1,5 @@
 <file duration="10000000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/webm/vorbis_vp8.0.webm" seekable="true">
-  <streams caps="video/webm">    <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)25/1" id="7ae4b2b456bd64e7addc591f8aae8db64b2486ddbd4157592b901839671660d2/6158711419147065455">
+  <streams caps="video/webm">    <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)0/1" id="7ae4b2b456bd64e7addc591f8aae8db64b2486ddbd4157592b901839671660d2/6158711419147065455">
        <frame duration="18446744073709551615" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="18446744073709551615" checksum="763835fdadf8dfca7cacf7b24b083d6c"/>
        <frame duration="18446744073709551615" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="33000000"  dts="18446744073709551615" checksum="d726d9c1aa4e5301f83616d3e4329090"/>
        <frame duration="18446744073709551615" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="67000000"  dts="18446744073709551615" checksum="42209c3b87a6c28b85de11105379877c"/>
