@@ -20,10 +20,14 @@
 """
 The GES GstValidate default testsuite
 """
+import os
+
 
 TEST_MANAGER  = "ges"
 
 def setup_tests(test_manager, options):
     print("Setting up GES default tests")
+    options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                      "..", "medias")))
     test_manager.register_defaults()
     return True
