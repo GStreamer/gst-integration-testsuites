@@ -43,6 +43,10 @@ def setup_tests(test_manager, options):
                       "..", "medias", "big")))
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
+    test_manager.add_scenarios([
+      "seek_forward_non_flushing",
+      "seek_backward_non_flushing",
+    ])
 
     return True
 
