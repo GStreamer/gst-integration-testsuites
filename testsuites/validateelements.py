@@ -91,16 +91,51 @@ def setup_tests(test_manager, options):
          "https://bugzilla.gnome.org/show_bug.cgi?id=743907"),
         ("validate.launch_pipeline.quarktv*",
          "https://bugzilla.gnome.org/show_bug.cgi?id=743906"),
+        ("validate.launch_pipeline.frei0r*",
+         "video filter plugins"),
+        ("validate.launch_pipeline.fieldanalysis*",
+         "https://bugzilla.gnome.org/show_bug.cgi?id=744188"),
+        ("validate.launch_pipeline.interleave*",
+         "https://bugzilla.gnome.org/show_bug.cgi?id=744211"),
+        ("validate.launch_pipeline.spectrum*",
+         "https://bugzilla.gnome.org/show_bug.cgi?id=744213"),
+        ("validate.launch_pipeline.level*",
+         "https://bugzilla.gnome.org/show_bug.cgi?id=745515"),
+        ("validate.launch_pipeline.smpte*",
+         "smpte cannot be tested with simple pipeline. Hence excluding"),
     ])
     valid_scenarios = ["play_15s"]
     Gst.init(None)
     factories = Gst.Registry.get().get_feature_list(Gst.ElementFactory)
     for element_factory in factories:
+        audiosrc = False
+        audiosink = False
+        videosrc = False
+        videosink = False
         klass = element_factory.get_metadata("klass")
         fname = element_factory.get_name()
         props = Gst.ElementFactory.make(fname, None).list_properties()
-        if "Effect" in klass:
+        padstemplates = element_factory.get_static_pad_templates()
+
+        if "" in klass:
             if "Audio" not in klass and "Video" not in klass:
+                continue
+            for padtemplate in padstemplates:
+                if padtemplate.static_caps.string:
+                    caps = padtemplate.get_caps()
+                    for i in xrange(caps.get_size()):
+                        structure = caps.get_structure(i)
+                        if "audio/x-raw" in structure.get_name():
+                            if padtemplate.direction == Gst.PadDirection.SRC:
+                                audiosrc = True
+                            elif padtemplate.direction == Gst.PadDirection.SINK:
+                                audiosink = True
+                        elif "video/x-raw" in structure.get_name():
+                            if padtemplate.direction == Gst.PadDirection.SRC:
+                                videosrc = True
+                            elif padtemplate.direction == Gst.PadDirection.SINK:
+                                videosink = True
+            if (audiosink is False and videosink is False) or (audiosrc is False and videosrc is False):
                 continue
             for prop in props:
                 if "name" in prop.name or "parent" in prop.name or "qos" in prop.name or \
