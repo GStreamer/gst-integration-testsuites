@@ -22,6 +22,7 @@ The GstValidate default testsuite
 """
 
 import os
+from testsuiteutils import update_assets
 
 
 TEST_MANAGER  = "validate"
@@ -39,8 +40,11 @@ BLACKLIST =[("validate.*reverse.*Sintel_2010_720p_mkv",
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")
 
-    options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
-                      "..", "medias", "big")))
+    assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "big"))
+    if options.sync:
+        update_assets(assets_dir)
+
+    options.add_paths(assets_dir)
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
     test_manager.add_scenarios([
@@ -49,5 +53,3 @@ def setup_tests(test_manager, options):
     ])
 
     return True
-
-
