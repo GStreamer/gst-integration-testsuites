@@ -42,7 +42,8 @@ def setup_tests(test_manager, options):
 
     assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "big"))
     if options.sync:
-        update_assets(assets_dir)
+        if not update_assets(assets_dir):
+            return False
 
     options.add_paths(assets_dir)
     test_manager.set_default_blacklist(BLACKLIST)
