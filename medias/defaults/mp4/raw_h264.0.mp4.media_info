@@ -1,5 +1,5 @@
 <file duration="10000000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mp4/raw_h264.0.mp4" seekable="true">
-  <streams caps="video/quicktime">    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)5000/167, pixel-aspect-ratio=(fraction)1/1" id="ab929aab7eeefa9bbe8c28b3fb569c51886b78d247da4e5461133812a5d09652/001">
+  <streams caps="video/quicktime">    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1" id="ab929aab7eeefa9bbe8c28b3fb569c51886b78d247da4e5461133812a5d09652/001">
        <frame duration="33333333" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="0" checksum="d050874d5d6d36c5ee9ff6d52b02dc67"/>
        <frame duration="33333333" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="33333333"  dts="33333333" checksum="acd767ea3990217d37547896c45ef583"/>
        <frame duration="33333334" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="166666666"  dts="66666666" checksum="b6c84d1631204547897b26d3794ee2fd"/>
@@ -301,7 +301,7 @@
        <frame duration="33333333" id="298" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="9966666666"  dts="9933333333" checksum="495e06554e6ee612a9b9adf8e5c28c40"/>
        <frame duration="33333334" id="299" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="9933333333"  dts="9966666666" checksum="0b6906dc10fdc0ecfde1cc69e90c0b18"/>
       <tags>
-        <tag content="taglist, datetime=(datetime)2013-09-03T16:21:35Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, video-codec=(string)H.264, bitrate=(uint)99582, language-code=(string)en, minimum-bitrate=(uint)71760, maximum-bitrate=(uint)71760;"/>
+        <tag content="taglist, datetime=(datetime)2013-09-03T16:21:35Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, video-codec=(string)&quot;H.264\ \(High\ Profile\)&quot;, bitrate=(uint)99582, language-code=(string)en, minimum-bitrate=(uint)71760, maximum-bitrate=(uint)71760;"/>
       </tags>
     </stream>
     <stream type="audio" caps="audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int)44100, channels=(int)1" id="ab929aab7eeefa9bbe8c28b3fb569c51886b78d247da4e5461133812a5d09652/002">
@@ -741,6 +741,6 @@
     </stream>
   </streams>
   <tags>
-    <tag content="taglist, audio-codec=(string)&quot;Raw\ 16-bit\ PCM\ audio&quot;, language-code=(string)en, bitrate=(uint)704524, datetime=(datetime)2013-09-03T16:21:35Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, video-codec=(string)H.264, minimum-bitrate=(uint)71760, maximum-bitrate=(uint)71760;"/>
+    <tag content="taglist, audio-codec=(string)&quot;Raw\ 16-bit\ PCM\ audio&quot;, language-code=(string)en, bitrate=(uint)704524, datetime=(datetime)2013-09-03T16:21:35Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, video-codec=(string)&quot;H.264\ \(High\ Profile\)&quot;, minimum-bitrate=(uint)71760, maximum-bitrate=(uint)71760;"/>
   </tags>
 </file>
