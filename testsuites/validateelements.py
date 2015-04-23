@@ -114,52 +114,50 @@ def setup_tests(test_manager, options):
         videosink = False
         klass = element_factory.get_metadata("klass")
         fname = element_factory.get_name()
-        props = Gst.ElementFactory.make(fname, None).list_properties()
+        props = GObject.list_properties(Gst.ElementFactory.make(fname, None))
         padstemplates = element_factory.get_static_pad_templates()
 
-        if "" in klass:
-            if "Audio" not in klass and "Video" not in klass:
+        if "Audio" not in klass and "Video" not in klass:
+            continue
+        for padtemplate in padstemplates:
+            if padtemplate.static_caps.string:
+                caps = padtemplate.get_caps()
+                for i in xrange(caps.get_size()):
+                    structure = caps.get_structure(i)
+                    if "audio/x-raw" in structure.get_name():
+                        if padtemplate.direction == Gst.PadDirection.SRC:
+                            audiosrc = True
+                        elif padtemplate.direction == Gst.PadDirection.SINK:
+                            audiosink = True
+                    elif "video/x-raw" in structure.get_name():
+                        if padtemplate.direction == Gst.PadDirection.SRC:
+                            videosrc = True
+                        elif padtemplate.direction == Gst.PadDirection.SINK:
+                            videosink = True
+        if (audiosink is False and videosink is False) or (audiosrc is False and videosrc is False):
+            continue
+        for prop in props:
+            if "name" in prop.name or "parent" in prop.name or "qos" in prop.name or \
+               "latency" in prop.name or "message-forward" in prop.name:
                 continue
-            for padtemplate in padstemplates:
-                if padtemplate.static_caps.string:
-                    caps = padtemplate.get_caps()
-                    for i in xrange(caps.get_size()):
-                        structure = caps.get_structure(i)
-                        if "audio/x-raw" in structure.get_name():
-                            if padtemplate.direction == Gst.PadDirection.SRC:
-                                audiosrc = True
-                            elif padtemplate.direction == Gst.PadDirection.SINK:
-                                audiosink = True
-                        elif "video/x-raw" in structure.get_name():
-                            if padtemplate.direction == Gst.PadDirection.SRC:
-                                videosrc = True
-                            elif padtemplate.direction == Gst.PadDirection.SINK:
-                                videosink = True
-            if (audiosink is False and videosink is False) or (audiosrc is False and videosrc is False):
-                continue
-            for prop in props:
-                if "name" in prop.name or "parent" in prop.name or "qos" in prop.name or \
-                   "latency" in prop.name or "message-forward" in prop.name:
-                    continue
-                if (prop.flags & GObject.ParamFlags.WRITABLE) and \
-                   (prop.flags & GObject.ParamFlags.READABLE):
-                    if prop.value_type == GObject.TYPE_BOOLEAN:
-                        loop = 2
-                    elif pspec_is_numeric(prop):
-                        loop = 3
-                    else:
-                        loop = 0
+            if (prop.flags & GObject.ParamFlags.WRITABLE) and \
+               (prop.flags & GObject.ParamFlags.READABLE):
+                if prop.value_type == GObject.TYPE_BOOLEAN:
+                    loop = 2
+                elif pspec_is_numeric(prop):
+                    loop = 3
+                else:
+                    loop = 0
 
-                    while loop:
-                        loop -= 1
-                        description = get_pipe_and_populate(test_manager, klass,
-                                                            fname, prop, loop)
-                        if None is not description:
-                            pipelines_descriptions.append(description)
+                while loop:
+                    loop -= 1
+                    description = get_pipe_and_populate(test_manager, klass,
+                                                        fname, prop, loop)
+                    if None is not description:
+                        pipelines_descriptions.append(description)
 
     # No restriction about scenarios that are potentially used
-    test_manager.add_scenarios([scenario.name for scenario in
-                               test_manager.scenarios_manager.get_scenario(None)])
+    test_manager.add_scenarios(valid_scenarios)
     test_manager.add_generators(test_manager.GstValidatePipelineTestsGenerator
                                 ("validate_elements", test_manager,
                                     pipelines_descriptions=pipelines_descriptions,
