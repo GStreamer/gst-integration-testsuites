@@ -64,6 +64,8 @@ def get_pipe_and_populate(test_manager, klass, fname, prop, loop):
         cpipe = "audiotestsrc num-buffers=20 ! %s " % (cname)
         sink = "! audioconvert ! %(audiosink)s"
     elif "Video" in klass:
+        if "gl" in fname:
+            cname = "glfilterbin filter = %s" % (cname)
         cpipe = "videotestsrc num-buffers=20 ! %s " % (cname)
         sink = "! videoconvert ! %(videosink)s"
     else:
@@ -89,20 +91,18 @@ def setup_tests(test_manager, options):
          "https://bugzilla.gnome.org/show_bug.cgi?id=743908"),
         ("validate.launch_pipeline.exclusion*",
          "https://bugzilla.gnome.org/show_bug.cgi?id=743907"),
-        ("validate.launch_pipeline.quarktv*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=743906"),
         ("validate.launch_pipeline.frei0r*",
          "video filter plugins"),
-        ("validate.launch_pipeline.fieldanalysis*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=744188"),
-        ("validate.launch_pipeline.interleave*",
+        ("validate.launch_pipeline.*interleavechannel-positions-from-input=False*",
          "https://bugzilla.gnome.org/show_bug.cgi?id=744211"),
         ("validate.launch_pipeline.spectrum*",
          "https://bugzilla.gnome.org/show_bug.cgi?id=744213"),
-        ("validate.launch_pipeline.level*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=745515"),
         ("validate.launch_pipeline.smpte*",
          "smpte cannot be tested with simple pipeline. Hence excluding"),
+        ("validate.launch_pipeline.gleffects_laplacian*",
+         "https://bugzilla.gnome.org/show_bug.cgi?id=748393"),
+        ("validate.launch_pipeline.glfilterbin*",
+         "glfilter bin doesnt launch."),
     ])
     valid_scenarios = ["play_15s"]
     Gst.init(None)
