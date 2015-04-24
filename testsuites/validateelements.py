@@ -114,11 +114,11 @@ def setup_tests(test_manager, options):
         videosink = False
         klass = element_factory.get_metadata("klass")
         fname = element_factory.get_name()
-        props = GObject.list_properties(Gst.ElementFactory.make(fname, None))
-        padstemplates = element_factory.get_static_pad_templates()
 
         if "Audio" not in klass and "Video" not in klass:
             continue
+
+        padstemplates = element_factory.get_static_pad_templates()
         for padtemplate in padstemplates:
             if padtemplate.static_caps.string:
                 caps = padtemplate.get_caps()
@@ -134,8 +134,16 @@ def setup_tests(test_manager, options):
                             videosrc = True
                         elif padtemplate.direction == Gst.PadDirection.SINK:
                             videosink = True
+
         if (audiosink is False and videosink is False) or (audiosrc is False and videosrc is False):
             continue
+
+        element = Gst.ElementFactory.make(fname, None)
+        if element is None:
+            print("Could not create element: %s" % fname)
+            continue
+
+        props = GObject.list_properties(element)
         for prop in props:
             if "name" in prop.name or "parent" in prop.name or "qos" in prop.name or \
                "latency" in prop.name or "message-forward" in prop.name:
