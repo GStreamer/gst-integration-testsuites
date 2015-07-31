@@ -1,0 +1,5 @@
+<file duration="0" frame-detection="0" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/svg/opacity01.svg" seekable="false">
+  <streams caps="">    <stream type="image" caps="image/svg+xml" id="ab1275a5c461622f797df99bbbd7dba7f8e7888b2b0180abc3e4597f09636dbd">
+    </stream>
+  </streams>
+</file>
