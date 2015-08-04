@@ -142,6 +142,7 @@ validate.file.playback.reverse_playback.raw_h264_0_mp4
 validate.file.playback.reverse_playback.raw_h264_1_mp4
 validate.file.playback.reverse_playback.raw_video_avi
 validate.file.playback.reverse_playback.raw_video_mov
+validate.file.playback.reverse_playback.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.reverse_playback.samples_multimedia_cx_testsuite_iv31_avi
 validate.file.playback.reverse_playback.vorbis_theora_0_ogg
 validate.file.playback.reverse_playback.vorbis_theora_1_ogg
