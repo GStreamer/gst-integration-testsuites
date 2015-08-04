@@ -23,11 +23,14 @@ from launcher import utils
 
 SYNC_ASSETS_COMMAND = "git fetch origin && git checkout origin/master && git annex get ."
 
-def update_assets(assets_dir):
+def update_assets(options, assets_dir):
     try:
-        utils.launch_command("cd %s && %s" % (assets_dir, SYNC_ASSETS_COMMAND),
-                             fails=True)
+        command = "cd %s && " % assets_dir
+        if options.force_sync:
+            command += "git reset --hard && "
+        command += SYNC_ASSETS_COMMAND
 
+        utils.launch_command(command, fails=True)
     except subprocess.CalledProcessError as e:
         utils.printc("Could not update assets repository\n\nError: %s"
                      "\n\nMAKE SURE YOU HAVE git-annex INSTALLED!" % (e),
