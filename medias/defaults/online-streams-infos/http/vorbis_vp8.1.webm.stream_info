@@ -1,5 +1,5 @@
 <file duration="10000000000" frame-detection="0" uri="http://127.0.0.1:8079/defaults/webm/vorbis_vp8.1.webm" seekable="true">
-  <streams caps="video/webm">    <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)25/1" id="7a7f040200caafb85ae2994a517a4d2f9a0fa0f6fdc88e74278f60dcb7beb4c6/450728571605371062">
+  <streams caps="video/webm">    <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)0/1" id="7a7f040200caafb85ae2994a517a4d2f9a0fa0f6fdc88e74278f60dcb7beb4c6/450728571605371062">
       <tags>
         <tag content="taglist, video-codec=(string)&quot;VP8\ video&quot;, container-format=(string)Matroska;"/>
       </tags>
