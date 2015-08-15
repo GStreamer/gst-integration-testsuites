@@ -1,3 +1,12 @@
+validate.dash.media_check.exMPD_BIP_TC1_mpd
+validate.dash.playback.change_state_intensive.dash_exMPD_BIP_TC1
+validate.dash.playback.fast_forward.dash_exMPD_BIP_TC1
+validate.dash.playback.play_15s.dash_exMPD_BIP_TC1
+validate.dash.playback.reverse_playback.dash_exMPD_BIP_TC1
+validate.dash.playback.scrub_forward_seeking.dash_exMPD_BIP_TC1
+validate.dash.playback.seek_backward.dash_exMPD_BIP_TC1
+validate.dash.playback.seek_forward.dash_exMPD_BIP_TC1
+validate.dash.playback.seek_with_stop.dash_exMPD_BIP_TC1
 validate.file.audiomixer.simple.fast_forward.basic
 validate.file.audiomixer.simple.play_15s.basic
 validate.file.audiomixer.simple.scrub_forward_seeking.basic
