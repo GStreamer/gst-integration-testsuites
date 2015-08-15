@@ -12,7 +12,7 @@ the following steps:
 
     $ git annex add medias/some/file/to.annex
     $ git commit
-    $ git copy medias/some/file/to.annex --to gstqaassets # You could use any archive.org backend you want
+    $ git annex copy medias/some/file/to.annex --to gstqaassets # You could use any archive.org backend you want
     $ git push origin master # Considering  those new medias should go to master
     $ git push origin git-annex # So that information about how to retrieve those medias are shared with others!
 
