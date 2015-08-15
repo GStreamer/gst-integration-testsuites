@@ -35,6 +35,7 @@ validate.file.media_check.op1a-mpeg2-wave_hd_mxf
 validate.file.media_check.op1a-pal-mpeg2_mxf
 validate.file.media_check.op2b-mpeg2-wave_hd_mxf
 validate.file.media_check.opacity01_svg
+validate.file.media_check.opus_1_ogg
 validate.file.media_check.png_png
 validate.file.media_check.raw_h264_0_mp4
 validate.file.media_check.raw_h264_1_mp4
@@ -65,6 +66,7 @@ validate.file.playback.change_state_intensive.numerated_frames_blue_ogv
 validate.file.playback.change_state_intensive.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.change_state_intensive.op1a-pal-mpeg2_mxf
 validate.file.playback.change_state_intensive.op2b-mpeg2-wave_hd_mxf
+validate.file.playback.change_state_intensive.opus_1_ogg
 validate.file.playback.change_state_intensive.raw_h264_0_mp4
 validate.file.playback.change_state_intensive.raw_h264_1_mp4
 validate.file.playback.change_state_intensive.raw_video_avi
@@ -91,6 +93,7 @@ validate.file.playback.fast_forward.GH1_00094_1920x1280_MTS
 validate.file.playback.fast_forward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.fast_forward.mp3_h264_0_mp4
 validate.file.playback.fast_forward.mp3_h264_1_mp4
+validate.file.playback.fast_forward.opus_1_ogg
 validate.file.playback.fast_forward.raw_h264_0_mp4
 validate.file.playback.fast_forward.raw_h264_1_mp4
 validate.file.playback.fast_forward.samples_multimedia_cx_asf_wmv_elephant_asf
@@ -112,6 +115,7 @@ validate.file.playback.play_15s.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.play_15s.op1a-pal-mpeg2_mxf
 validate.file.playback.play_15s.op2b-mpeg2-wave_hd_mxf
 validate.file.playback.play_15s.opacity01_svg
+validate.file.playback.play_15s.opus_1_ogg
 validate.file.playback.play_15s.png_png
 validate.file.playback.play_15s.raw_h264_0_mp4
 validate.file.playback.play_15s.raw_h264_1_mp4
@@ -138,6 +142,7 @@ validate.file.playback.reverse_playback.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.reverse_playback.mp3_h264_0_mp4
 validate.file.playback.reverse_playback.mp3_h264_1_mp4
 validate.file.playback.reverse_playback.numerated_frames_blue_ogv
+validate.file.playback.reverse_playback.opus_1_ogg
 validate.file.playback.reverse_playback.raw_h264_0_mp4
 validate.file.playback.reverse_playback.raw_h264_1_mp4
 validate.file.playback.reverse_playback.raw_video_avi
@@ -154,6 +159,7 @@ validate.file.playback.scrub_forward_seeking.numerated_frames_blue_ogv
 validate.file.playback.scrub_forward_seeking.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.scrub_forward_seeking.op1a-pal-mpeg2_mxf
 validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf
+validate.file.playback.scrub_forward_seeking.opus_1_ogg
 validate.file.playback.scrub_forward_seeking.raw_h264_0_mp4
 validate.file.playback.scrub_forward_seeking.raw_h264_1_mp4
 validate.file.playback.scrub_forward_seeking.raw_video_avi
@@ -183,6 +189,7 @@ validate.file.playback.seek_backward.numerated_frames_blue_ogv
 validate.file.playback.seek_backward.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.seek_backward.op1a-pal-mpeg2_mxf
 validate.file.playback.seek_backward.op2b-mpeg2-wave_hd_mxf
+validate.file.playback.seek_backward.opus_1_ogg
 validate.file.playback.seek_backward.raw_h264_0_mp4
 validate.file.playback.seek_backward.raw_h264_1_mp4
 validate.file.playback.seek_backward.raw_video_avi
@@ -212,6 +219,7 @@ validate.file.playback.seek_forward.numerated_frames_blue_ogv
 validate.file.playback.seek_forward.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.seek_forward.op1a-pal-mpeg2_mxf
 validate.file.playback.seek_forward.op2b-mpeg2-wave_hd_mxf
+validate.file.playback.seek_forward.opus_1_ogg
 validate.file.playback.seek_forward.raw_h264_0_mp4
 validate.file.playback.seek_forward.raw_h264_1_mp4
 validate.file.playback.seek_forward.raw_video_avi
@@ -240,6 +248,7 @@ validate.file.playback.seek_with_stop.mp3_h264_1_mp4
 validate.file.playback.seek_with_stop.numerated_frames_blue_ogv
 validate.file.playback.seek_with_stop.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.seek_with_stop.op2b-mpeg2-wave_hd_mxf
+validate.file.playback.seek_with_stop.opus_1_ogg
 validate.file.playback.seek_with_stop.raw_h264_0_mp4
 validate.file.playback.seek_with_stop.raw_h264_1_mp4
 validate.file.playback.seek_with_stop.raw_video_avi
@@ -273,6 +282,7 @@ validate.file.transcode.to_mp3_and_h264_in_mp4.bowlerhatdancer_sleepytom_SGP_mjp
 validate.file.transcode.to_mp3_and_h264_in_mp4.mp3_h264_0_mp4
 validate.file.transcode.to_mp3_and_h264_in_mp4.mp3_h264_1_mp4
 validate.file.transcode.to_mp3_and_h264_in_mp4.numerated_frames_blue_ogv
+validate.file.transcode.to_mp3_and_h264_in_mp4.opus_1_ogg
 validate.file.transcode.to_mp3_and_h264_in_mp4.raw_h264_0_mp4
 validate.file.transcode.to_mp3_and_h264_in_mp4.raw_h264_1_mp4
 validate.file.transcode.to_mp3_and_h264_in_mp4.raw_video_avi
@@ -289,6 +299,7 @@ validate.file.transcode.to_vorbis_and_h264_in_mkv.bowlerhatdancer_sleepytom_SGP_
 validate.file.transcode.to_vorbis_and_h264_in_mkv.mp3_h264_0_mp4
 validate.file.transcode.to_vorbis_and_h264_in_mkv.mp3_h264_1_mp4
 validate.file.transcode.to_vorbis_and_h264_in_mkv.numerated_frames_blue_ogv
+validate.file.transcode.to_vorbis_and_h264_in_mkv.opus_1_ogg
 validate.file.transcode.to_vorbis_and_h264_in_mkv.raw_h264_0_mp4
 validate.file.transcode.to_vorbis_and_h264_in_mkv.raw_h264_1_mp4
 validate.file.transcode.to_vorbis_and_h264_in_mkv.raw_video_avi
@@ -305,6 +316,7 @@ validate.file.transcode.to_vorbis_and_theora_in_ogg.bowlerhatdancer_sleepytom_SG
 validate.file.transcode.to_vorbis_and_theora_in_ogg.mp3_h264_0_mp4
 validate.file.transcode.to_vorbis_and_theora_in_ogg.mp3_h264_1_mp4
 validate.file.transcode.to_vorbis_and_theora_in_ogg.numerated_frames_blue_ogv
+validate.file.transcode.to_vorbis_and_theora_in_ogg.opus_1_ogg
 validate.file.transcode.to_vorbis_and_theora_in_ogg.raw_h264_0_mp4
 validate.file.transcode.to_vorbis_and_theora_in_ogg.raw_h264_1_mp4
 validate.file.transcode.to_vorbis_and_theora_in_ogg.raw_video_avi
@@ -320,6 +332,7 @@ validate.file.transcode.to_vorbis_and_vp8_in_webm.bowlerhatdancer_sleepytom_SGP_
 validate.file.transcode.to_vorbis_and_vp8_in_webm.mp3_h264_0_mp4
 validate.file.transcode.to_vorbis_and_vp8_in_webm.mp3_h264_1_mp4
 validate.file.transcode.to_vorbis_and_vp8_in_webm.numerated_frames_blue_ogv
+validate.file.transcode.to_vorbis_and_vp8_in_webm.opus_1_ogg
 validate.file.transcode.to_vorbis_and_vp8_in_webm.raw_h264_0_mp4
 validate.file.transcode.to_vorbis_and_vp8_in_webm.raw_h264_1_mp4
 validate.file.transcode.to_vorbis_and_vp8_in_webm.raw_video_avi
