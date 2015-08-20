@@ -21,7 +21,12 @@
 import subprocess
 from launcher import utils
 
-SYNC_ASSETS_COMMAND = "git fetch origin && git checkout origin/master && git annex get ."
+try:
+    from launcher.config import GST_VALIDATE_TESTSUITE_VERSION
+except ImportError:
+    VERSION = "master"
+
+SYNC_ASSETS_COMMAND = "git fetch origin && git checkout origin/%s && git annex get ." % GST_VALIDATE_TESTSUITE_VERSION
 
 def update_assets(options, assets_dir):
     try:
