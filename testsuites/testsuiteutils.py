@@ -24,7 +24,7 @@ from launcher import utils
 try:
     from launcher.config import GST_VALIDATE_TESTSUITE_VERSION
 except ImportError:
-    VERSION = "master"
+    GST_VALIDATE_TESTSUITE_VERSION = "master"
 
 SYNC_ASSETS_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s) && git annex get ." % (GST_VALIDATE_TESTSUITE_VERSION,
                                                                                                                    GST_VALIDATE_TESTSUITE_VERSION)
