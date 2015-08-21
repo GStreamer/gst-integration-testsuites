@@ -26,7 +26,8 @@ try:
 except ImportError:
     VERSION = "master"
 
-SYNC_ASSETS_COMMAND = "git fetch origin && git checkout origin/%s && git annex get ." % GST_VALIDATE_TESTSUITE_VERSION
+SYNC_ASSETS_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s) && git annex get ." % (GST_VALIDATE_TESTSUITE_VERSION,
+                                                                                                                   GST_VALIDATE_TESTSUITE_VERSION)
 
 def update_assets(options, assets_dir):
     try:
