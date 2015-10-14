@@ -23,6 +23,7 @@ The GstValidate default testsuite
 
 import os
 from testsuiteutils import update_assets
+from launcher.baseclasses import MediaFormatCombination
 
 
 TEST_MANAGER = "validate"
@@ -45,6 +46,8 @@ def setup_tests(test_manager, options):
                                 "..", "medias")))
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
+
+    test_manager.add_encoding_formats([MediaFormatCombination("quicktime", "rawaudio", "prores")])
 
     valid_mixing_scenarios = ["play_15s",
                               "fast_forward",
