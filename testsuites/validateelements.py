@@ -24,8 +24,12 @@
 The GstValidate default testsuite
 """
 
-from gi.repository import Gst
-from gi.repository import GObject
+import gi
+
+gi.require_version("Gst", "1.0")
+
+from gi.repository import Gst  # noqa
+from gi.repository import GObject  # noqa
 
 TEST_MANAGER = "validate"
 
@@ -34,7 +38,8 @@ def pspec_is_numeric(prop):
     return prop.value_type in [GObject.TYPE_INT, GObject.TYPE_INT64,
                                GObject.TYPE_UINT, GObject.TYPE_UINT64,
                                GObject.TYPE_LONG, GObject.TYPE_ULONG,
-                               GObject.TYPE_DOUBLE]
+                               GObject.TYPE_DOUBLE,
+                               GObject.TYPE_FLOAT]
 
 
 def get_pipe_and_populate(test_manager, klass, fname, prop, loop):
