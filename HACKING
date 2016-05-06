@@ -12,6 +12,8 @@ the following steps:
 
     $ git annex add medias/some/file/to.annex
     $ git commit
+    # Enable gstqaassets backend (Ask maintainers for those keys if you need them)
+    $ AWS_ACCESS_KEY_ID={some-key} AWS_SECRET_ACCESS_KEY={another-key} git annex enableremote gstqaassets
     $ git annex copy medias/some/file/to.annex --to gstqaassets # You could use any archive.org backend you want
     $ git push origin master # Considering  those new medias should go to master
     $ git push origin git-annex # So that information about how to retrieve those medias are shared with others!
