@@ -48,9 +48,5 @@ def setup_tests(test_manager, options):
     options.add_paths(assets_dir)
     test_manager.set_default_blacklist(BLACKLIST)
     test_manager.register_defaults()
-    test_manager.add_scenarios([
-      "seek_forward_non_flushing",
-      "seek_backward_non_flushing",
-    ])
 
     return True
