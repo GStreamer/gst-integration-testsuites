@@ -2,7 +2,7 @@ This the official GStreamer integration testsuites implementation repository.
 Those testsuites are meant to be used with GstValidate available in the
 gst-devtools[0] repository
 
-This repository includes both media files (available in the medias/)
+This repository includes both media files (available in medias/)
 that will be retrieved from the web thanks to git-annex[1] directory and several
 testsuites (available in testsuites/) to be used with gst-validate-launcher[2].
 
@@ -17,4 +17,4 @@ in particular to:
 
 [0] http://cgit.freedesktop.org/gstreamer/gst-devtools/
 [1] https://git-annex.branchable.com/
-[2] http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/command-line-tools.html#gst-validate-launcher
+[2] https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/gst-validate-launcher.html
