@@ -10,5 +10,3 @@ validate.file.playback.seek_with_stop.Sintel_2010_720p_mkv
 validate.file.playback.set_subtitles.Sintel_2010_720p_mkv
 validate.file.playback.switch_subtitle_track_while_paused.Sintel_2010_720p_mkv
 validate.file.playback.switch_subtitles.Sintel_2010_720p_mkv
-validate.file.playback.seek_forward_non_flushing.Sintel_2010_720p_mkv
-validate.file.playback.seek_backward_non_flushing.Sintel_2010_720p_mkv
