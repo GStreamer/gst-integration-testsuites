@@ -173,7 +173,6 @@ validate.file.playback.scrub_forward_seeking.mp3_h264_1_mp4
 validate.file.playback.scrub_forward_seeking.numerated_frames_blue_ogv
 validate.file.playback.scrub_forward_seeking.op1a-mpeg2-wave_hd_mxf
 validate.file.playback.scrub_forward_seeking.op1a-pal-mpeg2_mxf
-validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf
 validate.file.playback.scrub_forward_seeking.opus_1_ogg
 validate.file.playback.scrub_forward_seeking.raw_h264_0_mp4
 validate.file.playback.scrub_forward_seeking.raw_h264_1_mp4
