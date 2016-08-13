@@ -2,6 +2,7 @@ validate.dash.playback.change_state_intensive.dash_exMPD_BIP_TC1
 validate.dash.playback.fast_forward.dash_exMPD_BIP_TC1
 validate.dash.playback.play_15s.dash_exMPD_BIP_TC1
 validate.dash.playback.reverse_playback.dash_exMPD_BIP_TC1
+validate.dash.playback.scrub_forward_seeking.dash_exMPD_BIP_TC1
 validate.dash.playback.seek_backward.dash_exMPD_BIP_TC1
 validate.dash.playback.seek_forward.dash_exMPD_BIP_TC1
 validate.dash.playback.seek_with_stop.dash_exMPD_BIP_TC1
@@ -16,6 +17,7 @@ validate.file.compositor.simple.fast_forward.synchronized
 validate.file.compositor.simple.play_15s.bgra
 validate.file.compositor.simple.play_15s.synchronized
 validate.file.compositor.simple.scrub_forward_seeking.bgra
+validate.file.compositor.simple.scrub_forward_seeking.synchronized
 validate.file.compositor.simple.seek_backward.bgra
 validate.file.compositor.simple.seek_backward.synchronized
 validate.file.compositor.simple.seek_forward.bgra
@@ -27,6 +29,7 @@ validate.file.glvideomixer.simple.fast_forward.synchronized
 validate.file.glvideomixer.simple.play_15s.bgra
 validate.file.glvideomixer.simple.play_15s.synchronized
 validate.file.glvideomixer.simple.scrub_forward_seeking.bgra
+validate.file.glvideomixer.simple.scrub_forward_seeking.synchronized
 validate.file.glvideomixer.simple.seek_backward.bgra
 validate.file.glvideomixer.simple.seek_backward.synchronized
 validate.file.glvideomixer.simple.seek_forward.bgra
@@ -393,6 +396,7 @@ validate.hls.playback.change_state_intensive.hls_bibbop
 validate.hls.playback.fast_forward.hls_bibbop
 validate.hls.playback.play_15s.hls_bibbop
 validate.hls.playback.reverse_playback.hls_bibbop
+validate.hls.playback.scrub_forward_seeking.hls_bibbop
 validate.hls.playback.seek_backward.hls_bibbop
 validate.hls.playback.seek_forward.hls_bibbop
 validate.http.media_check.mp3_h264_1_mp4
