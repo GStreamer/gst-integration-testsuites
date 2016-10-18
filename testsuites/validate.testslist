@@ -393,10 +393,7 @@ validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_0_webm
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_1_webm
 validate.hls.media_check.bipbopall_m3u8
 validate.hls.playback.change_state_intensive.hls_bibbop
-validate.hls.playback.fast_forward.hls_bibbop
 validate.hls.playback.play_15s.hls_bibbop
-validate.hls.playback.reverse_playback.hls_bibbop
-validate.hls.playback.scrub_forward_seeking.hls_bibbop
 validate.hls.playback.seek_backward.hls_bibbop
 validate.hls.playback.seek_forward.hls_bibbop
 validate.http.media_check.mp3_h264_1_mp4
