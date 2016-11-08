@@ -127,7 +127,7 @@ def setup_tests(test_manager, options):
         for padtemplate in padstemplates:
             if padtemplate.static_caps.string:
                 caps = padtemplate.get_caps()
-                for i in xrange(caps.get_size()):
+                for i in range(caps.get_size()):
                     structure = caps.get_structure(i)
                     if "audio/x-raw" in structure.get_name():
                         if padtemplate.direction == Gst.PadDirection.SRC:
