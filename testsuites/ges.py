@@ -23,20 +23,35 @@ The GES GstValidate default testsuite
 import os
 
 
-TEST_MANAGER  = "ges"
+TEST_MANAGER = "ges"
+
 
 def setup_tests(test_manager, options):
     print("Setting up GES default tests")
     options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
-                      "..", "medias", "defaults")))
+                                                   "..", "medias", "defaults")))
     projects_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ges",
                                                  "ges-projects"))
     test_manager.add_expected_issues(
-        {'ges.playback.scrub_forward_seeking.test_mixing.*mp3.*': [
-            {'summary': 'position after a seek is wrong',
-             'sometimes': True,
-             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=771122'
-           }
-        ]})
+        {'ges.playback.scrub_forward_seeking.test_mixing.*mp3.*':
+         [
+             {'summary': 'position after a seek is wrong',
+              'sometimes': True,
+              'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=771122'
+              }
+         ],
+         'ges.playback.scrub_.*_seeking.test_mixing.*':
+         [
+             {'summary': 'We got a g_log critical issue',
+              'sometimes': True,
+              'details': '.*gstdecodebin2.c.*(gst_decode_bin_expose): should not be reached.*',
+              'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775051'
+              },
+             {
+                 'returncode': 18
+             }
+         ]
+         }
+    )
     test_manager.register_defaults(projects_path)
     return True
