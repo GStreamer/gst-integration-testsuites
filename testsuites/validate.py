@@ -32,9 +32,44 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
               'Got error: Internal data stream error. -- Debug message: mpegtsbase.c(1371):'
               'mpegts_base_loop (): ...: stream stopped, reason not-negotiated'),
              ('validate.file.*.simple.fast_forward.synchronized',
-              'https://bugzilla.gnome.org/show_bug.cgi?id=775102')]
+              'https://bugzilla.gnome.org/show_bug.cgi?id=775102'),
+             ('validate.hls.playback.change_state_intensive.*',
+              'https://bugzilla.gnome.org/show_bug.cgi?id=775118'),
+             ]
 
 EXPECTED_ISSUES = {
+    'validate.dash.playback.*seek.*|validate.dash.playback.*reverse.*'
+    '|validate.dash.playback.*fast.':
+    [
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'detected-on': 'playbin',
+            'summary': 'We got an ERROR message on the bus',
+            'level': 'critical',
+            'sometimes': True,
+        },
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'summary': "flow return from pad push doesn't match expected value",
+            'details': '.*Wrong combined flow return error.*',
+            'level': 'critical',
+            'sometimes': True,
+        },
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'level': 'critical',
+            'summary': 'All the actions were not executed before the program stopped',
+            'sometimes': True,
+        },
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=774854',
+            'timeout': True,
+            'message': 'Application timed out:.*',
+            'stacktrace_symbols': ['gst_queue2_sink_activate_mode',
+                                   'gst_queue2_handle_sink_query'],
+            'sometimes': True,
+        }
+    ],
     'validate.http.*.vorbis_theora_1_ogg':
     [
         {
@@ -67,6 +102,7 @@ def setup_tests(test_manager, options):
     options.set_http_server_dir(os.path.abspath(os.path.join(os.path.dirname(__file__),
                                 "..", "medias")))
     test_manager.set_default_blacklist(BLACKLIST)
+    test_manager.add_expected_issues(EXPECTED_ISSUES)
     test_manager.register_defaults()
 
     test_manager.add_encoding_formats([MediaFormatCombination("quicktime", "rawaudio", "prores")])

@@ -390,7 +390,6 @@ validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_1_ogg
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_0_webm
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_1_webm
 validate.hls.media_check.bipbopall_m3u8
-validate.hls.playback.change_state_intensive.hls_bibbop
 validate.hls.playback.play_15s.hls_bibbop
 validate.hls.playback.seek_backward.hls_bibbop
 validate.hls.playback.seek_forward.hls_bibbop
