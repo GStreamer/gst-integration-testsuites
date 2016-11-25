@@ -13,7 +13,6 @@ validate.file.audiomixer.simple.seek_backward.basic
 validate.file.audiomixer.simple.seek_forward.basic
 validate.file.audiomixer.simple.seek_with_stop.basic
 validate.file.compositor.simple.fast_forward.bgra
-validate.file.compositor.simple.fast_forward.synchronized
 validate.file.compositor.simple.play_15s.bgra
 validate.file.compositor.simple.play_15s.synchronized
 validate.file.compositor.simple.scrub_forward_seeking.bgra
@@ -25,7 +24,6 @@ validate.file.compositor.simple.seek_forward.synchronized
 validate.file.compositor.simple.seek_with_stop.bgra
 validate.file.compositor.simple.seek_with_stop.synchronized
 validate.file.glvideomixer.simple.fast_forward.bgra
-validate.file.glvideomixer.simple.fast_forward.synchronized
 validate.file.glvideomixer.simple.play_15s.bgra
 validate.file.glvideomixer.simple.play_15s.synchronized
 validate.file.glvideomixer.simple.scrub_forward_seeking.bgra
