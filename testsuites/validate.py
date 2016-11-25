@@ -34,6 +34,26 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
              ('validate.file.*.simple.fast_forward.synchronized',
               'https://bugzilla.gnome.org/show_bug.cgi?id=775102')]
 
+EXPECTED_ISSUES = {
+    'validate.http.*.vorbis_theora_1_ogg':
+    [
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
+            'detected-on': 'playbin',
+            'summary': 'We got an ERROR message on the bus',
+            'details': 'No valid frames decoded before end of stream',
+            'level': 'critical',
+            'sometimes': True,
+        },
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
+            'level': 'critical',
+            'summary': 'All the actions were not executed before the program stopped',
+            'sometimes': True,
+        }
+    ],
+}
+
 
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")
