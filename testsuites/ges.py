@@ -40,17 +40,6 @@ def setup_tests(test_manager, options):
               'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=771122'
               }
          ],
-         'ges.playback.scrub_.*_seeking.test_mixing.*':
-         [
-             {'summary': 'We got a g_log critical issue',
-              'sometimes': True,
-              'details': '.*gstdecodebin2.c.*(gst_decode_bin_expose): should not be reached.*',
-              'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775051'
-              },
-             {
-                 'returncode': 18
-             }
-         ]
          }
     )
     test_manager.register_defaults(projects_path)
