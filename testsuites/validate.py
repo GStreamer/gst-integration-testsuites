@@ -76,14 +76,14 @@ EXPECTED_ISSUES = {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
             'detected-on': 'playbin',
             'summary': 'We got an ERROR message on the bus',
-            'details': 'No valid frames decoded before end of stream',
+            'details': '.*No valid frames decoded before end of stream.*',
             'level': 'critical',
             'sometimes': True,
         },
         {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
             'level': 'critical',
-            'summary': 'All the actions were not executed before the program stopped',
+            'summary': '.*All the actions were not executed before the program stopped.*',
             'sometimes': True,
         }
     ],
