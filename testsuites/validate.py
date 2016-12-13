@@ -60,14 +60,6 @@ EXPECTED_ISSUES = {
             'level': 'critical',
             'summary': 'All the actions were not executed before the program stopped',
             'sometimes': True,
-        },
-        {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=774854',
-            'timeout': True,
-            'message': 'Application timed out:.*',
-            'stacktrace_symbols': ['gst_queue2_sink_activate_mode',
-                                   'gst_queue2_handle_sink_query'],
-            'sometimes': True,
         }
     ],
     'validate.http.*.vorbis_theora_1_ogg':
