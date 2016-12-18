@@ -1,5 +1,6 @@
-<file duration="3333000000" frame-detection="1" uri="file:///home/thiagoss/gst-validate/gst-integration-testsuites/medias/defaults/mp4/raw_video.mov" seekable="true">
-  <streams caps="video/quicktime">    <stream type="video" caps="video/x-raw, format=(string)UYVY, width=(int)320, height=(int)240, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)jpeg, colorimetry=(string)bt601, framerate=(fraction)30/1" id="7dca0009a9dcdbfad0894dbc0de40d836afc1607c4585fe7ff691cd2b48b7d90/001">
+<file duration="3333000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mp4/raw_video.mov" seekable="true">
+  <streams caps="video/quicktime">
+    <stream type="video" caps="video/x-raw, format=(string)UYVY, width=(int)320, height=(int)240, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)jpeg, colorimetry=(string)bt601, framerate=(fraction)30/1" id="ff6c33b93c6ac4f91d7e36c49ea40fcb7a7d7b9b70d72816ab90ef99aa47e6e6/001">
        <frame duration="33333333" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="18446744073709551615" running-time="0" checksum="42183094bb956f1342eefe2a3194f6e4"/>
        <frame duration="33333333" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="33333333"  dts="18446744073709551615" running-time="33333333" checksum="8a6811064dd5a49075a66ec614cdce87"/>
        <frame duration="33333334" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="66666666"  dts="18446744073709551615" running-time="66666666" checksum="91e6bfe6019552adf8519812a013ad8d"/>

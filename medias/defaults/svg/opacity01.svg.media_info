@@ -1,5 +1,7 @@
-<file duration="0" frame-detection="0" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/svg/opacity01.svg" seekable="false">
-  <streams caps="">    <stream type="image" caps="image/svg+xml" id="ab1275a5c461622f797df99bbbd7dba7f8e7888b2b0180abc3e4597f09636dbd">
+<file duration="0" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/svg/opacity01.svg" seekable="false">
+  <streams caps="">
+    <stream type="image" caps="image/svg+xml" id="278cae74d4426e6e88fa983abce42a74d7745319e914543aab71ea13a25ef64d">
+       <frame duration="18446744073709551615" id="0" is-keyframe="true" offset="0" offset-end="1913" pts="18446744073709551615"  dts="0" running-time="18446744073709551615" checksum="f8da3905c076124de77798d2ba6f26db"/>
     </stream>
   </streams>
 </file>
