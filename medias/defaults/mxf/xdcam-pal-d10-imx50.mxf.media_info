@@ -1,4 +1,4 @@
-<file duration="2160000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mxf/xdcam-pal-d10-imx50.mxf" seekable="true">
+<file duration="2160000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mxf/xdcam-pal-d10-imx50.mxf" seekable="true">
   <streams caps="application/mxf">
     <stream type="audio" caps="audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int)48000, channels=(int)8, channel-mask=(bitmask)0x0000000000000000" id="8b5b9ab248d15204fb395dedb039a98269ce7f0935cecf1b8849b3644eb7e1f7/003">
       <tags>

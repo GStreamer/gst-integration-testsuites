@@ -1,4 +1,4 @@
-<file duration="10000000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/webm/vorbis_vp8.1.webm" seekable="true">
+<file duration="10000000000" frame-detection="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/webm/vorbis_vp8.1.webm" seekable="true">
   <streams caps="video/webm">
     <stream type="video" caps="video/x-vp8, width=(int)320, height=(int)240, framerate=(fraction)0/1" id="cb8058d5e98b7806b033ae4587c8281935d98f62011bd5c1fc2ff5a57d3f9f89/001:450728571605371062">
       <tags>
@@ -12,6 +12,6 @@
     </stream>
   </streams>
   <tags>
-    <tag content="taglist, video-codec=(string)&quot;VP8\ video&quot;, container-format=(string)Matroska, language-code=(string)en, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)&quot;Xiph.Org\ libVorbis\ I\ 20120203\ \(Omnipresent\)&quot;, encoder-version=(uint)0, audio-codec=(string)Vorbis, nominal-bitrate=(uint)80000, bitrate=(uint)80000;"/>
+    <tag content="taglist, container-format=(string)Matroska, language-code=(string)en, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)&quot;Xiph.Org\ libVorbis\ I\ 20120203\ \(Omnipresent\)&quot;, encoder-version=(uint)0, audio-codec=(string)Vorbis, nominal-bitrate=(uint)80000, bitrate=(uint)80000, video-codec=(string)&quot;VP8\ video&quot;;"/>
   </tags>
 </file>

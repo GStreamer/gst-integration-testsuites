@@ -1,5 +1,6 @@
-<file duration="107136000000" frame-detection="1" uri="file:///home/thiagoss/gst-validate/gst-integration-testsuites/medias/defaults/wmv-asf/samples.multimedia.cx_asf_wmv_low_fps_cheaterlow.wmv" seekable="true">
-  <streams caps="video/x-ms-asf">    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)64040, depth=(int)16, rate=(int)44100, channels=(int)2, block_align=(int)1487, codec_data=(buffer)009000000f00cf050000" id="8c96bf891ef075e1ee8293a56d93cb53203a563a43275f2684451d4d188b15af/001">
+<file duration="107136000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/wmv-asf/samples.multimedia.cx_asf_wmv_low_fps_cheaterlow.wmv" seekable="true">
+  <streams caps="video/x-ms-asf">
+    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)64040, depth=(int)16, rate=(int)44100, channels=(int)2, block_align=(int)1487, codec_data=(buffer)009000000f00cf050000" id="94616b24a86ab0c7d74efd5720e22397fe2ca086fdfbe09f2657da7fd34df0e9/001">
        <frame duration="18446744073709551615" id="0" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="18446744073709551615" running-time="0" checksum="b7c98c0a7ffa23eca438d13775aa564f"/>
        <frame duration="18446744073709551615" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="139000000"  dts="18446744073709551615" running-time="139000000" checksum="9c1855e925e013d1737755278b6061f9"/>
        <frame duration="18446744073709551615" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="325000000"  dts="18446744073709551615" running-time="325000000" checksum="da4ea0247a6b44d27a351fc118e89f62"/>
@@ -581,10 +582,10 @@
        <frame duration="18446744073709551615" id="578" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="106904000000"  dts="18446744073709551615" running-time="106904000000" checksum="3fde9811dce22bb8d68d6d70427c3cfa"/>
        <frame duration="18446744073709551615" id="579" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="107136000000"  dts="18446744073709551615" running-time="107136000000" checksum="85a1691948dafa969e162a3bd9b5c6c3"/>
       <tags>
-        <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;;"/>
+        <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, bitrate=(uint)64040;"/>
       </tags>
     </stream>
-    <stream type="video" caps="video/x-wmv, wmvversion=(int)1, width=(int)360, height=(int)240, format=(string)WMV1" id="8c96bf891ef075e1ee8293a56d93cb53203a563a43275f2684451d4d188b15af/002">
+    <stream type="video" caps="video/x-wmv, wmvversion=(int)1, width=(int)360, height=(int)240, format=(string)WMV1" id="94616b24a86ab0c7d74efd5720e22397fe2ca086fdfbe09f2657da7fd34df0e9/002">
        <frame duration="18446744073709551615" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="18446744073709551615" running-time="0" checksum="374d90b919e3c2de42ce909a4269f2b2"/>
        <frame duration="18446744073709551615" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="66000000"  dts="18446744073709551615" running-time="66000000" checksum="b95cd23d7e4b84002a146173f8b409a4"/>
        <frame duration="18446744073709551615" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="133000000"  dts="18446744073709551615" running-time="133000000" checksum="a93ff107d90a8e1edb759199b858f941"/>
@@ -1970,6 +1971,6 @@
     </stream>
   </streams>
   <tags>
-    <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, video-codec=(string)&quot;Microsoft\ Windows\ Media\ 7&quot;;"/>
+    <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, bitrate=(uint)64040, video-codec=(string)&quot;Microsoft\ Windows\ Media\ 7&quot;;"/>
   </tags>
 </file>

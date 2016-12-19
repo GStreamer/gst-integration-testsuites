@@ -753,6 +753,6 @@
     </stream>
   </streams>
   <tags>
-    <tag content="taglist, container-format=(string)Matroska, language-code=(string)en, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)&quot;Xiph.Org\ libVorbis\ I\ 20120203\ \(Omnipresent\)&quot;, encoder-version=(uint)0, audio-codec=(string)Vorbis, nominal-bitrate=(uint)80000, bitrate=(uint)80000, video-codec=(string)&quot;VP8\ video&quot;;"/>
+    <tag content="taglist, container-format=(string)Matroska, language-code=(string)en, video-codec=(string)&quot;VP8\ video&quot;, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)&quot;Xiph.Org\ libVorbis\ I\ 20120203\ \(Omnipresent\)&quot;, encoder-version=(uint)0, audio-codec=(string)Vorbis, nominal-bitrate=(uint)80000, bitrate=(uint)80000;"/>
   </tags>
 </file>

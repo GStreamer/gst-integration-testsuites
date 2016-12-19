@@ -1,5 +1,6 @@
-<file duration="47416477000" frame-detection="1" uri="file:///home/thiagoss/gst-validate/gst-integration-testsuites/medias/defaults/avi/samples.multimedia.cx_testsuite_iv31.avi" seekable="true">
-  <streams caps="video/x-msvideo">    <stream type="video" caps="video/x-indeo, indeoversion=(int)3, framerate=(fraction)1000000/83333, width=(int)160, height=(int)120" id="98127f01df609cb97a89979d297ba0a4e399cfe95dcc8d97c41dc1bb7875c33d/001">
+<file duration="47416477000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/avi/samples.multimedia.cx_testsuite_iv31.avi" seekable="true">
+  <streams caps="video/x-msvideo">
+    <stream type="video" caps="video/x-indeo, indeoversion=(int)3, framerate=(fraction)1000000/83333, width=(int)160, height=(int)120" id="0740b58b00e63354cbdab279ce720ae7283c983517ff4be9487e4103321e7f5b/001">
        <frame duration="83333000" id="0" is-keyframe="true" offset="0" offset-end="1" pts="0"  dts="0" running-time="0" checksum="c97753069a4cef417c77b804683fad9d"/>
        <frame duration="83333000" id="1" is-keyframe="false" offset="1" offset-end="2" pts="18446744073709551615"  dts="83333000" running-time="18446744073709551615" checksum="bcf4cae7f003e75702df37133e170b11"/>
        <frame duration="83333000" id="2" is-keyframe="false" offset="2" offset-end="3" pts="18446744073709551615"  dts="166666000" running-time="18446744073709551615" checksum="c96a557cc07fda2ea50da1109df65aa5"/>
@@ -573,7 +574,7 @@
         <tag content="taglist, video-codec=(string)&quot;Intel\ Video\ 3&quot;, container-format=(string)AVI;"/>
       </tags>
     </stream>
-    <stream type="audio" caps="audio/x-raw, format=(string)U8, layout=(string)interleaved, channels=(int)1, rate=(int)11025" id="98127f01df609cb97a89979d297ba0a4e399cfe95dcc8d97c41dc1bb7875c33d/002">
+    <stream type="audio" caps="audio/x-raw, format=(string)U8, layout=(string)interleaved, channels=(int)1, rate=(int)11025" id="0740b58b00e63354cbdab279ce720ae7283c983517ff4be9487e4103321e7f5b/002">
        <frame duration="83356009" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0"  dts="0" running-time="0" checksum="a2c896376cb58685ee35fa38a712e2ae"/>
        <frame duration="83265306" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="83356009"  dts="83356009" running-time="83356009" checksum="e69b67cd93eed6f0c8145f9eaf220118"/>
        <frame duration="83356009" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="166621315"  dts="166621315" running-time="166621315" checksum="703aa22489fca4646d227df8dba27727"/>
