@@ -3,25 +3,36 @@ testsuites:
 
 The testsuites implemented in testsuites/ should follow the PEP8 coding style.
 
-Git annex usage:
-----------------
+## Add a new media file
 
-We should never use git annex sync to make sure we always keep a clean history.
-So to add new annexed files that are not available online, you should follow
-the following steps:
+You need access to gstreamer.freedesktop.org to be able to upload media files and
+`rsync` needs to be installed on the system
 
-    $ git annex add medias/some/file/to.annex
-    $ git commit
-    # Enable gstqaassets backend (Ask maintainers for those keys if you need them)
-    $ AWS_ACCESS_KEY_ID={some-key} AWS_SECRET_ACCESS_KEY={another-key} git annex enableremote gstqaassets
-    $ git annex copy medias/some/file/to.annex --to gstqaassets # You could use any archive.org backend you want
-    $ git push origin master # Considering  those new medias should go to master
-    $ git push origin git-annex # So that information about how to retrieve those medias are shared with others!
+1)  Make sure to get all assets first doing:
 
-If you just want to add files that are already available on the web (and that
-you **know** will keep being available), you can just do
+  medias/get_files.py # no argument
 
-    $ git annex addurl http://some/url
-    $ git mv url medias/where/it/should/go # You could cd first too.
-    $ git annex fix # Make sure git annex fixes its symlinks
-    $ git commit
+2) Add your media file in the tree and generate the media_info:
+
+  gst-validate-media-check-1.0 [--full] medias/path/to/your/new/file medias/path/to/your/new/file.media_info
+
+(you can also do it with gst-validate-launcher -G)
+
+3) Add the media info in git:
+
+  git add medias/path/to/your/new/file.media_info
+
+4) Upload everything to gstreamer.freedesktop.org:/srv/gstreamer.freedesktop.org/www/data/media/gst-integration-testsuite
+
+  python medias/upload_media_files.py # Dry run
+
+Check everything look fine (`git diff`)
+
+  python medias/upload_media_files.py --upload
+
+
+5) Check and update the `medias/files.json` file
+
+  git add medias/files.json
+
+6) Commit and push

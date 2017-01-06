@@ -18,29 +18,91 @@
 # Boston, MA 02110-1301, USA.
 
 
+import json
+import os
 import subprocess
-from launcher import utils
+import sys
+
+from urllib.request import urlretrieve
+from urllib.parse import quote
 
 try:
     from launcher.config import GST_VALIDATE_TESTSUITE_VERSION
 except ImportError:
     GST_VALIDATE_TESTSUITE_VERSION = "master"
 
-SYNC_ASSETS_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s) && git annex get ." % (GST_VALIDATE_TESTSUITE_VERSION,
-                                                                                                                   GST_VALIDATE_TESTSUITE_VERSION)
+
+last_message_length = 0
+def message(string):
+    global last_message_length
+    print('\r' + string + ' ' * max(0, last_message_length - len(string)), end='')
+    last_message_length = len(string)
+
+
+def sizeof_fmt(num, suffix='B'):
+    for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
+        if abs(num) < 1024.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f%s%s" % (num, 'Yi', suffix)
+
+
+URL = ""
+def reporthook(blocknum, blocksize, totalsize):
+    global URL
+    readsofar = blocknum * blocksize
+    if totalsize > 0:
+        percent = readsofar * 1e2 / totalsize
+        s = "\r%s —%5.1f%% %s / %s" % (URL,
+            percent, sizeof_fmt(readsofar), sizeof_fmt(totalsize)) \
+            + ' ' * 50
+        message(s)
+    else: # total size is unknown
+        message("read %d" % (readsofar,))
+
+def download_files(assets_dir):
+    print("Downloading %s" % assets_dir if assets_dir else "all assets")
+    fdir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        '..', 'medias'))
+
+    with open(os.path.join(fdir, 'files.json'), 'r') as f:
+        files = json.load(f)
+
+    for f, ref_filesize in files:
+        if assets_dir and not f.startswith(assets_dir):
+            continue
+
+        fname = os.path.join(fdir, f)
+        if os.path.exists(fname) and os.path.getsize(fname) == ref_filesize:
+            message('%s... OK' % fname)
+            continue
+
+        os.makedirs(os.path.dirname(fname), exist_ok=True)
+        rpath = fname[len(fdir) + 1:]
+        global URL
+        URL = 'https://gstreamer.freedesktop.org/data/media/gst-integration-testsuite/' + quote(rpath)
+        message("\rDownloading %s" % URL, end="")
+
+        try:
+            urlretrieve(URL, fname, reporthook)
+        except:
+            print("\nCould not retieved %s" % URL)
+            raise
+
+        if os.path.getsize(fname) != ref_filesize:
+            print("ERROR: File %s expected size %s != %s, this should never happen!",
+                  fname, os.path.getsize(fname), ref_filesize)
+            exit(1)
+    print("")
 
 def update_assets(options, assets_dir):
     try:
-        command = "cd %s && " % assets_dir
         if options.force_sync:
-            command += "git reset --hard && "
-        command += SYNC_ASSETS_COMMAND
-
-        utils.launch_command(command, fails=True)
-    except subprocess.CalledProcessError as e:
-        utils.printc("Could not update assets repository\n\nError: %s"
-                     "\n\nMAKE SURE YOU HAVE git-annex INSTALLED!" % (e),
-                     utils.Colors.FAIL, True)
+            subprocess.check_call(["git","reset", "--hard"])
+        download_files(os.path.basename(os.path.join(assets_dir)))
+    except Exception as e:
+        print("\nERROR: Could not update assets \n\n%s"
+              "\n\nMAKE SURE YOU HAVE git-annex INSTALLED!" % (e))
 
         return False
 

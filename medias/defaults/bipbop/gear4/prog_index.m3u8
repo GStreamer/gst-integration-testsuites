@@ -1,1 +1,16 @@
-../../../../.git/annex/objects/xm/22/SHA256E-s294--3592f297e941b31f08469713d074f022299267c24907053ff9466849087949a9.m3u8/SHA256E-s294--3592f297e941b31f08469713d074f022299267c24907053ff9466849087949a9.m3u8
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10, no desc
+fileSequence0.ts
+#EXTINF:10, no desc
+fileSequence1.ts
+#EXTINF:10, no desc
+fileSequence2.ts
+#EXTINF:10, no desc
+fileSequence3.ts
+#EXTINF:10, no desc
+fileSequence4.ts
+#EXTINF:10, no desc
+fileSequence5.ts
+#EXT-X-ENDLIST
