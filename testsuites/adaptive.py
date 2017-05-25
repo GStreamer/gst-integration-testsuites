@@ -20,7 +20,7 @@
 # Boston, MA 02110-1301, USA.
 
 """
-The GstValidate DASH-IF test-vectors testsuite
+The GstValidate adaptive streams test-vectors testsuite
 """
 
 import os
@@ -36,9 +36,9 @@ BLACKLIST = [
     ]
 
 def setup_tests(test_manager, options):
-    print("Setting up GstValidate DASH-IF test-vectors tests")
+    print("Setting up GstValidate Adaptive Streaming test-vectors tests")
 
-    assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "dash-if"))
+    assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "adaptivecontent"))
     options.add_paths(assets_dir)
     test_manager.set_default_blacklist(BLACKLIST)
     #test_manager.add_expected_issues(EXPECTED_ISSUES)
@@ -46,10 +46,14 @@ def setup_tests(test_manager, options):
     scenarios = test_manager.get_scenarios()
     # Don't test generic tests that are already covered by the base validate runner
     scenarios.remove("change_state_intensive")
-    # Scrubbing is a tad pointless/intensive for these suites
+    # Scrubbing is a tad pointless/intensive for these suites (already covered elsewhere)
     scenarios.remove("scrub_forward_seeking")
     # Add keyunit trick mode testing
     scenarios.append("trick_mode_seeks")
+    # Add live/seekable scenarios
+    scenarios.append("seek_end_live")
+    scenarios.append("full_live_rewind")
+    scenarios.append("play_15s_live")
     test_manager.set_scenarios(scenarios)
 
     return True

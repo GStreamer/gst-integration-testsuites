@@ -1,4 +1,4 @@
-<file duration="1491220992000000000" frame-detection="0" uri="http://vm2.dashif.org/livesim/testpic_2s/Manifest.mpd#t=posix:now" seekable="false">
+<file duration="1491220992000000000" frame-detection="0" uri="http://vm2.dashif.org/livesim/testpic_2s/Manifest.mpd#t=posix:now" seekable="true" live="true">
   <streams caps="application/dash+xml">
     <stream type="audio" caps="audio/mpeg, mpegversion=(int)4, framed=(boolean)true, stream-format=(string)raw, level=(string)2, base-profile=(string)lc, profile=(string)lc, codec_data=(buffer)1190, rate=(int)48000, channels=(int)2" id="d1358c4723f528093c4780910d03b80d31a2e7e0abe0d072edccbc09a727f987/audio_00/001">
       <tags>
