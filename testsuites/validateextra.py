@@ -27,13 +27,13 @@ from testsuiteutils import update_assets
 
 TEST_MANAGER  = "validate"
 
-BLACKLIST =[("validate.*reverse.*Sintel_2010_720p_mkv",
+BLACKLIST =[("validateextra.*reverse.*Sintel_2010_720p_mkv",
              "TODO in matroskademux: FIXME: We should build an index during playback or "
              "when scanning that can be used here. The reverse playback code requires "
              " seek_index and seek_entry to be set!"),
 
             # Subtitles known issues
-            ("validate.file.playback.switch_subtitle_track.Sintel_2010_720p_mkv",
+            ("validateextra.file.playback.switch_subtitle_track.Sintel_2010_720p_mkv",
              "https://bugzilla.gnome.org/show_bug.cgi?id=734051"),
             ]
 
