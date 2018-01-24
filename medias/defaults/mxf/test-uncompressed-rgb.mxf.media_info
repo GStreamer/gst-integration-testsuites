@@ -1,6 +1,6 @@
-<file duration="1000000000" frame-detection="1" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mxf/test-uncompressed-rgb.mxf" seekable="true">
+<file duration="1000000000" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/mxf/test-uncompressed-rgb.mxf" seekable="true">
   <streams caps="application/mxf">
-    <stream type="video" caps="video/x-raw, format=(string)RGB, width=(int)320, height=(int)240, framerate=(fraction)10/1, pixel-aspect-ratio=(fraction)1/1" id="45d307e7f0634a000b0eb87dbc7639e613b40afe56be8f10f839534b59ea2655/002">
+    <stream type="video" caps="video/x-raw, format=(string)RGB, width=(int)320, height=(int)240, framerate=(fraction)10/1, pixel-aspect-ratio=(fraction)1/1" id="e2e127386622e617a91e5fb9a3ceabcfa319e8bf5bd02af317248c48a2497db3/002">
        <frame duration="100000000" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="0" running-time="0" checksum="6d1bc3e14fa97f22a8e7ef9fac92cb0d"/>
        <frame duration="100000000" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="100000000" dts="100000000" running-time="100000000" checksum="9f7e65ddccbc4e9ddfe4d3a424dedcc4"/>
        <frame duration="100000000" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="200000000" dts="200000000" running-time="200000000" checksum="d7e542a25427e6cbcb920281bb85b5c1"/>
