@@ -81,7 +81,7 @@ def download_files(assets_dir):
         rpath = fname[len(fdir) + 1:]
         global URL
         URL = 'https://gstreamer.freedesktop.org/data/media/gst-integration-testsuite/' + quote(rpath)
-        message("\rDownloading %s" % URL, end="")
+        message("\rDownloading %s" % URL)
 
         try:
             urlretrieve(URL, fname, reporthook)
@@ -95,10 +95,14 @@ def download_files(assets_dir):
             exit(1)
     print("")
 
+
 def update_assets(options, assets_dir):
     try:
+        CHECKOUT_BRANCH_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s)" % (
+            GST_VALIDATE_TESTSUITE_VERSION, GST_VALIDATE_TESTSUITE_VERSION)
         if options.force_sync:
-            subprocess.check_call(["git","reset", "--hard"])
+            subprocess.check_call(["git", "reset", "--hard"])
+        subprocess.check_call(CHECKOUT_BRANCH_COMMAND)
         download_files(os.path.basename(os.path.join(assets_dir)))
     except Exception as e:
         print("\nERROR: Could not update assets \n\n%s"
