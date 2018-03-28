@@ -33,6 +33,8 @@ except ImportError:
 
 
 last_message_length = 0
+
+
 def message(string):
     global last_message_length
     print('\r' + string + ' ' * max(0, last_message_length - len(string)), end='')
@@ -40,7 +42,7 @@ def message(string):
 
 
 def sizeof_fmt(num, suffix='B'):
-    for unit in ['','Ki','Mi','Gi','Ti','Pi','Ei','Zi']:
+    for unit in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
         if abs(num) < 1024.0:
             return "%3.1f%s%s" % (num, unit, suffix)
         num /= 1024.0
@@ -48,17 +50,20 @@ def sizeof_fmt(num, suffix='B'):
 
 
 URL = ""
+
+
 def reporthook(blocknum, blocksize, totalsize):
     global URL
     readsofar = blocknum * blocksize
     if totalsize > 0:
         percent = readsofar * 1e2 / totalsize
         s = "\r%s —%5.1f%% %s / %s" % (URL,
-            percent, sizeof_fmt(readsofar), sizeof_fmt(totalsize)) \
+                                       percent, sizeof_fmt(readsofar), sizeof_fmt(totalsize)) \
             + ' ' * 50
         message(s)
-    else: # total size is unknown
+    else:  # total size is unknown
         message("read %d" % (readsofar,))
+
 
 def download_files(assets_dir):
     print("Downloading %s" % assets_dir if assets_dir else "all assets")
@@ -80,7 +85,8 @@ def download_files(assets_dir):
         os.makedirs(os.path.dirname(fname), exist_ok=True)
         rpath = fname[len(fdir) + 1:]
         global URL
-        URL = 'https://gstreamer.freedesktop.org/data/media/gst-integration-testsuite/' + quote(rpath)
+        URL = 'https://gstreamer.freedesktop.org/data/media/gst-integration-testsuite/' + \
+            quote(rpath)
         message("\rDownloading %s" % URL)
 
         try:
@@ -102,7 +108,8 @@ def update_assets(options, assets_dir):
             GST_VALIDATE_TESTSUITE_VERSION, GST_VALIDATE_TESTSUITE_VERSION)
         if options.force_sync:
             subprocess.check_call(["git", "reset", "--hard"])
-        subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True)
+        print("Checking out %s" % GST_VALIDATE_TESTSUITE_VERSION)
+        subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True, cwd=assets_dir)
         download_files(os.path.basename(os.path.join(assets_dir)))
     except Exception as e:
         print("\nERROR: Could not update assets \n\n%s"
