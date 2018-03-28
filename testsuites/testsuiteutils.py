@@ -102,7 +102,7 @@ def update_assets(options, assets_dir):
             GST_VALIDATE_TESTSUITE_VERSION, GST_VALIDATE_TESTSUITE_VERSION)
         if options.force_sync:
             subprocess.check_call(["git", "reset", "--hard"])
-        subprocess.check_call(CHECKOUT_BRANCH_COMMAND)
+        subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True)
         download_files(os.path.basename(os.path.join(assets_dir)))
     except Exception as e:
         print("\nERROR: Could not update assets \n\n%s"
