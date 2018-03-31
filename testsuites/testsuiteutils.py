@@ -112,8 +112,7 @@ def update_assets(options, assets_dir):
         subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True, cwd=assets_dir)
         download_files(os.path.basename(os.path.join(assets_dir)))
     except Exception as e:
-        print("\nERROR: Could not update assets \n\n%s"
-              "\n\nMAKE SURE YOU HAVE git-annex INSTALLED!" % (e))
+        print("\nERROR: Could not update assets \n\n: %s" % e)
 
         return False
 
