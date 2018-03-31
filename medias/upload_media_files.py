@@ -113,7 +113,7 @@ if __name__ == "__main__":
                     continue
                 except subprocess.CalledProcessError:
                     with open(gitignore, "a") as f:
-                        f.write(rpath + "\n")
+                        f.write("medias/" + rpath + "\n")
 
             print('Syncing %s' % rpath)
             res.append([rpath, os.path.getsize(fname)])
