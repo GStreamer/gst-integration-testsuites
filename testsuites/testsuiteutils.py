@@ -107,7 +107,7 @@ def update_assets(options, assets_dir):
         CHECKOUT_BRANCH_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s)" % (
             GST_VALIDATE_TESTSUITE_VERSION, GST_VALIDATE_TESTSUITE_VERSION)
         if options.force_sync:
-            subprocess.check_call(["git", "reset", "--hard"])
+            subprocess.check_call(["git", "reset", "--hard"], cwd=asset_dir)
         print("Checking out %s" % GST_VALIDATE_TESTSUITE_VERSION)
         subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True, cwd=assets_dir)
         download_files(os.path.basename(os.path.join(assets_dir)))
