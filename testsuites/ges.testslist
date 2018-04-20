@@ -1,3 +1,4 @@
+ges.playback.scrub_backward_seeking.runtime_colorspace_change
 ges.playback.scrub_backward_seeking.test_basic.audio_only.flac_jpeg_mkv
 ges.playback.scrub_backward_seeking.test_basic.audio_only.mp3_h264_mp4
 ges.playback.scrub_backward_seeking.test_basic.audio_only.opus_jpeg_mkv
@@ -47,6 +48,7 @@ ges.playback.scrub_backward_seeking.test_transition.audio_video.opus_jpeg_mkv
 ges.playback.scrub_backward_seeking.test_transition.audio_video.raw_h264_mp4
 ges.playback.scrub_backward_seeking.test_transition.audio_video.vorbis_theora_ogg
 ges.playback.scrub_backward_seeking.test_transition.audio_video.vorbis_vp8_webm
+ges.playback.scrub_forward_seeking.runtime_colorspace_change
 ges.playback.scrub_forward_seeking.test_basic.audio_only.flac_jpeg_mkv
 ges.playback.scrub_forward_seeking.test_basic.audio_only.mp3_h264_mp4
 ges.playback.scrub_forward_seeking.test_basic.audio_only.opus_jpeg_mkv
@@ -96,6 +98,7 @@ ges.playback.scrub_forward_seeking.test_transition.audio_video.opus_jpeg_mkv
 ges.playback.scrub_forward_seeking.test_transition.audio_video.raw_h264_mp4
 ges.playback.scrub_forward_seeking.test_transition.audio_video.vorbis_theora_ogg
 ges.playback.scrub_forward_seeking.test_transition.audio_video.vorbis_vp8_webm
+ges.render.aac_and_h264_in_mp4.runtime_colorspace_change
 ges.render.aac_and_h264_in_mp4.test_basic.audio_only.flac_jpeg_mkv
 ges.render.aac_and_h264_in_mp4.test_basic.audio_only.mp3_h264_mp4
 ges.render.aac_and_h264_in_mp4.test_basic.audio_only.opus_jpeg_mkv
@@ -145,6 +148,7 @@ ges.render.aac_and_h264_in_mp4.test_transition.audio_video.opus_jpeg_mkv
 ges.render.aac_and_h264_in_mp4.test_transition.audio_video.raw_h264_mp4
 ges.render.aac_and_h264_in_mp4.test_transition.audio_video.vorbis_theora_ogg
 ges.render.aac_and_h264_in_mp4.test_transition.audio_video.vorbis_vp8_webm
+ges.render.aac_and_jpeg_in_quicktime.runtime_colorspace_change
 ges.render.aac_and_jpeg_in_quicktime.test_basic.audio_only.flac_jpeg_mkv
 ges.render.aac_and_jpeg_in_quicktime.test_basic.audio_only.mp3_h264_mp4
 ges.render.aac_and_jpeg_in_quicktime.test_basic.audio_only.opus_jpeg_mkv
@@ -194,6 +198,7 @@ ges.render.aac_and_jpeg_in_quicktime.test_transition.audio_video.opus_jpeg_mkv
 ges.render.aac_and_jpeg_in_quicktime.test_transition.audio_video.raw_h264_mp4
 ges.render.aac_and_jpeg_in_quicktime.test_transition.audio_video.vorbis_theora_ogg
 ges.render.aac_and_jpeg_in_quicktime.test_transition.audio_video.vorbis_vp8_webm
+ges.render.ac3_and_h264_in_mp4.runtime_colorspace_change
 ges.render.ac3_and_h264_in_mp4.test_basic.audio_only.flac_jpeg_mkv
 ges.render.ac3_and_h264_in_mp4.test_basic.audio_only.mp3_h264_mp4
 ges.render.ac3_and_h264_in_mp4.test_basic.audio_only.opus_jpeg_mkv
@@ -243,6 +248,7 @@ ges.render.ac3_and_h264_in_mp4.test_transition.audio_video.opus_jpeg_mkv
 ges.render.ac3_and_h264_in_mp4.test_transition.audio_video.raw_h264_mp4
 ges.render.ac3_and_h264_in_mp4.test_transition.audio_video.vorbis_theora_ogg
 ges.render.ac3_and_h264_in_mp4.test_transition.audio_video.vorbis_vp8_webm
+ges.render.opus_and_h264_in_mkv.runtime_colorspace_change
 ges.render.opus_and_h264_in_mkv.test_basic.audio_only.flac_jpeg_mkv
 ges.render.opus_and_h264_in_mkv.test_basic.audio_only.mp3_h264_mp4
 ges.render.opus_and_h264_in_mkv.test_basic.audio_only.opus_jpeg_mkv
@@ -292,6 +298,7 @@ ges.render.opus_and_h264_in_mkv.test_transition.audio_video.opus_jpeg_mkv
 ges.render.opus_and_h264_in_mkv.test_transition.audio_video.raw_h264_mp4
 ges.render.opus_and_h264_in_mkv.test_transition.audio_video.vorbis_theora_ogg
 ges.render.opus_and_h264_in_mkv.test_transition.audio_video.vorbis_vp8_webm
+ges.render.opus_and_jpeg_in_mkv.runtime_colorspace_change
 ges.render.opus_and_jpeg_in_mkv.test_basic.audio_only.flac_jpeg_mkv
 ges.render.opus_and_jpeg_in_mkv.test_basic.audio_only.mp3_h264_mp4
 ges.render.opus_and_jpeg_in_mkv.test_basic.audio_only.opus_jpeg_mkv
@@ -341,6 +348,7 @@ ges.render.opus_and_jpeg_in_mkv.test_transition.audio_video.opus_jpeg_mkv
 ges.render.opus_and_jpeg_in_mkv.test_transition.audio_video.raw_h264_mp4
 ges.render.opus_and_jpeg_in_mkv.test_transition.audio_video.vorbis_theora_ogg
 ges.render.opus_and_jpeg_in_mkv.test_transition.audio_video.vorbis_vp8_webm
+ges.render.opus_and_theora_in_ogg.runtime_colorspace_change
 ges.render.opus_and_theora_in_ogg.test_basic.audio_only.flac_jpeg_mkv
 ges.render.opus_and_theora_in_ogg.test_basic.audio_only.mp3_h264_mp4
 ges.render.opus_and_theora_in_ogg.test_basic.audio_only.opus_jpeg_mkv
@@ -390,6 +398,7 @@ ges.render.opus_and_theora_in_ogg.test_transition.audio_video.opus_jpeg_mkv
 ges.render.opus_and_theora_in_ogg.test_transition.audio_video.raw_h264_mp4
 ges.render.opus_and_theora_in_ogg.test_transition.audio_video.vorbis_theora_ogg
 ges.render.opus_and_theora_in_ogg.test_transition.audio_video.vorbis_vp8_webm
+ges.render.opus_and_vp8_in_webm.runtime_colorspace_change
 ges.render.opus_and_vp8_in_webm.test_basic.audio_only.flac_jpeg_mkv
 ges.render.opus_and_vp8_in_webm.test_basic.audio_only.mp3_h264_mp4
 ges.render.opus_and_vp8_in_webm.test_basic.audio_only.opus_jpeg_mkv
@@ -439,6 +448,7 @@ ges.render.opus_and_vp8_in_webm.test_transition.audio_video.opus_jpeg_mkv
 ges.render.opus_and_vp8_in_webm.test_transition.audio_video.raw_h264_mp4
 ges.render.opus_and_vp8_in_webm.test_transition.audio_video.vorbis_theora_ogg
 ges.render.opus_and_vp8_in_webm.test_transition.audio_video.vorbis_vp8_webm
+ges.render.vorbis_and_h264_in_mkv.runtime_colorspace_change
 ges.render.vorbis_and_h264_in_mkv.test_basic.audio_only.flac_jpeg_mkv
 ges.render.vorbis_and_h264_in_mkv.test_basic.audio_only.mp3_h264_mp4
 ges.render.vorbis_and_h264_in_mkv.test_basic.audio_only.opus_jpeg_mkv
@@ -488,6 +498,7 @@ ges.render.vorbis_and_h264_in_mkv.test_transition.audio_video.opus_jpeg_mkv
 ges.render.vorbis_and_h264_in_mkv.test_transition.audio_video.raw_h264_mp4
 ges.render.vorbis_and_h264_in_mkv.test_transition.audio_video.vorbis_theora_ogg
 ges.render.vorbis_and_h264_in_mkv.test_transition.audio_video.vorbis_vp8_webm
+ges.render.vorbis_and_jpeg_in_mkv.runtime_colorspace_change
 ges.render.vorbis_and_jpeg_in_mkv.test_basic.audio_only.flac_jpeg_mkv
 ges.render.vorbis_and_jpeg_in_mkv.test_basic.audio_only.mp3_h264_mp4
 ges.render.vorbis_and_jpeg_in_mkv.test_basic.audio_only.opus_jpeg_mkv
@@ -537,6 +548,7 @@ ges.render.vorbis_and_jpeg_in_mkv.test_transition.audio_video.opus_jpeg_mkv
 ges.render.vorbis_and_jpeg_in_mkv.test_transition.audio_video.raw_h264_mp4
 ges.render.vorbis_and_jpeg_in_mkv.test_transition.audio_video.vorbis_theora_ogg
 ges.render.vorbis_and_jpeg_in_mkv.test_transition.audio_video.vorbis_vp8_webm
+ges.render.vorbis_and_theora_in_ogg.runtime_colorspace_change
 ges.render.vorbis_and_theora_in_ogg.test_basic.audio_only.flac_jpeg_mkv
 ges.render.vorbis_and_theora_in_ogg.test_basic.audio_only.mp3_h264_mp4
 ges.render.vorbis_and_theora_in_ogg.test_basic.audio_only.opus_jpeg_mkv
@@ -586,6 +598,7 @@ ges.render.vorbis_and_theora_in_ogg.test_transition.audio_video.opus_jpeg_mkv
 ges.render.vorbis_and_theora_in_ogg.test_transition.audio_video.raw_h264_mp4
 ges.render.vorbis_and_theora_in_ogg.test_transition.audio_video.vorbis_theora_ogg
 ges.render.vorbis_and_theora_in_ogg.test_transition.audio_video.vorbis_vp8_webm
+ges.render.vorbis_and_vp8_in_webm.runtime_colorspace_change
 ges.render.vorbis_and_vp8_in_webm.test_basic.audio_only.flac_jpeg_mkv
 ges.render.vorbis_and_vp8_in_webm.test_basic.audio_only.mp3_h264_mp4
 ges.render.vorbis_and_vp8_in_webm.test_basic.audio_only.opus_jpeg_mkv
