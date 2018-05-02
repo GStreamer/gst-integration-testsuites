@@ -108,6 +108,8 @@ def setup_tests(test_manager, options):
          "https://bugzilla.gnome.org/show_bug.cgi?id=748393"),
         ("validateelements.launch_pipeline.glfilterbin*",
          "glfilter bin doesnt launch."),
+        ("validateelements.launch_pipeline.audiomixmatrix*",
+         "Now deprecated and requires specific properties to be set."),
     ])
     valid_scenarios = ["play_15s"]
     Gst.init(None)
