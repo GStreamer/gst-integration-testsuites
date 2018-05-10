@@ -397,6 +397,7 @@ validate.hls.playback.reverse_playback.hls_bibbop
 validate.hls.playback.scrub_forward_seeking.hls_bibbop
 validate.hls.playback.seek_backward.hls_bibbop
 validate.hls.playback.seek_forward.hls_bibbop
+validate.hls.playback.seek_with_stop.hls_bibbop
 validate.http.media_check.mp3_h264_1_mp4
 validate.http.media_check.raw_h264_1_mp4
 validate.http.media_check.raw_video_mkv
