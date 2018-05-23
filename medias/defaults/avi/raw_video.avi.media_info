@@ -1,6 +1,9 @@
-<file duration="3333333333" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/avi/raw_video.avi" seekable="true">
+<file duration="3333333333" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/avi/raw_video.avi" seekable="true">
   <streams caps="video/x-msvideo">
-    <stream type="video" caps="video/x-raw, format=(string)I420, framerate=(fraction)30/1, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1" id="8d1a18fe6b28464ffde91bbc13149caedcd8cd85e9fd3ac44a8c5d8be87a00bc/001">
+    <stream type="video" caps="video/x-raw, format=(string)I420, framerate=(fraction)30/1, width=(int)320, height=(int)240, pixel-aspect-ratio=(fraction)1/1" id="a67334c4182acfe26d61e49bfc1423b61bfb898f4d4ce7d0b610c4c93b90cdfa/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="18446744073709551615" time="0" position="0" duration="3333333333"/>
+      </segments>
        <frame duration="33333333" id="0" is-keyframe="true" offset="0" offset-end="1" pts="0" dts="0" running-time="0" checksum="ee2750c913334b098a06dc4a7aa25956"/>
        <frame duration="33333333" id="1" is-keyframe="true" offset="1" offset-end="2" pts="33333333" dts="33333333" running-time="33333333" checksum="6c35f8bb5ed4b07945e764c5d55de554"/>
        <frame duration="33333334" id="2" is-keyframe="true" offset="2" offset-end="3" pts="66666666" dts="66666666" running-time="66666666" checksum="b5283c0de33492bd7f0d19e67adcdc5c"/>

@@ -1,6 +1,9 @@
-<file duration="27699000000" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/wmv-asf/samples.multimedia.cx_asf_wmv_elephant.asf" seekable="true">
+<file duration="27699000000" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/wmv-asf/samples.multimedia.cx_asf_wmv_elephant.asf" seekable="true">
   <streams caps="video/x-ms-asf">
-    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)128, depth=(int)16, rate=(int)8000, channels=(int)1, block_align=(int)1, codec_data=(buffer)00020000000001000000" id="a9958dd99d5f0353203171cb1bcab08e4a5e80520e539b0e95d6560eee952f96/001">
+    <stream type="audio" caps="audio/x-wma, wmaversion=(int)2, bitrate=(int)128, depth=(int)16, rate=(int)8000, channels=(int)1, block_align=(int)1, codec_data=(buffer)00020000000001000000" id="f05e0942456814ae7b50848407e1a09f258fb9aa5ad9e204061c7b9af816436e/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="27699000000" time="0" position="0" duration="27699000000"/>
+      </segments>
        <frame duration="18446744073709551615" id="0" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="387000000" dts="18446744073709551615" running-time="387000000" checksum="f1d3ff8443297732862df21dc4e57262"/>
        <frame duration="18446744073709551615" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="687000000" dts="18446744073709551615" running-time="687000000" checksum="f1d3ff8443297732862df21dc4e57262"/>
        <frame duration="18446744073709551615" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="937000000" dts="18446744073709551615" running-time="937000000" checksum="f1d3ff8443297732862df21dc4e57262"/>
@@ -112,7 +115,10 @@
         <tag content="taglist, container-format=(string)ASF, audio-codec=(string)&quot;WMA\ Version\ 8&quot;, bitrate=(uint)128;"/>
       </tags>
     </stream>
-    <stream type="video" caps="video/x-msmpeg, msmpegversion=(int)43, width=(int)160, height=(int)120" id="a9958dd99d5f0353203171cb1bcab08e4a5e80520e539b0e95d6560eee952f96/002">
+    <stream type="video" caps="video/x-msmpeg, msmpegversion=(int)43, width=(int)160, height=(int)120" id="f05e0942456814ae7b50848407e1a09f258fb9aa5ad9e204061c7b9af816436e/002">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="27699000000" time="0" position="0" duration="27699000000"/>
+      </segments>
        <frame duration="18446744073709551615" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="18446744073709551615" running-time="0" checksum="9cd8459f1cf05af68aeabbfc3908cec1"/>
        <frame duration="18446744073709551615" id="1" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="33000000" dts="18446744073709551615" running-time="33000000" checksum="8bb275d7ccf43f7b3dca1fd104f1c791"/>
        <frame duration="18446744073709551615" id="2" is-keyframe="false" offset="18446744073709551615" offset-end="18446744073709551615" pts="99000000" dts="18446744073709551615" running-time="99000000" checksum="48b4f8960603548358f111cd9e843ef3"/>

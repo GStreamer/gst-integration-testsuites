@@ -1,6 +1,9 @@
-<file duration="10031000000" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/mp4/mp3_h264.0.mp4" seekable="true">
+<file duration="10031000000" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mp4/mp3_h264.0.mp4" seekable="true">
   <streams caps="video/quicktime">
-    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true" id="8e4a45495a73f3b32dbe4469b0dd7cc51150c76696e82c85167ee321c7df0377/001">
+    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true" id="4df4f426c4ea52d61b7e619f0ab7af1c5fd0a9962051b5be0bccdb3f8aefb282/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="66666666" stop="10066666666" time="0" position="66666666" duration="18446744073709551615"/>
+      </segments>
        <frame duration="33333333" id="0" is-keyframe="true" offset="0" offset-end="18446744073709551615" pts="66666666" dts="0" running-time="0" checksum="790a8f5fa13dfc92f6adcdfb0550c559"/>
        <frame duration="33333333" id="1" is-keyframe="false" offset="1473" offset-end="18446744073709551615" pts="100000000" dts="33333333" running-time="33333334" checksum="acd767ea3990217d37547896c45ef583"/>
        <frame duration="33333333" id="2" is-keyframe="false" offset="1991" offset-end="18446744073709551615" pts="233333333" dts="66666666" running-time="166666667" checksum="b6c84d1631204547897b26d3794ee2fd"/>
@@ -305,7 +308,10 @@
         <tag content="taglist, video-codec=(string)&quot;H.264\ /\ AVC&quot;, bitrate=(uint)99582, language-code=(string)en, datetime=(datetime)2013-09-03T16:21:39Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime;"/>
       </tags>
     </stream>
-    <stream type="audio" caps="audio/mpeg, mpegversion=(int)1, mpegaudioversion=(int)1, layer=(int)3, rate=(int)44100, channels=(int)1, parsed=(boolean)true" id="8e4a45495a73f3b32dbe4469b0dd7cc51150c76696e82c85167ee321c7df0377/002">
+    <stream type="audio" caps="audio/mpeg, mpegversion=(int)1, mpegaudioversion=(int)1, layer=(int)3, rate=(int)44100, channels=(int)1, parsed=(boolean)true" id="4df4f426c4ea52d61b7e619f0ab7af1c5fd0a9962051b5be0bccdb3f8aefb282/002">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="10031000000" time="0" position="0" duration="18446744073709551615"/>
+      </segments>
        <frame duration="26122448" id="0" is-keyframe="true" offset="0" offset-end="18446744073709551615" pts="0" dts="0" running-time="0" checksum="8008882b4a26f3e5e003bb30b5b70bd7"/>
        <frame duration="26122448" id="1" is-keyframe="true" offset="835" offset-end="18446744073709551615" pts="26122448" dts="26122448" running-time="26122448" checksum="e9f09104753a1e0f9524c1d726bbb801"/>
        <frame duration="26122448" id="2" is-keyframe="true" offset="1043" offset-end="18446744073709551615" pts="52244897" dts="52244897" running-time="52244897" checksum="af8e5809274d3ebfdbff9d74cabd530c"/>
@@ -696,6 +702,6 @@
     </stream>
   </streams>
   <tags>
-    <tag content="taglist, audio-codec=(string)&quot;MPEG-1\ layer\ 3&quot;, language-code=(string)en, bitrate=(uint)75394, datetime=(datetime)2013-09-03T16:21:39Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, video-codec=(string)&quot;H.264\ /\ AVC&quot;, has-crc=(boolean)false, channel-mode=(string)mono, nominal-bitrate=(uint)256000;"/>
+    <tag content="taglist, audio-codec=(string)&quot;MPEG-1\ layer\ 3&quot;, language-code=(string)en, bitrate=(uint)75394, datetime=(datetime)2013-09-03T16:21:39Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime, has-crc=(boolean)false, channel-mode=(string)mono, nominal-bitrate=(uint)256000, video-codec=(string)&quot;H.264\ /\ AVC&quot;;"/>
   </tags>
 </file>

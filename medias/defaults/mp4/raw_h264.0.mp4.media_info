@@ -1,6 +1,9 @@
-<file duration="10000000000" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/mp4/raw_h264.0.mp4" seekable="true">
+<file duration="10000000000" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mp4/raw_h264.0.mp4" seekable="true">
   <streams caps="video/quicktime">
-    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true" id="b9af0ba2dcf819d7bf1839166ab777c14717e596232bfc5ebe01f032c1bb5311/001">
+    <stream type="video" caps="video/x-h264, stream-format=(string)avc, alignment=(string)au, level=(string)2, profile=(string)high, codec_data=(buffer)01640014ffe1001867640014acd94141fb0110000003001773594000f142996001000568ebecb22c, width=(int)320, height=(int)240, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true" id="ab929aab7eeefa9bbe8c28b3fb569c51886b78d247da4e5461133812a5d09652/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="66666666" stop="10066666666" time="0" position="66666666" duration="18446744073709551615"/>
+      </segments>
        <frame duration="33333333" id="0" is-keyframe="true" offset="0" offset-end="18446744073709551615" pts="66666666" dts="0" running-time="0" checksum="790a8f5fa13dfc92f6adcdfb0550c559"/>
        <frame duration="33333333" id="1" is-keyframe="false" offset="1473" offset-end="18446744073709551615" pts="100000000" dts="33333333" running-time="33333334" checksum="acd767ea3990217d37547896c45ef583"/>
        <frame duration="33333333" id="2" is-keyframe="false" offset="1991" offset-end="18446744073709551615" pts="233333333" dts="66666666" running-time="166666667" checksum="b6c84d1631204547897b26d3794ee2fd"/>
@@ -305,7 +308,10 @@
         <tag content="taglist, video-codec=(string)&quot;H.264\ /\ AVC&quot;, bitrate=(uint)99582, language-code=(string)en, datetime=(datetime)2013-09-03T16:21:35Z, description=(string)&quot;audiotest\ wave&quot;, encoder=(string)x264, container-format=(string)Quicktime;"/>
       </tags>
     </stream>
-    <stream type="audio" caps="audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int)44100, channels=(int)1" id="b9af0ba2dcf819d7bf1839166ab777c14717e596232bfc5ebe01f032c1bb5311/002">
+    <stream type="audio" caps="audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int)44100, channels=(int)1" id="ab929aab7eeefa9bbe8c28b3fb569c51886b78d247da4e5461133812a5d09652/002">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="9984580498" time="0" position="0" duration="18446744073709551615"/>
+      </segments>
        <frame duration="23219954" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="18446744073709551615" running-time="0" checksum="aecbb0286041f04484b4c40032cd8e6b"/>
        <frame duration="23219955" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="23219954" dts="18446744073709551615" running-time="23219954" checksum="a22be8f8d8f26467ba3eaf5d80efe356"/>
        <frame duration="23219954" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="46439909" dts="18446744073709551615" running-time="46439909" checksum="cbf7d4edba87ab9240bc159424b8b15d"/>

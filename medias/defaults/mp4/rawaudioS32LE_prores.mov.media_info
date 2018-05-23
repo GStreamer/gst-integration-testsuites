@@ -1,6 +1,9 @@
-<file duration="9988888888" frame-detection="1" uri="file:///home/nicolas/gst-validate/gst-integration-testsuites/medias/defaults/mp4/rawaudioS32LE_prores.mov" seekable="true">
+<file duration="9988888888" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/mp4/rawaudioS32LE_prores.mov" seekable="true">
   <streams caps="video/quicktime">
-    <stream type="video" caps="video/x-prores, variant=(string)standard, width=(int)320, height=(int)240, framerate=(fraction)91/3, pixel-aspect-ratio=(fraction)1/1" id="81f46dc09cb7580f1509b8ee32de4ae05eb912d8503f7f64a06548df4eb129df/001">
+    <stream type="video" caps="video/x-prores, variant=(string)standard, width=(int)320, height=(int)240, framerate=(fraction)91/3, pixel-aspect-ratio=(fraction)1/1" id="b828f3f6b3a925cbeb00f2f640b0efaa6d49a2d8265eff729b3a43ba7e7580fe/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="9988888888" time="0" position="0" duration="18446744073709551615"/>
+      </segments>
        <frame duration="32967032" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="0" running-time="0" checksum="a959630b6aeec19c08b4bd8d19f6069a"/>
        <frame duration="32967033" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="32967032" dts="32967032" running-time="32967032" checksum="3353be7b2e5ac9ab86519d9fd7b007ce"/>
        <frame duration="32967033" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="65934065" dts="65934065" running-time="65934065" checksum="9105e357850848a0ed4a251556f223f3"/>
@@ -308,7 +311,10 @@
         <tag content="taglist, video-codec=(string)&quot;Apple\ ProRes&quot;, language-code=(string)en, datetime=(datetime)2015-10-11T11:13:06Z, container-format=(string)Quicktime;"/>
       </tags>
     </stream>
-    <stream type="audio" caps="audio/x-raw, format=(string)S32LE, layout=(string)interleaved, rate=(int)44100, channels=(int)1" id="81f46dc09cb7580f1509b8ee32de4ae05eb912d8503f7f64a06548df4eb129df/002">
+    <stream type="audio" caps="audio/x-raw, format=(string)S32LE, layout=(string)interleaved, rate=(int)44100, channels=(int)1" id="b828f3f6b3a925cbeb00f2f640b0efaa6d49a2d8265eff729b3a43ba7e7580fe/002">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="9984580498" time="0" position="0" duration="18446744073709551615"/>
+      </segments>
        <frame duration="2902494" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="18446744073709551615" running-time="0" checksum="44842859f4d3f52a455e6e1b6a6b6e7f"/>
        <frame duration="13061224" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="2902494" dts="18446744073709551615" running-time="2902494" checksum="b892d6f4a965807cb7cfaf3cbbd98f3b"/>
        <frame duration="23219955" id="2" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="15963718" dts="18446744073709551615" running-time="15963718" checksum="1d01c97937568f92acfa0a97db0e448b"/>
