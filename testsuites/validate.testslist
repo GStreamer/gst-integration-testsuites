@@ -46,6 +46,7 @@ validate.file.media_check.op2b-mpeg2-wave_hd_mxf
 validate.file.media_check.opacity01_svg
 validate.file.media_check.opus_1_ogg
 validate.file.media_check.png_png
+validate.file.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 validate.file.media_check.raw_h264_0_mp4
 validate.file.media_check.raw_h264_1_mp4
 validate.file.media_check.raw_video_avi
@@ -466,6 +467,7 @@ validate.http.transcode.to_vorbis_and_vp8_in_webm.raw_video_mkv
 validate.http.transcode.to_vorbis_and_vp8_in_webm.raw_video_mov
 validate.http.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_1_ogg
 validate.http.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_1_webm
+validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.change_state_intensive.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 ~validate.rtsp.playback.change_state_intensive.fragmented_nonseekable_sink_mp4

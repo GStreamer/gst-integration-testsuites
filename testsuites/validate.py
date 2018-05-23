@@ -39,8 +39,11 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
               'https://bugzilla.gnome.org/show_bug.cgi?id=783436'),
             ('validate.rtsp.*playback.*seek.*mxf$|validate.rtsp.*playback.*change_state_intensive.*mxf$',
               'Actions on MXF streams with rtsp-server fail in racy ways.'
-             ' (Deactivating as it is not very important.)')
+             ' (Deactivating as it is not very important.)'),
+             ("(?!.*.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4).*.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4",
+              '`qtdemux-test-frag-basic_zero_dur_no_mehd_mp4` is there only for media_check tests.'),
             ]
+
 
 EXPECTED_ISSUES = {
     'validate.dash.playback.*seek.*|validate.dash.playback.*reverse.*'
