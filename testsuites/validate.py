@@ -102,7 +102,21 @@ EXPECTED_ISSUES = {
             'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
         }
-    ]
+    ],
+    'validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf':
+    [
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=796746',
+            'level': 'critical',
+            'summary': 'We got an ERROR message on the bus',
+            'details': '.*Got error: No valid frames decoded before end of stream.*',
+        },
+        {
+            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=796746',
+            'level': 'critical',
+            'summary': 'The program stopped before some actions were executed',
+        }
+    ],
 }
 
 
