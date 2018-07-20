@@ -168,6 +168,10 @@
         31762747
     ],
     [
+        "defaults/matroska/timed_frames_video_only_1fps.mkv",
+        797918
+    ],
+    [
         "defaults/mp4/fragmented_nonseekable_sink.mp4",
         1894684
     ],

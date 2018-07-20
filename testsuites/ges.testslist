@@ -648,3 +648,4 @@ ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.opus_jpeg_mkv
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.raw_h264_mp4
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.vorbis_theora_ogg
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.vorbis_vp8_webm
+ges.scenario.check_set_inpoint
