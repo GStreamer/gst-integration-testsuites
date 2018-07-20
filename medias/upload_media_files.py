@@ -47,6 +47,15 @@ def call(cmd, options, msg=None):
             print('DRY: %s' % msg)
 
 
+def in_git(fpath):
+    try:
+        subprocess.check_output(['git', 'ls-files', '--error-unmatch', fpath],
+                stderr=subprocess.STDOUT)
+        return True
+    except subprocess.CalledProcessError as e:
+        return False
+
+
 def is_binary(fpath):
     with open(fpath, 'rb') as f:
         try:
@@ -90,6 +99,11 @@ if __name__ == "__main__":
         for f in files:
             fname = os.path.join(root, f)
             rpath = fname[len(fdir) + 1:]
+
+            if in_git(fname):
+                if options.verbose:
+                    print("%s is in git." % fname)
+                continue
 
             if not is_binary(fname):
                 if options.verbose:
