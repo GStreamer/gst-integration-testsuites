@@ -135,7 +135,7 @@ if __name__ == "__main__":
     from_file.flush()
     os.system('cat %s' % from_file.name)
 
-    cmd = ["rsync", '-a', '--progress', '--copy-links', '--files-from=%s' % from_file.name, cdir, SERVER + ':' + MEDIA_BASE]
+    cmd = ["rsync", '-a', '--progress', '--copy-links', '--files-from=%s' % from_file.name, fdir, SERVER + ':' + MEDIA_BASE]
     call(cmd, options)
 
     cmd = ["ssh", SERVER, 'chmod -R o+r,g+w %s; chgrp -R gstreamer %s' % (MEDIA_BASE, MEDIA_BASE)]
