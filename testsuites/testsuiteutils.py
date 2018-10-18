@@ -36,9 +36,12 @@ last_message_length = 0
 
 
 def message(string):
-    global last_message_length
-    print('\r' + string + ' ' * max(0, last_message_length - len(string)), end='')
-    last_message_length = len(string)
+    if sys.stdout.isatty():
+        global last_message_length
+        print('\r' + string + ' ' * max(0, last_message_length - len(string)), end='')
+        last_message_length = len(string)
+    else:
+        print(string)
 
 
 def sizeof_fmt(num, suffix='B'):
@@ -87,10 +90,14 @@ def download_files(assets_dir):
         global URL
         URL = 'https://gstreamer.freedesktop.org/data/media/gst-integration-testsuite/' + \
             quote(rpath)
-        message("\rDownloading %s" % URL)
-
+        if sys.stdout.isatty():
+            message("\rDownloading %s" % URL)
+            hook = reporthook
+        else:
+            message("Downloading %s" % URL)
+            hook = None
         try:
-            urlretrieve(URL, fname, reporthook)
+            urlretrieve(URL, fname, hook)
         except:
             print("\nCould not retieved %s" % URL)
             raise
