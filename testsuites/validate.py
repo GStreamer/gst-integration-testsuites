@@ -40,6 +40,9 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
             ('validate.rtsp.*playback.*seek.*mxf$|validate.rtsp.*playback.*change_state_intensive.*mxf$',
               'Actions on MXF streams with rtsp-server fail in racy ways.'
              ' (Deactivating as it is not very important.)'),
+            ('validate.rtsp.*pal-dv25_mxf$',
+              'File has decoding issues with rtsp-server.'
+             ' (Deactivating as it is not very important.)'),
              ("(?!.*.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4).*.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4",
               '`qtdemux-test-frag-basic_zero_dur_no_mehd_mp4` is there only for media_check tests.'),
             ]
