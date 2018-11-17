@@ -164,8 +164,16 @@
         11526306
     ],
     [
+        "defaults/matroska/red_timed_frames_video_only_1fps.mkv",
+        522661
+    ],
+    [
         "defaults/matroska/test5.mkv",
         31762747
+    ],
+    [
+        "defaults/matroska/timed_frames_audio_video_1fps.mkv",
+        965117
     ],
     [
         "defaults/matroska/timed_frames_video_only_1fps.mkv",

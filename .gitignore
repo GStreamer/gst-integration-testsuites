@@ -147,3 +147,5 @@ medias/defaults/avi/samples.multimedia.cx_testsuite_iv31.avi
 medias/defaults/avi/bowlerhatdancer.sleepytom.SGP.mjpeg.avi
 medias/defaults/exMPD_BIP_TC1/ElephantsDream_H264BPL30_0100.mp4
 medias/defaults/matroska/timed_frames_video_only_1fps.mkv
+medias/defaults/matroska/red_timed_frames_video_only_1fps.mkv
+medias/defaults/matroska/timed_frames_audio_video_1fps.mkv
