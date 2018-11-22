@@ -21,6 +21,7 @@
 The GES GstValidate default testsuite
 """
 import os
+from testsuiteutils import update_assets
 
 
 TEST_MANAGER = "ges"
@@ -28,6 +29,10 @@ TEST_MANAGER = "ges"
 
 def setup_tests(test_manager, options):
     print("Setting up GES default tests")
+    assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "defaults"))
+    if options.sync:
+        if not update_assets(options, assets_dir):
+            return False
     options.add_paths(os.path.abspath(os.path.join(os.path.dirname(__file__),
                                                    "..", "medias", "defaults")))
     projects_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ges",
