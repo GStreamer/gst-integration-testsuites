@@ -1,0 +1,18 @@
+{
+    "aspectcropratio":
+    {
+        "pipeline": "videotestsrc !  aspectratiocrop name=cropper ! %(videosink)s",
+        "scenarios": [
+            {
+                "name": "set_aspect_ratio_in_paused",
+                "actions": [
+                    "description, seek=true, handles-states=true",
+                    "pause",
+                    "set-property, playback-time=0.0, target-element-name=cropper, property-name=aspect-ratio, property-value=\"16/9\"",
+                    "play",
+                    "stop, playback-time=1.0"
+                ]
+            }
+        ]
+    }
+}

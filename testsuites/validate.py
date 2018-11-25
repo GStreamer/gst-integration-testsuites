@@ -126,15 +126,22 @@ EXPECTED_ISSUES = {
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")
 
-    assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "defaults"))
+    testsuite_dir = os.path.realpath(os.path.join(os.path.dirname(__file__)))
+
+    assets_dir = os.path.realpath(os.path.join(testsuite_dir, os.path.pardir, "medias", "defaults"))
     if options.sync:
         if not update_assets(options, assets_dir):
             return False
 
     options.add_paths(assets_dir)
-    options.set_http_server_dir(os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                "..", "medias")))
+    options.set_http_server_dir(os.path.join(testsuite_dir, os.path.pardir, "medias"))
     test_manager.set_default_blacklist(BLACKLIST)
+
+    pipelines_tests = os.path.join(testsuite_dir, 'pipelines.json')
+    test_manager.add_generators(
+        test_manager.GstValidatePipelineTestsGenerator.from_json(test_manager, pipelines_tests)
+    )
+
     test_manager.add_expected_issues(EXPECTED_ISSUES)
     test_manager.register_defaults()
 
