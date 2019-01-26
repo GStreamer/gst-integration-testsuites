@@ -468,6 +468,7 @@ validate.http.transcode.to_vorbis_and_vp8_in_webm.raw_video_mov
 validate.http.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_1_ogg
 validate.http.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_1_webm
 validate.launch_pipeline.aspectcropratio.set_aspect_ratio_in_paused
+validate.launch_pipeline.flvdemux.audio_only.play_15s
 validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.change_state_intensive.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
