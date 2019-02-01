@@ -111,18 +111,23 @@ EXPECTED_ISSUES = {
     'validate.rtsp.playback.change_state_intensive.*':
     [
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=783516',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/377',
             'level': 'critical',
             'summary': 'We got an ERROR message on the bus',
             'details': '.*Got error: Could not read from resource.*',
             'sometimes': True,
         },
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=783516',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/377',
             'level': 'critical',
             'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
-        }
+        },
+        {
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/377',
+            'timeout': True,
+            'sometimes': True,
+        },
     ],
     'validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf':
     [
