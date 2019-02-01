@@ -99,6 +99,15 @@ EXPECTED_ISSUES = {
             'sometimes': True,
         }
     ],
+    'validate.rtsp.playback.seek_backward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi':
+    [
+        {
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/563',
+            'level': 'critical',
+            'summary': 'The program stopped before some actions were executed',
+            'sometimes': True,
+        },
+    ],
     'validate.rtsp.playback.change_state_intensive.*':
     [
         {
