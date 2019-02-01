@@ -5,7 +5,7 @@
 # $ gst-launch-1.0 uridecodebin uri=file://$PWD/$FILENAME ! checksumsink |grep "^0:00" | sed "s/ /=/g" | sed "s/^/    $FILENAME./g" | sed "s/$/, \\\/g"
 # ```
 
-define-consts,\
+set-vars,\
     red_timed_frames_video_only_1fps.mkv.0:00:00.000000000=1a247ef67c47263d0445c13dad97b36a5e1fb741, \
     red_timed_frames_video_only_1fps.mkv.0:00:01.000000000=8d463adcbdef4da361675a34aff6e293cde9e090, \
     red_timed_frames_video_only_1fps.mkv.0:00:02.000000000=b37282e2d52f9912e729400c92006ba6093d0258, \

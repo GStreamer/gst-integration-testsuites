@@ -1,6 +1,6 @@
 description, seek=true, handles-states=true, needs_preroll=true
 
-define-consts,\
+set-vars,\
     frame0=68cc0c0b6d6863a135f40297a54aec9f1593f34c,\
     frame1=9b42849e45e15981115cff9da00ecbf7afafd462
 
