@@ -71,7 +71,7 @@ EXPECTED_ISSUES = {
         {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
             'level': 'critical',
-            'summary': 'All the actions were not executed before the program stopped',
+            'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
         }
     ],
@@ -95,7 +95,7 @@ EXPECTED_ISSUES = {
         {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
             'level': 'critical',
-            'summary': '.*All the actions were not executed before the program stopped.*',
+            'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
         }
     ],
