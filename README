@@ -15,5 +15,8 @@ in particular to:
 
     $ gst-validate-launcher --help
 
+Note that this repository uses [git-lfs] so you will need to install it before cloning.
+
 [0] http://cgit.freedesktop.org/gstreamer/gst-devtools/
 [1] https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/gst-validate-launcher.html
+[git-lfs] https://git-lfs.github.com/
