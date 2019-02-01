@@ -767,8 +767,3 @@ validate.testbin.playback.scrub_forward_seeking.audio+video
 validate.testbin.playback.seek_backward.audio+video
 validate.testbin.playback.seek_forward.audio+video
 validate.testbin.playback.seek_with_stop.audio+video
-validate.testbin.transcode.to_mp3_and_h264_in_mp4.audio+video
-validate.testbin.transcode.to_rawaudio_and_prores_in_quicktime.audio+video
-validate.testbin.transcode.to_vorbis_and_h264_in_mkv.audio+video
-validate.testbin.transcode.to_vorbis_and_theora_in_ogg.audio+video
-validate.testbin.transcode.to_vorbis_and_vp8_in_webm.audio+video
