@@ -86,6 +86,13 @@ EXPECTED_ISSUES = {
             'sometimes': True,
         },
         {
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/311',
+            'level': 'critical',
+            'summary': 'We got an ERROR message on the bus',
+            'details': '.*Got error: Could not decode stream.*',
+            'sometimes': True,
+        },
+        {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
             'level': 'critical',
             'summary': '.*All the actions were not executed before the program stopped.*',
