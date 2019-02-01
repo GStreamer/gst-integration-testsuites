@@ -759,11 +759,3 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.switch_audio_track.tron_en_ge_aac_h264_ts
 ~validate.rtsp2.playback.switch_subtitle_track.test5_mkv
 ~validate.rtsp2.playback.switch_subtitles.test5_mkv
-validate.testbin.playback.change_state_intensive.audio+video
-validate.testbin.playback.fast_forward.audio+video
-validate.testbin.playback.play_15s.audio+video
-validate.testbin.playback.reverse_playback.audio+video
-validate.testbin.playback.scrub_forward_seeking.audio+video
-validate.testbin.playback.seek_backward.audio+video
-validate.testbin.playback.seek_forward.audio+video
-validate.testbin.playback.seek_with_stop.audio+video

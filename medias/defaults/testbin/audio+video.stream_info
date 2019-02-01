@@ -1,6 +1,0 @@
-<file duration="20000000000" frame-detection="1" uri="testbin://audio,samplesperbuffer=1024+video,pattern=ball,motion=sweep,flip=true" seekable="true">
-  <streams caps="none">
-    <stream type="video" caps="video/x-raw" id="videotestsrc_stream_0"/>
-    <stream type="audio" caps="audio/x-raw" id="audiotestsrc_stream_0"/>
-  </streams>
-</file>
