@@ -31,6 +31,8 @@ TEST_MANAGER = "validate"
 BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x1280_MTS',
               'Got error: Internal data stream error. -- Debug message: mpegtsbase.c(1371):'
               'mpegts_base_loop (): ...: stream stopped, reason not-negotiated'),
+             ('validate.testbin.transcode.*',
+              "Encoding testsrc is not so interesting and the source is now unlimited"),
              ('validate.file.*.simple.fast_forward.synchronized',
               'https://bugzilla.gnome.org/show_bug.cgi?id=775102'),
              ('validate.hls.playback.change_state_intensive.*',
