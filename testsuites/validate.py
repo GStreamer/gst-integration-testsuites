@@ -161,8 +161,13 @@ def setup_tests(test_manager, options):
     test_manager.set_default_blacklist(BLACKLIST)
 
     pipelines_tests = os.path.join(testsuite_dir, 'pipelines.json')
+
     test_manager.add_generators(
-        test_manager.GstValidatePipelineTestsGenerator.from_json(test_manager, pipelines_tests)
+        test_manager.GstValidatePipelineTestsGenerator.from_json(test_manager, pipelines_tests, extra_data={
+            "medias": os.path.join(testsuite_dir, os.path.pardir, "medias"),
+            "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
+            "validate-flow-actual-results-dir": test_manager.options.logsdir,
+        })
     )
 
     test_manager.add_expected_issues(EXPECTED_ISSUES)

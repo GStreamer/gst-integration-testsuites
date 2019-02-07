@@ -19,5 +19,87 @@
     {
         "pipeline": "uridecodebin uri='file://%(config_path)s/../medias/defaults/flv/819290236.flv' caps=audio/x-raw expose-all-streams=FALSE ! queue ! audioconvert ! audioresample ! %(audiosink)s",
         "scenarios": ["play_15s"]
+    },
+    "flow_simple_test":
+    {
+        "pipeline": "videotestsrc num-buffers=3 ! fakesink",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=true, caps-properties={ width, height };"
+        ]
+    },
+    "appsrc_simple_test":
+    {
+        "pipeline": "appsrc ! qtdemux name=demux ! video/x-h264 ! fakesink async=false demux. ! audio/x-raw ! fakesink async=false",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=true"
+        ],
+        "scenarios": [
+            {
+                "name": "single_push",
+                "actions": [
+                    "description, seek=false, handles-states=false",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/defaults/mp4/raw_h264.0.mp4\""
+                ]
+            }
+        ]
+    },
+    "appsrc_custom_caps":
+    {
+        "pipeline": "appsrc ! fakesink async=false",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=true"
+        ],
+        "scenarios": [
+            {
+                "name": "single_push",
+                "actions": [
+                    "description, seek=false, handles-states=false",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/defaults/mp4/raw_h264.0.mp4\", caps=(GstCaps)\"video/foo\\,\\ variant\\=\\\"test-custom\\\"\"",
+                    "appsrc-eos, target-element-name=appsrc0"
+                ]
+            }
+        ]
+    },
+    "qtdemux_change_edit_list":
+    {
+        "pipeline": "appsrc ! qtdemux ! fakesink async=false",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=false"
+        ],
+        "scenarios": [
+            {
+                "name": "default",
+                "actions": [
+                    "description, seek=false, handles-states=false",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/car-20120827-85.mp4/init.mp4\"",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/car-20120827-85.mp4/media1.mp4\"",
+                    "checkpoint, text=\"A moov with a different edit list is now pushed\"",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/car-20120827-86.mp4/init.mp4\"",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/car-20120827-86.mp4/media2.mp4\"",
+                    "stop"
+                ]
+            }
+        ]
+    },
+    "matroskademux_flush_within_cluster":
+    {
+        "pipeline": "appsrc ! matroskademux ! fakesink async=false",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=true"
+        ],
+        "scenarios": [
+            {
+                "name": "default",
+                "actions": [
+                    "description, seek=false, handles-states=false",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/feelings_vp9-20130806-242.webm/init.webm\"",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/feelings_vp9-20130806-242.webm/media1.webm\", size=5000",
+                    "flush, target-element-name=appsrc0",
+                    "checkpoint, text=\"A different cluster is pushed\"",
+                    "appsrc-push, target-element-name=appsrc0, file-name=\"%(medias)s/fragments/feelings_vp9-20130806-242.webm/media2.webm\", size=10000",
+                    "stop"
+                ]
+            }
+        ]
     }
 }
