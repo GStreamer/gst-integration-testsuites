@@ -12,3 +12,4 @@
 *.ogg filter=lfs diff=lfs merge=lfs -text
 *.asf filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+*.flv filter=lfs diff=lfs merge=lfs -text
