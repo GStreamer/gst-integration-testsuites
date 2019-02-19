@@ -136,11 +136,13 @@ EXPECTED_ISSUES = {
             'level': 'critical',
             'summary': 'We got an ERROR message on the bus',
             'details': '.*Got error: No valid frames decoded before end of stream.*',
+            "sometimes": True
         },
         {
             'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=796746',
             'level': 'critical',
             'summary': 'The program stopped before some actions were executed',
+            "sometimes": True
         }
     ],
 }
