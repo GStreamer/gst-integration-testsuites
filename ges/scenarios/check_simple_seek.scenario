@@ -7,7 +7,7 @@ pause
 add-clip, name=red, asset-id=file://nothing/red_timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip
 add-clip, name=blue, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip
 commit
-check-last-sample, sinkpad-caps="video/x-raw", checksum=red_timed_frames_video_only_1fps.mkv.0:00:00.000000000
+check-last-sample, sinkpad-caps="video/x-raw", checksum="$(red_timed_frames_video_only_1fps_mkv_0_00_00_000000000)"
 seek, flags=accurate+flush, start=30.0
-check-last-sample, sinkpad-caps="video/x-raw", checksum=timed_frames_video_only_1fps.mkv.0:00:10.000000000
-stop;
+check-last-sample, sinkpad-caps="video/x-raw", checksum="$(timed_frames_video_only_1fps_mkv_0_00_10_000000000)"
+stop
