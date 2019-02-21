@@ -101,5 +101,12 @@
                 ]
             }
         ]
+    },
+    "cenc_audio_esds_property_overrides":
+    {
+        "pipeline": "filesrc location=%(medias)s/encrypted/cenc-encrypted-youtube-aac.mp4 ! qtdemux ! mockdecryptor ! fakesink async=false",
+        "config": [
+            "%(validateflow)s, pad=fakesink0:sink, record-buffers=true"
+        ]
     }
 }

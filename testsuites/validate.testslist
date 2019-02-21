@@ -472,6 +472,7 @@ validate.launch_pipeline.appsrc_simple_test.single_push
 validate.launch_pipeline.aspectcropratio.set_aspect_ratio_in_paused
 validate.launch_pipeline.flvdemux.audio_only.play_15s
 validate.launch_pipeline.matroskademux_flush_within_cluster.default
+validate.launch_pipeline.pipelines.cenc_audio_esds_property_overrides
 validate.launch_pipeline.pipelines.flow_simple_test
 validate.launch_pipeline.qtdemux_change_edit_list.default
 validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
