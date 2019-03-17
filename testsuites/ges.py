@@ -44,7 +44,7 @@ def setup_tests(test_manager, options):
          [
              {'summary': 'position after a seek is wrong',
               'sometimes': True,
-              'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=771122'
+              'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-editing-services/issues/27',
               }
          ],
          }

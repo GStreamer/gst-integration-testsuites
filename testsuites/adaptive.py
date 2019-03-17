@@ -30,10 +30,10 @@ TEST_MANAGER = "validate"
 
 BLACKLIST = [
     ('validate.dash.playback.trick_mode_seeks.DASHIF_TestCases_2a_qualcomm_1_MultiResMPEG2',
-     'https://bugzilla.gnome.org/show_bug.cgi?id=781313'),
+     'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/545'),
     ('validate.dash.playback.trick_mode_seeks.DASHIF_TestCases_1a_netflix_exMPD_BIP_TC1',
-     'https://bugzilla.gnome.org/show_bug.cgi?id=781313'),
-    ]
+     'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/545'),
+]
 
 def setup_tests(test_manager, options):
     print("Setting up GstValidate Adaptive Streaming test-vectors tests")

@@ -35,16 +35,16 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
              ('validate.testbin.transcode.*',
               "Encoding testsrc is not so interesting and the source is now unlimited"),
              ('validate.file.*.simple.fast_forward.synchronized',
-              'https://bugzilla.gnome.org/show_bug.cgi?id=775102'),
+              'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/541'),
              ('validate.hls.playback.change_state_intensive.*',
-              'https://bugzilla.gnome.org/show_bug.cgi?id=775118'),
+              'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/482'),
             ('validate.rtsp.*playback.switch.*',
-              'https://bugzilla.gnome.org/show_bug.cgi?id=783436'),
+             'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/357'),
             ('validate.rtsp.*playback.*seek.*mxf$|validate.rtsp.*playback.*change_state_intensive.*mxf$',
-              'Actions on MXF streams with rtsp-server fail in racy ways.'
+             'Actions on MXF streams with rtsp-server fail in racy ways.'
              ' (Deactivating as it is not very important.)'),
             ('validate.rtsp.*pal-dv25_mxf$',
-              'File has decoding issues with rtsp-server.'
+             'File has decoding issues with rtsp-server.'
              ' (Deactivating as it is not very important.)'),
              ("(?!.*.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4).*.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4",
               '`qtdemux-test-frag-basic_zero_dur_no_mehd_mp4` is there only for media_check tests.'),

@@ -33,6 +33,493 @@ from gi.repository import GObject  # noqa
 
 TEST_MANAGER = "validate"
 
+KNOWN_ISSUES = {
+    "validateelements.launch_pipeline.videocropbottom=2147483647.play_15s": [
+        {
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            "sometimes": False,
+            # "details": "Error message posted by: videotestsrc0",
+        },
+    ],
+    "validateelements.launch_pipeline.videocropleft=2147483647.play_15s": [
+        {
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            "sometimes": False,
+            # "details": "Error message posted by: videotestsrc0",
+        },
+    ],
+    "validateelements.launch_pipeline.videocropright=2147483647.play_15s": [
+        {
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            "sometimes": False,
+            # "details": "Error message posted by: videotestsrc0",
+        },
+    ],
+    "validateelements.launch_pipeline.videocroptop=2147483647.play_15s": [
+        {
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            "sometimes": False,
+            # "details": "Error message posted by: videotestsrc0",
+        },
+    ],
+    "validateelements.launch_pipeline.avwaitrecording=False.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.avwaitrecording=True.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.avwaittarget-running-time=0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.avwaittarget-running-time=18446744073709551615.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.cvsmoothkernel-height=2147483647.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.cvsmoothkernel-width=2147483647.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.rawaudioparsenum-channels=2147483647.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "g-log::critical",
+            "summary": "We got a g_log critical issue",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "gst_audio_info_set_format: assertion 'channels <= 64 || position == NULL' failed",
+        },
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No valid frames found before end of stream -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbaseparse.c(1371): gst_base_parse_sink_event_default (): /GstPipeline:pipeline0/GstRawAudioParse:rawaudioparse0",
+        },
+    ],
+    "validateelements.launch_pipeline.rawvideoparseframe-size=4294967295.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No valid frames found before end of stream -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbaseparse.c(1371): gst_base_parse_sink_event_default (): /GstPipeline:pipeline0/GstRawVideoParse:rawvideoparse0",
+        },
+    ],
+    "validateelements.launch_pipeline.rawvideoparseheight=0.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Error message posted by: rawvideoparse0",
+        },
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: Internal data stream error. -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbasesrc.c(3064): gst_base_src_loop (): /GstPipeline:pipeline0/GstVideoTestSrc:videotestsrc0:\nstreaming stopped, reason error (-5)",
+        },
+    ],
+    "validateelements.launch_pipeline.rawvideoparseheight=2147483647.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Error message posted by: rawvideoparse0",
+        },
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: Internal data stream error. -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbasesrc.c(3064): gst_base_src_loop (): /GstPipeline:pipeline0/GstVideoTestSrc:videotestsrc0:\nstreaming stopped, reason error (-5)",
+        },
+    ],
+    "validateelements.launch_pipeline.rawvideoparsewidth=0.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Error message posted by: rawvideoparse0",
+        },
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: Internal data stream error. -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbasesrc.c(3064): gst_base_src_loop (): /GstPipeline:pipeline0/GstVideoTestSrc:videotestsrc0:\nstreaming stopped, reason error (-5)",
+        },
+    ],
+    "validateelements.launch_pipeline.rawvideoparsewidth=2147483647.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::not-negotiated",
+            "summary": "a NOT NEGOTIATED message has been posted on the bus.",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Error message posted by: rawvideoparse0",
+        },
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: Internal data stream error. -- Debug message: ../subprojects/gstreamer/libs/gst/base/gstbasesrc.c(3064): gst_base_src_loop (): /GstPipeline:pipeline0/GstVideoTestSrc:videotestsrc0:\nstreaming stopped, reason error (-5)",
+        },
+    ],
+    "validateelements.launch_pipeline.shapewipeborder=0.0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.shapewipeborder=1.0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.shapewipeposition=0.0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.shapewipeposition=1.0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.videoraterate=0.0.play_15s": [        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'timeout': True,
+            'sometimes': True,
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspcompression-gain-db=0.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspcompression-gain-db=9.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspcompression-gain-db=90.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspdelay-agnostic=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspdelay-agnostic=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspecho-cancel=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspexperimental-agc=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspexperimental-agc=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspextended-filter=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspextended-filter=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspgain-control=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspgain-control=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsphigh-pass-filter=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsphigh-pass-filter=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsplimiter=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsplimiter=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspnoise-suppression=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspnoise-suppression=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspstartup-min-volume=12.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspstartup-min-volume=255.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsptarget-level-dbfs=0.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsptarget-level-dbfs=3.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdsptarget-level-dbfs=31.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspvoice-detection-frame-size-ms=10.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspvoice-detection-frame-size-ms=30.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspvoice-detection=False.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+    "validateelements.launch_pipeline.webrtcdspvoice-detection=True.play_15s": [
+        {
+            "bug": "FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)",
+            "issue-id": "runtime::error-on-bus",
+            "summary": "We got an ERROR message on the bus",
+            "level": "critical",
+            "detected-on": "pipeline0",
+            # "details": "Got error: No echo probe with name webrtcechoprobe0 found. -- Debug message: ../subprojects/gst-plugins-bad/ext/webrtcdsp/gstwebrtcdsp.cpp(591): gst_webrtc_dsp_start (): /GstPipeline:pipeline0/GstWebrtcDsp:webrtcdsp0",
+        },
+    ],
+
+    "validateelements.launch_pipeline.cameracalibratedelay=2147483647.play_15s": [
+        {
+            'bug': 'FIXME - REPORT A BUG in https://gitlab.freedesktop.org/gstreamer/ ? (or remove this line)',
+            'signame': 'SIGIOT',
+            'sometimes': True,
+        },
+    ],
+}
+
 
 def pspec_is_numeric(prop):
     return prop.value_type in [GObject.TYPE_INT, GObject.TYPE_INT64,
@@ -87,25 +574,14 @@ def get_pipe_and_populate(test_manager, klass, fname, prop, loop):
 def setup_tests(test_manager, options):
     print("Setting up tests to validate all elements")
     pipelines_descriptions = []
+    test_manager.add_expected_issues(KNOWN_ISSUES)
     test_manager.set_default_blacklist([
-        ("validateelements.launch_pipeline.videocrop*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=743910"),
         ("validateelements.launch_pipeline.videobox*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=743909"),
-        ("validateelements.launch_pipeline.simplevideomark*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=743908"),
-        ("validateelements.launch_pipeline.exclusion*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=743907"),
+         "Those are broken pipelines."),
         ("validateelements.launch_pipeline.frei0r*",
          "video filter plugins"),
-        ("validateelements.launch_pipeline.*interleavechannel-positions-from-input=False*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=744211"),
-        ("validateelements.launch_pipeline.spectrum*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=744213"),
         ("validateelements.launch_pipeline.smpte*",
          "smpte cannot be tested with simple pipeline. Hence excluding"),
-        ("validateelements.launch_pipeline.gleffects_laplacian*",
-         "https://bugzilla.gnome.org/show_bug.cgi?id=748393"),
         ("validateelements.launch_pipeline.glfilterbin*",
          "glfilter bin doesnt launch."),
         ("validateelements.launch_pipeline.audiomixmatrix*",

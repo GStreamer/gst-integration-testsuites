@@ -3,21 +3,21 @@ KNOWN_ISSUES = {
     '|validate.dash.playback.*fast.':
     [
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/486',
             'detected-on': 'playbin',
             'summary': 'We got an ERROR message on the bus',
             'level': 'critical',
             'sometimes': True,
         },
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/486',
             'summary': "flow return from pad push doesn't match expected value",
             'details': '.*Wrong combined flow return error.*',
             'level': 'critical',
             'sometimes': True,
         },
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775266',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/486',
             'level': 'critical',
             'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
@@ -26,7 +26,7 @@ KNOWN_ISSUES = {
     'validate.http.*.vorbis_theora_1_ogg':
     [
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/311',
             'detected-on': 'playbin',
             'summary': 'We got an ERROR message on the bus',
             'details': '.*No valid frames decoded before end of stream.*',
@@ -41,7 +41,7 @@ KNOWN_ISSUES = {
             'sometimes': True,
         },
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=775107',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/311',
             'level': 'critical',
             'summary': 'The program stopped before some actions were executed',
             'sometimes': True,
@@ -67,14 +67,14 @@ KNOWN_ISSUES = {
     'validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf':
     [
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=796746',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/744',
             'level': 'critical',
             'summary': 'We got an ERROR message on the bus',
             'details': '.*Got error: No valid frames decoded before end of stream.*',
             "sometimes": True
         },
         {
-            'bug': 'https://bugzilla.gnome.org/show_bug.cgi?id=796746',
+            'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/744',
             'level': 'critical',
             'summary': 'The program stopped before some actions were executed',
             "sometimes": True
