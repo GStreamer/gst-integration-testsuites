@@ -35,12 +35,11 @@ BLACKLIST = [("validateextra.*reverse.*Sintel_2010_720p_mkv",
             # Subtitles known issues
             ("validateextra.file.playback.switch_subtitle_track.Sintel_2010_720p_mkv",
              "https://bugzilla.gnome.org/show_bug.cgi?id=734051"),
-             ]
-
+            ("validateextra.rtsp.*subtitle.*Sintel_2010_720p_mkv$",
+             "Subtitles are not exposed on RTSP?")
+]
 
 def setup_tests(test_manager, options):
-    print("Setting up GstValidate default tests")
-
     assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "big"))
     if options.sync:
         if not update_assets(options, assets_dir):
