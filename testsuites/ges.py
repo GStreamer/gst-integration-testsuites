@@ -39,14 +39,17 @@ def setup_tests(test_manager, options):
     scenarios_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ges",
                                                  "scenarios"))
     test_manager.add_expected_issues(
-        {'ges.playback.scrub_forward_seeking.test_mixing.*mp3.*':
-         [
-             {'summary': 'position after a seek is wrong',
-              'sometimes': True,
-              'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-editing-services/issues/27',
-              }
-         ],
-         }
+        {
+            'https://gitlab.freedesktop.org/gstreamer/gst-editing-services/issues/27': {
+                'tests': ['ges.playback.scrub_forward_seeking.test_mixing.*mp3.*'],
+                'issues': [
+                    {
+                        'summary': 'position after a seek is wrong',
+                        'sometimes': True,
+                    }
+                ]
+            }
+        }
     )
     test_manager.register_defaults(projects_path, scenarios_path)
     return True
