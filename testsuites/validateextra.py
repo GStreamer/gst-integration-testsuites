@@ -25,9 +25,9 @@ import os
 from testsuiteutils import update_assets
 
 
-TEST_MANAGER  = "validate"
+TEST_MANAGER = "validate"
 
-BLACKLIST =[("validateextra.*reverse.*Sintel_2010_720p_mkv",
+BLACKLIST = [("validateextra.*reverse.*Sintel_2010_720p_mkv",
              "TODO in matroskademux: FIXME: We should build an index during playback or "
              "when scanning that can be used here. The reverse playback code requires "
              " seek_index and seek_entry to be set!"),
@@ -35,7 +35,8 @@ BLACKLIST =[("validateextra.*reverse.*Sintel_2010_720p_mkv",
             # Subtitles known issues
             ("validateextra.file.playback.switch_subtitle_track.Sintel_2010_720p_mkv",
              "https://bugzilla.gnome.org/show_bug.cgi?id=734051"),
-            ]
+             ]
+
 
 def setup_tests(test_manager, options):
     print("Setting up GstValidate default tests")

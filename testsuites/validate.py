@@ -48,12 +48,10 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
              ' (Deactivating as it is not very important.)'),
              ("(?!.*.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4).*.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4",
               '`qtdemux-test-frag-basic_zero_dur_no_mehd_mp4` is there only for media_check tests.'),
-            ]
+             ]
 
 
 def setup_tests(test_manager, options):
-    print("Setting up GstValidate default tests")
-
     testsuite_dir = os.path.realpath(os.path.join(os.path.dirname(__file__)))
 
     assets_dir = os.path.realpath(os.path.join(testsuite_dir, os.path.pardir, "medias", "defaults"))
@@ -88,20 +86,20 @@ def setup_tests(test_manager, options):
                               "scrub_forward_seeking"]
 
     for compositor in ["compositor", "glvideomixer"]:
-            test_manager.add_generators(
-                test_manager.GstValidateMixerTestsGenerator(compositor + ".simple", test_manager,
-                                                            compositor,
-                                                            "video",
-                                                            converter="deinterlace ! videoconvert",
-                                                            mixed_srcs={
-                                                                 "synchronized": {"mixer_props": "sink_1::alpha=0.5 sink_1::xpos=50 sink_1::ypos=50",  # noqa
-                                                                                  "sources":
-                                                                                  ("videotestsrc pattern=snow timestamp-offset=3000000000 ! 'video/x-raw,format=AYUV,width=640,height=480,framerate=(fraction)30/1' !  timeoverlay",  # noqa
-                                                                                   "videotestsrc pattern=smpte ! 'video/x-raw,format=AYUV,width=800,height=600,framerate=(fraction)10/1' ! timeoverlay")},  # noqa
-                                                                 "bgra": ("videotestsrc ! video/x-raw, framerate=\(fraction\)10/1, width=100, height=100",  # noqa
-                                                                          "videotestsrc ! video/x-raw, framerate=\(fraction\)5/1, width=320, height=240")
-                                                            },
-                                                            valid_scenarios=valid_mixing_scenarios))
+        test_manager.add_generators(
+            test_manager.GstValidateMixerTestsGenerator(compositor + ".simple", test_manager,
+                                                        compositor,
+                                                        "video",
+                                                        converter="deinterlace ! videoconvert",
+                                                        mixed_srcs={
+                                                             "synchronized": {"mixer_props": "sink_1::alpha=0.5 sink_1::xpos=50 sink_1::ypos=50",  # noqa
+                                                                              "sources":
+                                                                              ("videotestsrc pattern=snow timestamp-offset=3000000000 ! 'video/x-raw,format=AYUV,width=640,height=480,framerate=(fraction)30/1' !  timeoverlay",  # noqa
+                                                                               "videotestsrc pattern=smpte ! 'video/x-raw,format=AYUV,width=800,height=600,framerate=(fraction)10/1' ! timeoverlay")},  # noqa
+                                                             "bgra": ("videotestsrc ! video/x-raw, framerate=\(fraction\)10/1, width=100, height=100",  # noqa
+                                                                      "videotestsrc ! video/x-raw, framerate=\(fraction\)5/1, width=320, height=240")
+                                                        },
+                                                        valid_scenarios=valid_mixing_scenarios))
 
     test_manager.add_generators(
         test_manager.GstValidateMixerTestsGenerator("audiomixer.simple", test_manager,

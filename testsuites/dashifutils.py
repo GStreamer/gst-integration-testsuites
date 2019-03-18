@@ -23,11 +23,13 @@
 The GstValidate DASH-IF test-vectors testsuite
 """
 
-import json, requests
+import json
+import requests
 import sys
 import xml.etree.ElementTree as ET
 
 TESTVECTOR_URL = "http://testassets.dashif.org:3000/v1/testvectors"
+
 
 def cleanup_entries(data):
     # we need to do some minor cleanup of the entries:
@@ -50,6 +52,7 @@ def cleanup_entries(data):
         _url = url.split("<a href=")[1].split(">Link<")[0]
         entry["url"] = _url
 
+
 def update_testvector_list(outputfile=None):
     # download and cleanup testvector json
     resp = requests.get(url=TESTVECTOR_URL)
@@ -60,9 +63,9 @@ def update_testvector_list(outputfile=None):
     else:
         json.dump(data["data"], fp=open(outputfile, "w"), indent=4, sort_keys=True)
 
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         update_testvector_list(sys.argv[1])
     else:
         update_testvector_list()
-

@@ -28,7 +28,6 @@ TEST_MANAGER = "ges"
 
 
 def setup_tests(test_manager, options):
-    print("Setting up GES default tests")
     assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "defaults"))
     if options.sync:
         if not update_assets(options, assets_dir):

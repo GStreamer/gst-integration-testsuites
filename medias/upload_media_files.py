@@ -28,6 +28,7 @@ import tempfile
 SERVER = "gstreamer.freedesktop.org"
 MEDIA_BASE = "/srv/gstreamer.freedesktop.org/www/data/media/gst-integration-testsuite"
 
+
 def call(cmd, options, msg=None):
     if options.upload:
         if not msg:
@@ -65,6 +66,7 @@ def is_binary(fpath):
         except UnicodeDecodeError:
             return True
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-u", "--upload", dest="upload",
@@ -92,7 +94,6 @@ if __name__ == "__main__":
             res = json.load(f)
     except FileNotFoundError:
         res = []
-
 
     from_file = tempfile.NamedTemporaryFile('w')
     for root, dirs, files in os.walk(cdir):

@@ -98,7 +98,7 @@ def download_files(assets_dir):
             hook = None
         try:
             urlretrieve(URL, fname, hook)
-        except:
+        except BaseException:
             print("\nCould not retieved %s" % URL)
             raise
 

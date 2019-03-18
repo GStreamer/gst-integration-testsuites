@@ -35,13 +35,14 @@ BLACKLIST = [
      'https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/545'),
 ]
 
+
 def setup_tests(test_manager, options):
     print("Setting up GstValidate Adaptive Streaming test-vectors tests")
 
     assets_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "medias", "adaptivecontent"))
     options.add_paths(assets_dir)
     test_manager.set_default_blacklist(BLACKLIST)
-    #test_manager.add_expected_issues(EXPECTED_ISSUES)
+    # test_manager.add_expected_issues(EXPECTED_ISSUES)
     test_manager.register_defaults()
     scenarios = test_manager.get_scenarios()
     # Don't test generic tests that are already covered by the base validate runner
@@ -57,4 +58,3 @@ def setup_tests(test_manager, options):
     test_manager.set_scenarios(scenarios)
 
     return True
-
