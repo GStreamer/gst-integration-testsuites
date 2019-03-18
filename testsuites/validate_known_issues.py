@@ -23,7 +23,7 @@ KNOWN_ISSUES = {
             'sometimes': True,
         }
     ],
-    'validate.http.*.vorbis_theora_1_ogg':
+    'validate.http.*.vorbis_theora_1_ogg|validate.rtsp.*.vorbis_theora_1_ogg':
     [
         {
             'bug': 'https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/311',
