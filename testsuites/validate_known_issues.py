@@ -95,4 +95,15 @@ KNOWN_ISSUES = {
             }
         ]
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/930": {
+        "tests": [
+            "validate.hls.playback.reverse_playback.*"
+        ],
+        "issues": [
+            {
+                'timeout': True,
+                'sometimes': True,
+            },
+        ],
+    },
 }
