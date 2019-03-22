@@ -106,4 +106,20 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/582": {
+        "tests": [
+            "validate.http.playback.reverse_playback.*"
+            "validate.http.playback.*seek.*"
+            "validate.http.playback.*change_state.*"
+        ],
+        "issues": [
+            {
+                'timeout': True,
+                'sometimes': True,
+                'stacktrace_symbols': [
+                    'gst_base_src_perform_seek'
+                ]
+            },
+        ],
+    },
 }
