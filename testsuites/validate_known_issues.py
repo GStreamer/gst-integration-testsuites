@@ -116,8 +116,19 @@ KNOWN_ISSUES = {
             {
                 'timeout': True,
                 'sometimes': True,
+            },
+        ],
+    },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/609": {
+        "tests": [
+            "validate.hls.playback.*seek.*"
+        ],
+        "issues": [
+            {
+                'timeout': True,
+                'sometimes': True,
                 'stacktrace_symbols': [
-                    'gst_base_src_perform_seek'
+                    'g_rec_mutex_lock'
                 ]
             },
         ],
