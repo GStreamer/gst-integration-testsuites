@@ -31,7 +31,9 @@ KNOWN_ISSUES = {
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/311": {
         "tests": [
             "validate.http.*.ogg$",
+            "validate.http.*.ogv$",
             "validate.rtsp.*.ogg$",
+            "validate.rtsp.*.ogv$",
         ],
         "issues": [
             {
@@ -51,7 +53,12 @@ KNOWN_ISSUES = {
                 "level": "critical",
                 "summary": "The program stopped before some actions were executed",
                 "sometimes": True,
-            }
+            },
+            {
+                "summary": "The program stopped before some actions were executed",
+                "issue-id": "scenario::not-ended",
+                "sometimes": True,
+            },
         ]
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/563": {
