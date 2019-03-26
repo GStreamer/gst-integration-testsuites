@@ -176,4 +176,15 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/585": {
+        "tests": [
+            "validate.rtsp.*playback.*seek.*."
+        ],
+        "issues": [
+            {
+                "summary": "We got a g_log critical issue",
+                "details": ".*g_hash_table_foreach_remove_or_steal.*",
+            },
+        ],
+    },
 }
