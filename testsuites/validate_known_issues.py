@@ -153,4 +153,15 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/937": {
+        "tests": [
+            "validate.hls.playback.fast_forward.*"
+        ],
+        "issues": [
+            {
+                'timeout': True,
+                'sometimes': True,
+            },
+        ],
+    },
 }
