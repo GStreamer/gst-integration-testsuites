@@ -187,4 +187,16 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/578": {
+        "tests": [
+            "validate.http.playback.change_state_intensive.*ogv"
+            "validate.http.playback.change_state_intensive.*ogg"
+        ],
+        "issues": [
+            {
+                'timeout': True,
+                'sometimes': True,
+            },
+        ],
+    },
 }
