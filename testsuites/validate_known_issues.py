@@ -210,4 +210,18 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/579": {
+        "tests": [
+            "validate.http.*ogv"
+            "validate.http.*ogg"
+        ],
+        "issues": [
+            {
+                "summary": "We got an ERROR message on the bus",
+                "level": "critical",
+                "details": ".*Could not decode stream.*",
+                "sometimes": True,
+            },
+        ]
+    }
 }
