@@ -1,4 +1,15 @@
 KNOWN_ISSUES = {
+    "General flakyness": {
+        "tests": [
+            r"^validate\.((?!play_15s).)*$",
+            r"^validate\.((?!transcode).)*$",
+            r"^validate\.((?!media_check).)*$",
+            r"^validate\.((?!compositor).)*$",
+            r"^validate\.((?!glvideomixer).)*$",
+            r"^validate\.((?!launch_pipeline).)*$",
+        ],
+        "allow_flakiness": True,
+    },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/486": {
         "tests": [
             "validate.dash.playback.fast_forward.dash_exMPD_BIP_TC1",
