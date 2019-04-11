@@ -17,7 +17,7 @@ KNOWN_ISSUES = {
             "validate.dash.playback.seek_with_stop.dash_exMPD_BIP_TC1",
             "validate.dash.playback.scrub_forward_seeking.dash_exMPD_BIP_TC1",
             "validate.dash.playback.seek_backward.dash_exMPD_BIP_TC1",
-            "validate.dash.playback.seek_forward.dash_exMPD_BIP_TC1"
+            "validate.dash.playback.seek_forward.dash_exMPD_BIP_TC1",
         ],
         "issues": [
             {
@@ -74,7 +74,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/563": {
         "tests": [
-            "validate.rtsp.playback.seek_backward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi"
+            "validate.rtsp.playback.seek_backward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi",
         ],
         "issues": [
             {
@@ -97,7 +97,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/744": {
         "tests": [
-            "validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf"
+            "validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf",
         ],
         "issues": [
             {
@@ -115,7 +115,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/930": {
         "tests": [
-            "validate.hls.playback.reverse_playback.*"
+            "validate.hls.playback.reverse_playback.*",
         ],
         "issues": [
             {
@@ -126,9 +126,9 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/582": {
         "tests": [
-            "validate.http.playback.reverse_playback.*"
-            "validate.http.playback.*seek.*"
-            "validate.http.playback.*change_state.*"
+            "validate.http.playback.reverse_playback.*",
+            "validate.http.playback.*seek.*",
+            "validate.http.playback.*change_state.*",
         ],
         "issues": [
             {
@@ -139,7 +139,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/609": {
         "tests": [
-            "validate.hls.playback.*seek.*"
+            "validate.hls.playback.*seek.*",
         ],
         "issues": [
             {
@@ -166,7 +166,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/937": {
         "tests": [
-            "validate.hls.playback.fast_forward.*"
+            "validate.hls.playback.fast_forward.*",
         ],
         "issues": [
             {
@@ -177,8 +177,8 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/578": {
         "tests": [
-            "validate.http.playback.change_state_intensive.*ogv"
-            "validate.http.playback.change_state_intensive.*ogg"
+            "validate.http.playback.change_state_intensive.*ogv",
+            "validate.http.playback.change_state_intensive.*ogg",
         ],
         "issues": [
             {
@@ -189,7 +189,7 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/585": {
         "tests": [
-            "validate.rtsp.*playback.*seek.*."
+            "validate.rtsp.*playback.*seek.*.",
         ],
         "issues": [
             {
@@ -200,8 +200,8 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/578": {
         "tests": [
-            "validate.http.playback.change_state_intensive.*ogv"
-            "validate.http.playback.change_state_intensive.*ogg"
+            "validate.http.playback.change_state_intensive.*ogv",
+            "validate.http.playback.change_state_intensive.*ogg",
         ],
         "issues": [
             {
@@ -212,8 +212,8 @@ KNOWN_ISSUES = {
     },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-base/issues/579": {
         "tests": [
-            "validate.http.*ogv"
-            "validate.http.*ogg"
+            "validate.http.*ogv",
+            "validate.http.*ogg",
         ],
         "issues": [
             {
