@@ -475,6 +475,7 @@ validate.launch_pipeline.matroskademux_flush_within_cluster.default
 validate.launch_pipeline.pipelines.cenc_audio_esds_property_overrides
 validate.launch_pipeline.pipelines.flow_simple_test
 validate.launch_pipeline.qtdemux_change_edit_list.default
+validate.launch_pipeline.scaletempo_playbin_audio_filter.fast_forward
 validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.change_state_intensive.bowlerhatdancer_sleepytom_SGP_mjpeg_avi

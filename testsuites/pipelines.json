@@ -108,5 +108,10 @@
         "config": [
             "%(validateflow)s, pad=fakesink0:sink, record-buffers=true"
         ]
+    },
+     "scaletempo_playbin_audio_filter":
+    {
+        "pipeline": "playbin audio-filter=scaletempo video-sink=fakesink uri=file://%(medias)s/defaults/mp4/mp3_h264.0.mp4",
+        "scenarios": ["fast_forward"]
     }
 }
