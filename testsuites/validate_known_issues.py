@@ -151,19 +151,6 @@ KNOWN_ISSUES = {
             },
         ],
     },
-    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-good/issues/584": {
-        "tests": [
-            "validate.rtsp.*playback.*seek.*.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv",
-            "validate.rtsp.*playback.*seek.*.raw_video.*"
-        ],
-        "issues": [
-            {
-                "issue-id": "g-log::critical",
-                "summary": "We got a g_log critical issue",
-                "details": ".*gst_buffer_pool_acquire_buffer.*",
-            },
-        ],
-    },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/937": {
         "tests": [
             "validate.hls.playback.fast_forward.*",
