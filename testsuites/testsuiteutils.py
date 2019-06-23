@@ -34,6 +34,10 @@ except ImportError:
 
 last_message_length = 0
 
+os.environ["GST_VALIDATE_CONFIG"] = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__), "..", "integration-testsuites.config")) + os.pathsep + os.environ.get("GST_VALIDATE_CONFIG", "")
+
 
 def message(string):
     if sys.stdout.isatty():
