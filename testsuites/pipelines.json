@@ -146,5 +146,41 @@
               ]
           }
         ]
-    }
+    },
+    "h264parse_trickmode_predicted":
+    {
+        "pipeline": "filesrc location=%(medias)s/defaults/mp4/mp3_h264.0.mp4 ! qtdemux ! h264parse name=parse ! fakesink",
+        "config": [
+            "%(validateflow)s, pad=parse:src, record-buffers=true"
+        ],
+        "scenarios": [
+          {
+              "name": "seek_trickmode_predicted",
+              "actions": [
+                  "description, seek=true, handles-states=true",
+                  "pause",
+                  "seek, name=trickmode-predicted-seek, rate=1.0, start=0.0, stop=\"$(duration)\", flags=\"flush+accurate+trickmode-forward-predicted\"",
+                  "play"
+              ]
+          }
+        ]
+    },
+    "h265parse_trickmode_predicted":
+    {
+        "pipeline": "filesrc location=%(medias)s/defaults/mp4/mp3_h265.0.mp4 ! qtdemux ! h265parse name=parse disable-passthrough=true ! fakesink",
+        "config": [
+            "%(validateflow)s, pad=parse:src, record-buffers=true"
+        ],
+        "scenarios": [
+          {
+              "name": "seek_trickmode_predicted",
+              "actions": [
+                  "description, seek=true, handles-states=true",
+                  "pause",
+                  "seek, name=trickmode-predicted-seek, rate=1.0, start=0.0, stop=\"$(duration)\", flags=\"flush+accurate+trickmode-forward-predicted\"",
+                  "play"
+              ]
+          }
+        ]
+     }
 }
