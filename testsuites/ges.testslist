@@ -755,4 +755,5 @@ ges.scenario.check_seek_on_very_deeply_nested_timeline
 ges.scenario.check_set_inpoint
 ges.scenario.check_set_inpoint_on_nested_timeline
 ges.scenario.check_simple_seek
+ges.scenario.edit_deeply_nested_timeline_too_short
 ges.scenario.play_two_nested_back_to_back
