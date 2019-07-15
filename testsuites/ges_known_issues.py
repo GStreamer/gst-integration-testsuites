@@ -28,10 +28,10 @@ KNOWN_ISSUES = {
             },
         ],
     },
-    "General flakyness": {
+    "General flakiness": {
         "tests": [
             r"^ges\.((?!render).)*$",
         ],
         "allow_flakiness": True,
-    }
+    },
 }

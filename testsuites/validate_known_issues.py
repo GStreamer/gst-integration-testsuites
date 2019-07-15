@@ -1,5 +1,5 @@
 KNOWN_ISSUES = {
-    "General flakyness": {
+    "General flakiness": {
         "tests": [
             r"^validate\.((?!play_15s).)*$",
             r"^validate\.((?!transcode).)*$",
@@ -231,5 +231,18 @@ KNOWN_ISSUES = {
             },
         ],
     },
+    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/1020": {
+        "tests": [
+            "validate.*mxf.*",
+        ],
+        "issues": [
+             {
+                 "issue-id": "threading::pull-range-from-wrong-thread",
+                 "summary": "gst_pad_pull_range called from wrong thread",
+                 "level": "critical",
+                 'can-happen-several-times': True,
+             },
+        ]
 
+    }
 }
