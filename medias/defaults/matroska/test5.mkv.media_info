@@ -1,6 +1,6 @@
 <file duration="46665000000" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/gst-validate/gst-integration-testsuites/medias/defaults/matroska/test5.mkv" seekable="true">
   <streams caps="video/x-matroska">
-    <stream type="video" caps="video/x-h264, level=(string)3.1, profile=(string)main, codec_data=(buffer)014d401fffe10014274d401fa918080093600d418041adb0ad7bdf0101000428ce09c8, stream-format=(string)avc, alignment=(string)au, width=(int)1024, height=(int)576, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)24/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true" id="dfe147586c35160fdb7db75dfbd6b71c3e49f9dfbdbcf62d243508359f191877/001:1258329745">
+    <stream type="video" caps="video/x-h264, level=(string)3.1, profile=(string)main, codec_data=(buffer)014d401fffe10014274d401fa918080093600d418041adb0ad7bdf0101000428ce09c8, stream-format=(string)avc, alignment=(string)au, width=(int)1024, height=(int)576, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)24/1, interlace-mode=(string)progressive, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, colorimetry=(string)bt601, parsed=(boolean)true" id="dfe147586c35160fdb7db75dfbd6b71c3e49f9dfbdbcf62d243508359f191877/001:1258329745">
       <segments>
         <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="18446744073709551615" time="0" position="0" duration="46665000000"/>
       </segments>
