@@ -477,6 +477,7 @@ validate.launch_pipeline.pipelines.flow_simple_test
 validate.launch_pipeline.pipelines.rtpsession_recv_simple
 validate.launch_pipeline.pipelines.rtpsession_send_simple
 validate.launch_pipeline.qtdemux_change_edit_list.default
+validate.launch_pipeline.qtdemux_reverse_playback_full_gop.reverse_playback_full_gop
 validate.launch_pipeline.scaletempo_playbin_audio_filter.fast_forward
 validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.GH1_00094_1920x1280_MTS

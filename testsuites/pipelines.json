@@ -127,5 +127,24 @@
     {
         "pipeline": "playbin audio-filter=scaletempo video-sink=fakesink uri=file://%(medias)s/defaults/mp4/mp3_h264.0.mp4",
         "scenarios": ["fast_forward"]
+    },
+    "qtdemux_reverse_playback_full_gop":
+    {
+        "pipeline": "filesrc location=%(medias)s/defaults/mp4/mp3_h264.0.mp4 ! qtdemux ! h264parse name=parse ! fakesink",
+        "config": [
+            "%(validateflow)s, pad=parse:src, record-buffers=true"
+        ],
+        "scenarios": [
+          {
+              "name": "reverse_playback_full_gop",
+              "actions": [
+                  "description, reverse-playback=true, seek=true, handles-states=true",
+                  "include,location=includes/default-seek-flags.scenario",
+                  "pause",
+                  "seek, name=Reverse-seek, playback-time=0.0, rate=-1.0, start=5.0, stop=10.0, flags=\"$(default_flags)\"",
+                  "play"
+              ]
+          }
+        ]
     }
 }
