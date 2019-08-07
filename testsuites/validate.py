@@ -48,6 +48,8 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
              ' (Deactivating as it is not very important.)'),
              ("(?!.*.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4).*.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4",
               '`qtdemux-test-frag-basic_zero_dur_no_mehd_mp4` is there only for media_check tests.'),
+             ('validate.rtsp.*playback.*mp3_h265_0_mp4$',
+              'The version of libav shipped by Fedora 29 crashes in various ways with these tests.'),
              ]
 
 
