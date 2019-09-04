@@ -183,5 +183,14 @@ PIPELINES_DESC = {
           }
         ]
      },
+    "mp4_redirect":
+    {
+        "pipeline": "playbin uri=pushfile://%(medias)s/defaults/mp4/redirect.mp4 name=playbin video-sink=\"%(videosink)s name=videosink\" audio-sink=\"%(audiosink)s\"",
+        "scenarios": [ "play_15s" ],
+        "config": [
+            "%(validateflow)s, pad=qtdemux0:sink",
+            "%(validateflow)s, pad=qtdemux1:sink"
+        ]
+     },
 }
 
