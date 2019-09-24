@@ -67,6 +67,7 @@ validate.file.media_check.vorbis_theora_0_ogg
 validate.file.media_check.vorbis_theora_1_ogg
 validate.file.media_check.vorbis_vp8_0_webm
 validate.file.media_check.vorbis_vp8_1_webm
+validate.file.media_check.vorbis_vp9_webm
 validate.file.media_check.xdcam-pal-d10-imx30_mxf
 validate.file.media_check.xdcam-pal-d10-imx50_mxf
 validate.file.media_check.xdcam-pal-dv25_mxf
@@ -100,6 +101,7 @@ validate.file.playback.change_state_intensive.vorbis_theora_0_ogg
 validate.file.playback.change_state_intensive.vorbis_theora_1_ogg
 validate.file.playback.change_state_intensive.vorbis_vp8_0_webm
 validate.file.playback.change_state_intensive.vorbis_vp8_1_webm
+validate.file.playback.change_state_intensive.vorbis_vp9_webm
 validate.file.playback.change_state_intensive.xdcam-pal-d10-imx30_mxf
 validate.file.playback.change_state_intensive.xdcam-pal-d10-imx50_mxf
 validate.file.playback.change_state_intensive.xdcam-pal-dv25_mxf
@@ -123,6 +125,7 @@ validate.file.playback.fast_forward.vorbis_theora_0_ogg
 validate.file.playback.fast_forward.vorbis_theora_1_ogg
 validate.file.playback.fast_forward.vorbis_vp8_0_webm
 validate.file.playback.fast_forward.vorbis_vp8_1_webm
+validate.file.playback.fast_forward.vorbis_vp9_webm
 validate.file.playback.play_15s.GH1_00094_1920x1280_MTS
 validate.file.playback.play_15s.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.play_15s.fragmented_nonseekable_sink_mp4
@@ -155,6 +158,7 @@ validate.file.playback.play_15s.vorbis_theora_0_ogg
 validate.file.playback.play_15s.vorbis_theora_1_ogg
 validate.file.playback.play_15s.vorbis_vp8_0_webm
 validate.file.playback.play_15s.vorbis_vp8_1_webm
+validate.file.playback.play_15s.vorbis_vp9_webm
 validate.file.playback.play_15s.xdcam-pal-d10-imx30_mxf
 validate.file.playback.play_15s.xdcam-pal-d10-imx50_mxf
 validate.file.playback.play_15s.xdcam-pal-dv25_mxf
@@ -202,6 +206,7 @@ validate.file.playback.scrub_forward_seeking.vorbis_theora_0_ogg
 validate.file.playback.scrub_forward_seeking.vorbis_theora_1_ogg
 validate.file.playback.scrub_forward_seeking.vorbis_vp8_0_webm
 validate.file.playback.scrub_forward_seeking.vorbis_vp8_1_webm
+validate.file.playback.scrub_forward_seeking.vorbis_vp9_webm
 validate.file.playback.scrub_forward_seeking.xdcam-pal-d10-imx30_mxf
 validate.file.playback.scrub_forward_seeking.xdcam-pal-d10-imx50_mxf
 validate.file.playback.scrub_forward_seeking.xdcam-pal-dv25_mxf
@@ -234,6 +239,7 @@ validate.file.playback.seek_backward.vorbis_theora_0_ogg
 validate.file.playback.seek_backward.vorbis_theora_1_ogg
 validate.file.playback.seek_backward.vorbis_vp8_0_webm
 validate.file.playback.seek_backward.vorbis_vp8_1_webm
+validate.file.playback.seek_backward.vorbis_vp9_webm
 validate.file.playback.seek_backward.xdcam-pal-d10-imx30_mxf
 validate.file.playback.seek_backward.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_backward.xdcam-pal-dv25_mxf
@@ -266,6 +272,7 @@ validate.file.playback.seek_forward.vorbis_theora_0_ogg
 validate.file.playback.seek_forward.vorbis_theora_1_ogg
 validate.file.playback.seek_forward.vorbis_vp8_0_webm
 validate.file.playback.seek_forward.vorbis_vp8_1_webm
+validate.file.playback.seek_forward.vorbis_vp9_webm
 validate.file.playback.seek_forward.xdcam-pal-d10-imx30_mxf
 validate.file.playback.seek_forward.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_forward.xdcam-pal-dv25_mxf
@@ -296,6 +303,7 @@ validate.file.playback.seek_with_stop.vorbis_theora_0_ogg
 validate.file.playback.seek_with_stop.vorbis_theora_1_ogg
 validate.file.playback.seek_with_stop.vorbis_vp8_0_webm
 validate.file.playback.seek_with_stop.vorbis_vp8_1_webm
+validate.file.playback.seek_with_stop.vorbis_vp9_webm
 validate.file.playback.seek_with_stop.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_with_stop.xdcam-pal-dv25_mxf
 validate.file.playback.switch_audio_track.test5_mkv
@@ -326,6 +334,7 @@ validate.file.transcode.to_mp3_and_h264_in_mp4.vorbis_theora_0_ogg
 validate.file.transcode.to_mp3_and_h264_in_mp4.vorbis_theora_1_ogg
 validate.file.transcode.to_mp3_and_h264_in_mp4.vorbis_vp8_0_webm
 validate.file.transcode.to_mp3_and_h264_in_mp4.vorbis_vp8_1_webm
+validate.file.transcode.to_mp3_and_h264_in_mp4.vorbis_vp9_webm
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.GH1_00094_1920x1280_MTS
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.fragmented_nonseekable_sink_mp4
@@ -346,6 +355,7 @@ validate.file.transcode.to_rawaudio_and_prores_in_quicktime.vorbis_theora_0_ogg
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.vorbis_theora_1_ogg
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.vorbis_vp8_0_webm
 validate.file.transcode.to_rawaudio_and_prores_in_quicktime.vorbis_vp8_1_webm
+validate.file.transcode.to_rawaudio_and_prores_in_quicktime.vorbis_vp9_webm
 validate.file.transcode.to_vorbis_and_h264_in_mkv.GH1_00094_1920x1280_MTS
 validate.file.transcode.to_vorbis_and_h264_in_mkv.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.transcode.to_vorbis_and_h264_in_mkv.fragmented_nonseekable_sink_mp4
@@ -366,6 +376,7 @@ validate.file.transcode.to_vorbis_and_h264_in_mkv.vorbis_theora_0_ogg
 validate.file.transcode.to_vorbis_and_h264_in_mkv.vorbis_theora_1_ogg
 validate.file.transcode.to_vorbis_and_h264_in_mkv.vorbis_vp8_0_webm
 validate.file.transcode.to_vorbis_and_h264_in_mkv.vorbis_vp8_1_webm
+validate.file.transcode.to_vorbis_and_h264_in_mkv.vorbis_vp9_webm
 validate.file.transcode.to_vorbis_and_theora_in_ogg.GH1_00094_1920x1280_MTS
 validate.file.transcode.to_vorbis_and_theora_in_ogg.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.transcode.to_vorbis_and_theora_in_ogg.fragmented_nonseekable_sink_mp4
@@ -386,6 +397,7 @@ validate.file.transcode.to_vorbis_and_theora_in_ogg.vorbis_theora_0_ogg
 validate.file.transcode.to_vorbis_and_theora_in_ogg.vorbis_theora_1_ogg
 validate.file.transcode.to_vorbis_and_theora_in_ogg.vorbis_vp8_0_webm
 validate.file.transcode.to_vorbis_and_theora_in_ogg.vorbis_vp8_1_webm
+validate.file.transcode.to_vorbis_and_theora_in_ogg.vorbis_vp9_webm
 validate.file.transcode.to_vorbis_and_vp8_in_webm.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.transcode.to_vorbis_and_vp8_in_webm.fragmented_nonseekable_sink_mp4
 validate.file.transcode.to_vorbis_and_vp8_in_webm.mp3_h264_0_mp4
@@ -405,6 +417,7 @@ validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_0_ogg
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_theora_1_ogg
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_0_webm
 validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp8_1_webm
+validate.file.transcode.to_vorbis_and_vp8_in_webm.vorbis_vp9_webm
 validate.hls.media_check.bipbopall_m3u8
 validate.hls.playback.fast_forward.hls_bibbop
 validate.hls.playback.play_15s.hls_bibbop
@@ -520,6 +533,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.vorbis_theora_1_ogg
 ~validate.rtsp.playback.change_state_intensive.vorbis_vp8_0_webm
 ~validate.rtsp.playback.change_state_intensive.vorbis_vp8_1_webm
+~validate.rtsp.playback.change_state_intensive.vorbis_vp9_webm
 ~validate.rtsp.playback.disable_subtitle_track_while_paused.test5_mkv
 ~validate.rtsp.playback.play_15s.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.play_15s.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
@@ -551,6 +565,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.play_15s.vorbis_theora_1_ogg
 ~validate.rtsp.playback.play_15s.vorbis_vp8_0_webm
 ~validate.rtsp.playback.play_15s.vorbis_vp8_1_webm
+~validate.rtsp.playback.play_15s.vorbis_vp9_webm
 ~validate.rtsp.playback.play_15s.xdcam-pal-d10-imx30_mxf
 ~validate.rtsp.playback.play_15s.xdcam-pal-d10-imx50_mxf
 ~validate.rtsp.playback.play_15s.xdcam-pal-dv25_mxf
@@ -577,6 +592,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.seek_backward.vorbis_theora_1_ogg
 ~validate.rtsp.playback.seek_backward.vorbis_vp8_0_webm
 ~validate.rtsp.playback.seek_backward.vorbis_vp8_1_webm
+~validate.rtsp.playback.seek_backward.vorbis_vp9_webm
 ~validate.rtsp.playback.seek_forward.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.seek_forward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 ~validate.rtsp.playback.seek_forward.mp3_h264_0_mp4
@@ -600,6 +616,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.seek_forward.vorbis_theora_1_ogg
 ~validate.rtsp.playback.seek_forward.vorbis_vp8_0_webm
 ~validate.rtsp.playback.seek_forward.vorbis_vp8_1_webm
+~validate.rtsp.playback.seek_forward.vorbis_vp9_webm
 ~validate.rtsp2.playback.change_state_intensive.GH1_00094_1920x1280_MTS
 ~validate.rtsp2.playback.change_state_intensive.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 ~validate.rtsp2.playback.change_state_intensive.fragmented_nonseekable_sink_mp4
@@ -630,6 +647,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.change_state_intensive.vorbis_theora_1_ogg
 ~validate.rtsp2.playback.change_state_intensive.vorbis_vp8_0_webm
 ~validate.rtsp2.playback.change_state_intensive.vorbis_vp8_1_webm
+~validate.rtsp2.playback.change_state_intensive.vorbis_vp9_webm
 ~validate.rtsp2.playback.change_state_intensive.xdcam-pal-d10-imx30_mxf
 ~validate.rtsp2.playback.change_state_intensive.xdcam-pal-d10-imx50_mxf
 ~validate.rtsp2.playback.change_state_intensive.xdcam-pal-dv25_mxf
@@ -681,6 +699,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.play_15s.vorbis_theora_1_ogg
 ~validate.rtsp2.playback.play_15s.vorbis_vp8_0_webm
 ~validate.rtsp2.playback.play_15s.vorbis_vp8_1_webm
+~validate.rtsp2.playback.play_15s.vorbis_vp9_webm
 ~validate.rtsp2.playback.play_15s.xdcam-pal-d10-imx30_mxf
 ~validate.rtsp2.playback.play_15s.xdcam-pal-d10-imx50_mxf
 ~validate.rtsp2.playback.play_15s.xdcam-pal-dv25_mxf
@@ -727,6 +746,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.seek_backward.vorbis_theora_1_ogg
 ~validate.rtsp2.playback.seek_backward.vorbis_vp8_0_webm
 ~validate.rtsp2.playback.seek_backward.vorbis_vp8_1_webm
+~validate.rtsp2.playback.seek_backward.vorbis_vp9_webm
 ~validate.rtsp2.playback.seek_backward.xdcam-pal-d10-imx30_mxf
 ~validate.rtsp2.playback.seek_backward.xdcam-pal-d10-imx50_mxf
 ~validate.rtsp2.playback.seek_backward.xdcam-pal-dv25_mxf
@@ -759,6 +779,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.seek_forward.vorbis_theora_1_ogg
 ~validate.rtsp2.playback.seek_forward.vorbis_vp8_0_webm
 ~validate.rtsp2.playback.seek_forward.vorbis_vp8_1_webm
+~validate.rtsp2.playback.seek_forward.vorbis_vp9_webm
 ~validate.rtsp2.playback.seek_forward.xdcam-pal-d10-imx30_mxf
 ~validate.rtsp2.playback.seek_forward.xdcam-pal-d10-imx50_mxf
 ~validate.rtsp2.playback.seek_forward.xdcam-pal-dv25_mxf
