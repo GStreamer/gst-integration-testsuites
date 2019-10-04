@@ -243,6 +243,15 @@ KNOWN_ISSUES = {
                  'can-happen-several-times': True,
              },
         ]
-
+    },
+    "Our asf file is basically broken": {
+        "tests": [
+            "validate.file.transcode.*.samples_multimedia_cx_asf_wmv_elephant_asf",
+        ],
+        "issues": [
+            {
+                "issue-id": "transcoded-file-wrong-duration",
+            },
+       ]
     }
 }
