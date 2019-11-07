@@ -192,5 +192,19 @@ PIPELINES_DESC = {
             "%(validateflow)s, pad=qtdemux1:sink"
         ]
      },
+    "x264enc_youtube_bitrate":
+    {
+        "pipeline": "videotestsrc ! video/x-raw,width=1920,height=1080 ! x264enc name=enc @preset=\"Profile YouTube\" ! fakesink",
+        "scenarios": [
+          {
+              "name": "fullhd_lowframerate",
+              "actions": [
+                  "pause",
+                  "check-property, target-element-name=enc, property-name=bitrate, property-value=8000",
+                  "stop"
+              ]
+          }
+        ]
+    },
 }
 
