@@ -25,6 +25,7 @@ import os
 from testsuiteutils import update_assets
 from launcher.baseclasses import MediaFormatCombination
 from validate_known_issues import KNOWN_ISSUES
+from pipelines import PIPELINES_DESC
 
 
 TEST_MANAGER = "validate"
@@ -67,14 +68,14 @@ def setup_tests(test_manager, options):
     options.set_http_server_dir(os.path.join(testsuite_dir, os.path.pardir, "medias"))
     test_manager.set_default_blacklist(BLACKLIST)
 
-    pipelines_tests = os.path.join(testsuite_dir, 'pipelines.json')
-
     test_manager.add_generators(
-        test_manager.GstValidatePipelineTestsGenerator.from_json(test_manager, pipelines_tests, extra_data={
-            "medias": os.path.join(testsuite_dir, os.path.pardir, "medias"),
-            "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
-            "validate-flow-actual-results-dir": test_manager.options.logsdir,
-        })
+        test_manager.GstValidatePipelineTestsGenerator.from_dict(test_manager, "pipelines",
+            PIPELINES_DESC, extra_data={
+                "config_path": os.path.dirname(testsuite_dir),
+                "medias": os.path.join(testsuite_dir, os.path.pardir, "medias"),
+                "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
+                "validate-flow-actual-results-dir": test_manager.options.logsdir,
+            })
     )
 
     test_manager.add_expected_issues(KNOWN_ISSUES)

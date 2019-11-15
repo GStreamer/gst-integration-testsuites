@@ -1,4 +1,4 @@
-{
+PIPELINES_DESC = {
     "aspectcropratio":
     {
         "pipeline": "videotestsrc !  aspectratiocrop name=cropper ! %(videosink)s",
@@ -17,7 +17,7 @@
     },
     "flvdemux.audio_only":
     {
-        "pipeline": "uridecodebin uri='file://%(config_path)s/../medias/defaults/flv/819290236.flv' caps=audio/x-raw expose-all-streams=FALSE ! queue ! audioconvert ! audioresample ! %(audiosink)s",
+        "pipeline": "uridecodebin uri='file://%(medias)s/defaults/flv/819290236.flv' caps=audio/x-raw expose-all-streams=FALSE ! queue ! audioconvert ! audioresample ! %(audiosink)s",
         "scenarios": ["play_15s"]
     },
     "rtpsession_send_simple":
@@ -182,5 +182,6 @@
               ]
           }
         ]
-     }
+     },
 }
+
