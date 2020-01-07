@@ -22,6 +22,9 @@ The GstValidate default testsuite
 """
 
 import os
+import glob
+import re
+
 from testsuiteutils import update_assets
 from launcher.baseclasses import MediaFormatCombination
 from validate_known_issues import KNOWN_ISSUES
@@ -55,9 +58,36 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
               'Do not preroll after pause.'),
              ]
 
+def add_accurate_seek_tests(test_manager, media_dir, extra_data):
+    accurate_seeks_media_infos = []
+    for f in [
+            'mp4/timecoded_jpeg_23976fps.mp4.media_info.skipped',
+            'mp4/timecoded_jpeg_2997fps.mp4.media_info.skipped',
+            'mp4/timecoded_jpeg_30fps.mp4.media_info.skipped',
+
+            'mp4/timecoded_vp8_23976fps.mp4.media_info.skipped',
+            'mp4/timecoded_vp8_2997fps.mp4.media_info.skipped',
+            'mp4/timecoded_vp8_30fps.mp4.media_info.skipped',
+
+            'mp4/timecoded_h264_23976fps.mp4.media_info.skipped',
+            'mp4/timecoded_h264_2997fps.mp4.media_info.skipped',
+            'mp4/timecoded_h264_30fps.mp4.media_info.skipped',
+        ]:
+        f = os.path.join(media_dir, "defaults", f)
+        accurate_seeks_media_infos.append((f, re.sub(r"\.media_info.*", "_reference_frames", f).replace('.', '_')))
+
+    test_manager.add_generators(
+        test_manager.GstValidateCheckAccurateSeekingTestGenerator(
+            'accurate_seeks',
+            test_manager,
+            [(os.path.join(media_dir, media_info), os.path.join(media_dir, reference_frames_dir)) for media_info, reference_frames_dir in accurate_seeks_media_infos],
+            extra_data=extra_data)
+    )
+
 
 def setup_tests(test_manager, options):
     testsuite_dir = os.path.realpath(os.path.join(os.path.dirname(__file__)))
+    media_dir = os.path.realpath(os.path.join(testsuite_dir, os.path.pardir, "medias"))
 
     assets_dir = os.path.realpath(os.path.join(testsuite_dir, os.path.pardir, "medias", "defaults"))
     if options.sync:
@@ -65,17 +95,21 @@ def setup_tests(test_manager, options):
             return False
 
     options.add_paths(assets_dir)
-    options.set_http_server_dir(os.path.join(testsuite_dir, os.path.pardir, "medias"))
+    options.set_http_server_dir(media_dir)
     test_manager.set_default_blacklist(BLACKLIST)
+
+    extra_data = {
+        "config_path": os.path.dirname(testsuite_dir),
+        "medias": media_dir,
+        "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
+        "validate-flow-actual-results-dir": test_manager.options.logsdir,
+        "ssim-results-dir": os.path.join(test_manager.options.logsdir, "ssim-results"),
+    }
+    add_accurate_seek_tests(test_manager, media_dir, extra_data)
 
     test_manager.add_generators(
         test_manager.GstValidatePipelineTestsGenerator.from_dict(test_manager, "pipelines",
-            PIPELINES_DESC, extra_data={
-                "config_path": os.path.dirname(testsuite_dir),
-                "medias": os.path.join(testsuite_dir, os.path.pardir, "medias"),
-                "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
-                "validate-flow-actual-results-dir": test_manager.options.logsdir,
-            })
+            PIPELINES_DESC, extra_data)
     )
 
     test_manager.add_expected_issues(KNOWN_ISSUES)
