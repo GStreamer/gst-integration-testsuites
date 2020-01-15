@@ -206,5 +206,23 @@ PIPELINES_DESC = {
           }
         ]
     },
+    "baseparse":
+    {
+        "pipeline": "file://%(medias)s/defaults/matroska/numerated_frames_blue.mkv ! matroskademux ! h264parse name=parser ! fakesink",
+        "scenarios": [
+            {
+                "name": "single_seek",
+                "actions": [
+                    "description, seek=true, handles-states=true",
+                    "pause",
+                    "seek, rate=1.0, start=0.03333333333, flags=\"flush+accurate\"",
+                    "stop",
+                ],
+            },
+         ],
+        "config": [
+            "%(validateflow)s, pad=parser:src, record-buffers=true, logged-event-types={ segment }",
+        ]
+     },
 }
 
