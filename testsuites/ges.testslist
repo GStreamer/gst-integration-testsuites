@@ -751,6 +751,7 @@ ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.vorbis_vp8_webm
 ges.scenario.add_effect_and_split
 ges.scenario.check_seek_on_nested_clips
 ges.scenario.check_seek_on_nested_timelines
+ges.scenario.check_seek_on_very_deeply_nested_timeline
 ges.scenario.check_set_inpoint
 ges.scenario.check_set_inpoint_on_nested_timeline
 ges.scenario.check_simple_seek
