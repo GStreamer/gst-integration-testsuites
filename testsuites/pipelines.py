@@ -224,5 +224,20 @@ PIPELINES_DESC = {
             "%(validateflow)s, pad=parser:src, record-buffers=true, logged-event-types={ segment }",
         ]
      },
+    "standalone_nleurisource":
+    {
+        "pipeline": "nleurisource uri=file://%(medias)s/defaults/matroska/numerated_frames_blue.mkv inpoint=1000000000 duration=1000000000  ! videoconvert name=videoconvert ! %(videosink)s",
+        "scenarios": [
+            {
+                "name": "play",
+                "actions": [
+                    "description, seek=false, handles-states=false",
+                ]
+            },
+        ],
+        "config": [
+            "%(validateflow)s, pad=videoconvert:sink, record-buffers=true, buffers-checksum=true, ignored-event-types={ tag }"
+        ]
+     },
 }
 
