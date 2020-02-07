@@ -6,13 +6,11 @@ set-vars,\
     nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges",\
     nested_timeline_depth2_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth2.xges"
 
-add-clip, name=clip, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip
 serialize-project, uri="$(nested_timeline_uri)"
-remove-clip, name=clip
-
-add-clip, name=nested-clip1, asset-id="$(nested_timeline_uri)", layer-priority=0, type=GESUriClip
 serialize-project, uri="$(nested_timeline_depth2_uri)"
-remove-clip, name=nested-clip1
+
+add-clip, name=clip, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_uri)"
+add-clip, name=nested-clip1, asset-id="$(nested_timeline_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth2_uri)"
 
 add-clip, name=nested-timeline1, asset-id="$(nested_timeline_depth2_uri)", layer-priority=0, type=GESUriClip, inpoint=0, duration=2.0
 add-clip, name=nested-timeline2, asset-id="$(nested_timeline_depth2_uri)", layer-priority=0, type=GESUriClip, inpoint=0, duration=2.0, start=2.0
