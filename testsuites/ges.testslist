@@ -759,3 +759,4 @@ ges.scenario.check_simple_seek
 ges.scenario.edit_deeply_nested_timeline_too_short
 ges.scenario.play_deeply_nested_back_to_back
 ges.scenario.play_two_nested_back_to_back
+ges.scenario.seek_on_stack_change_on_internal_subtimeline
