@@ -1,4 +1,5 @@
-description, seek=true, handles-states=true, needs_preroll=true, ges-track-types="video"
+description, seek=true, handles-states=true, needs_preroll=true, \
+    ges-options={--track-types, video, --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1"}
 
 set-vars, nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges"
 
