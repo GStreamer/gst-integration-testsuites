@@ -239,5 +239,12 @@ PIPELINES_DESC = {
             "%(validateflow)s, pad=videoconvert:sink, record-buffers=true, buffers-checksum=true, ignored-event-types={ tag }"
         ]
      },
+    "interlace_deinterlace":
+    {
+        "pipeline": "videotestsrc num-buffers=10 ! interlace ! video/x-raw,interlace-mode=mixed ! deinterlace ! video/x-raw,interlace-mode=progressive ! fakevideosink name=fakevideosink",
+        "config": [
+            "%(validateflow)s, pad=fakevideosink:sink, record-buffers=true, buffers-checksum=true"
+        ]
+    },
 }
 
