@@ -556,6 +556,7 @@ validate.launch_pipeline.mp4_redirect.play_15s
 validate.launch_pipeline.pipelines.cenc_audio_esds_property_overrides
 validate.launch_pipeline.pipelines.flow_simple_test
 validate.launch_pipeline.pipelines.interlace_deinterlace
+validate.launch_pipeline.pipelines.interlace_deinterlace_alternate
 validate.launch_pipeline.pipelines.rtpsession_recv_simple
 validate.launch_pipeline.pipelines.rtpsession_send_simple
 validate.launch_pipeline.qtdemux_change_edit_list.default
