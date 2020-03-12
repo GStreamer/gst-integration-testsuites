@@ -125,7 +125,7 @@ PIPELINES_DESC = {
     },
      "scaletempo_playbin_audio_filter":
     {
-        "pipeline": "playbin audio-filter=scaletempo video-sink=fakesink uri=file://%(medias)s/defaults/mp4/mp3_h264.0.mp4",
+        "pipeline": "playbin audio-filter=scaletempo video-sink=\"%(videosink)s\" audio-sink=\"%(audiosink)s\" uri=file://%(medias)s/defaults/mp4/mp3_h264.0.mp4",
         "scenarios": ["fast_forward"]
     },
     "qtdemux_reverse_playback_full_gop":
