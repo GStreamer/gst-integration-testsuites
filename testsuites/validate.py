@@ -73,8 +73,11 @@ def add_accurate_seek_tests(test_manager, media_dir, extra_data):
             'mp4/timecoded_h264_2997fps.mp4.media_info.skipped',
             'mp4/timecoded_h264_30fps.mp4.media_info.skipped',
         ]:
-        f = os.path.join(media_dir, "defaults", f)
-        accurate_seeks_media_infos.append((f, re.sub(r"\.media_info.*", "_reference_frames", f).replace('.', '_')))
+        dirname = os.path.join(media_dir, "defaults", os.path.dirname(f))
+        filename = os.path.basename(f)
+        media_info = os.path.join(dirname, filename)
+        reference_frames_dir = os.path.join(dirname, re.sub(r"\.media_info.*", "_reference_frames", filename).replace('.', '_'))
+        accurate_seeks_media_infos.append((media_info, reference_frames_dir))
 
     test_manager.add_generators(
         test_manager.GstValidateCheckAccurateSeekingTestGenerator(
