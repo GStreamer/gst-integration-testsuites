@@ -253,5 +253,11 @@ PIPELINES_DESC = {
             "%(validateflow)s, pad=fakevideosink:sink, record-buffers=true, buffers-checksum=true"
         ]
     },
+    "h265parse_alternate":
+    {
+        "pipeline": "filesrc location=%(medias)s/defaults/h265/alternate.h265 ! h265parse ! fakesink name=fakesink",
+        "config": [
+            "%(validateflow)s, pad=fakesink:sink, record-buffers=true"
+        ]
+    },
 }
-

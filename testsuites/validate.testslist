@@ -555,6 +555,7 @@ validate.launch_pipeline.matroskademux_flush_within_cluster.default
 validate.launch_pipeline.mp4_redirect.play_15s
 validate.launch_pipeline.pipelines.cenc_audio_esds_property_overrides
 validate.launch_pipeline.pipelines.flow_simple_test
+validate.launch_pipeline.pipelines.h265parse_alternate
 validate.launch_pipeline.pipelines.interlace_deinterlace
 validate.launch_pipeline.pipelines.interlace_deinterlace_alternate
 validate.launch_pipeline.pipelines.rtpsession_recv_simple
