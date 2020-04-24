@@ -27,8 +27,8 @@ import re
 
 from testsuiteutils import update_assets
 from launcher.baseclasses import MediaFormatCombination
+from launcher.apps.gstvalidate import GstValidateSimpleTestsGenerator
 from validate_known_issues import KNOWN_ISSUES
-from pipelines import PIPELINES_DESC
 
 
 TEST_MANAGER = "validate"
@@ -104,15 +104,15 @@ def setup_tests(test_manager, options):
     extra_data = {
         "config_path": os.path.dirname(testsuite_dir),
         "medias": media_dir,
-        "validate-flow-expectations-dir": os.path.join(testsuite_dir, os.path.pardir, "flow-expectations"),
+        "validate-flow-expectations-dir": os.path.join(testsuite_dir, "validate", "flow-expectations"),
         "validate-flow-actual-results-dir": test_manager.options.logsdir,
         "ssim-results-dir": os.path.join(test_manager.options.logsdir, "ssim-results"),
     }
     add_accurate_seek_tests(test_manager, media_dir, extra_data)
 
     test_manager.add_generators(
-        test_manager.GstValidatePipelineTestsGenerator.from_dict(test_manager, "pipelines",
-            PIPELINES_DESC, extra_data)
+        GstValidateSimpleTestsGenerator("simple", test_manager,
+            os.path.join(testsuite_dir, "validate"))
     )
 
     test_manager.add_expected_issues(KNOWN_ISSUES)
