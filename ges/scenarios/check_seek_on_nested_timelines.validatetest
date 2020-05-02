@@ -1,7 +1,13 @@
-description, seek=true, handles-states=true,
-    ges-options={\
+set-globals, media_dir="$(test_dir)/../../medias/defaults"
+
+meta,
+    seek=true,
+    handles-states=true,
+    tool = "ges-launch-$(gst_api_version)",
+    args = {
         --track-types, video,
-         --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1"\
+        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1",
+        --videosink, "$(videosink) name=videosink",
     }
 
 include, location="../../medias/defaults/matroska/timed_frames_video_only_1fps.mkv.frames_checksums.scenario"
@@ -13,7 +19,8 @@ set-vars,
 serialize-project, uri="$(nested_timeline_uri)"
 serialize-project, uri="$(nested_timeline_depth2_uri)"
 
-add-clip, name=clip, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_uri)"
+add-clip, name=clip, project-uri="$(nested_timeline_uri)",
+    asset-id="file://$(media_dir)/matroska/timed_frames_video_only_1fps.mkv", layer-priority=0, type=GESUriClip
 add-clip, name=nested-clip1, asset-id="$(nested_timeline_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth2_uri)"
 
 add-clip, name=nested-timeline1, asset-id="$(nested_timeline_depth2_uri)", layer-priority=0, type=GESUriClip, inpoint=0, duration=2.0

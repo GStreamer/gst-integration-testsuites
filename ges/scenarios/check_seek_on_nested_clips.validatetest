@@ -1,20 +1,23 @@
-description,
+set-globals, media_dir="$(test_dir)/../../medias/defaults"
+meta,
+    tool = "ges-launch-$(gst_api_version)",
     seek=true,
     handles-states=true,
     needs_preroll=true,
-    ges-options={\
+    ges-options={
         "--track-type=video",
-        "--video-caps=video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1"\
+        "--video-caps=video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1",
+        --videosink, "$(videosink) name=videosink",
     }
 
 include, location="../../medias/defaults/matroska/timed_frames_video_only_1fps.mkv.frames_checksums.scenario"
 
-set-vars,\
-    nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges"
+set-vars,
+    nested_timeline_uri="file://$(logsdir)/ges/scenarios/$(test_name)/nested_timeline.xges"
 
 add-clip,
     name=clip,
-    asset-id=file://nothing/timed_frames_video_only_1fps.mkv,
+    asset-id="file://$(media_dir)/matroska/timed_frames_video_only_1fps.mkv",
     layer-priority=0,
     type=GESUriClip
 

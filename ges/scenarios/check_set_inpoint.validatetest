@@ -1,7 +1,10 @@
-description, handles-states=true,
-    ges-options={\
+set-globals, media_dir="$(test_dir)/../../medias/defaults"
+meta, handles-states=true,
+    tool = "ges-launch-$(gst_api_version)",
+    args = {
         --track-types, video,
-        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1"\
+        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1",
+        --videosink, "$(videosink) name=videosink",
     }
 
 set-vars,
@@ -9,7 +12,7 @@ set-vars,
     frame1=9b42849e45e15981115cff9da00ecbf7afafd462
 
 pause
-add-clip, name=clip, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip
+add-clip, name=clip, asset-id="file://$(media_dir)/matroska/timed_frames_video_only_1fps.mkv", layer-priority=0, type=GESUriClip
 commit
 check-last-sample, sinkpad-caps="video/x-raw", checksum="$(frame0)"
 

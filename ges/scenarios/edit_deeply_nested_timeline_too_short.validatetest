@@ -1,9 +1,21 @@
-description, seek=true, handles-states=true, needs_preroll=true, ges-track-types=video
+set-globals, media_dir="$(test_dir)/../../medias/defaults"
+meta,
+    seek=true,
+    handles-states=true,
+    needs_preroll=true,
+    tool = "ges-launch-$(gst_api_version)",
+    args = {
+        "--track-type=video",
+        --videosink, "$(videosink) name=videosink",
+    },
+    configs = {
+        "$(validateflow), pad=videosink:sink, record-buffers=true, ignored-fields=\"stream-start={stream-id,group-id,stream}\"",
+    }
 
 set-vars,
-    nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges",
-    nested_timeline_depth2_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth2.xges",
-    project_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/project.xges"
+    nested_timeline_uri="file://$(logsdir)/ges/scenarios/$(test_name)/nested_timeline.xges",
+    nested_timeline_depth2_uri="file://$(logsdir)/ges/scenarios/$(test_name)/nested_timeline_depth2.xges",
+    project_uri="file://$(logsdir)/ges/scenarios/$(test_name)/project.xges"
 
 set-track-restriction-caps, track-type="video", caps="video/x-raw,width=1080,height=720"
 # Make sure the asset ID is the project_uri and serialize the empty timeline for each nested projects uris
@@ -11,7 +23,7 @@ serialize-project, uri="$(project_uri)"
 serialize-project, uri="$(nested_timeline_uri)"
 serialize-project, uri="$(nested_timeline_depth2_uri)"
 
-add-clip, name=clip, asset-id=file:///timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip, duration=4.0, project-uri="$(nested_timeline_uri)"
+add-clip, name=clip, asset-id="file://$(media_dir)/matroska/timed_frames_video_only_1fps.mkv", layer-priority=0, type=GESUriClip, duration=4.0, project-uri="$(nested_timeline_uri)"
 add-clip, name=nested-clip1, asset-id="$(nested_timeline_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth2_uri)"
 add-clip, name=nested-timeline1, asset-id="$(nested_timeline_depth2_uri)", layer-priority=0, type=GESUriClip, inpoint=0, duration=4.0
 add-asset, id="$(nested_timeline_depth2_uri)", type="GESTimeline"

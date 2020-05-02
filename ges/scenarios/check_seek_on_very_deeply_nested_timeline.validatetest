@@ -1,19 +1,22 @@
-description, seek=true, handles-states=true,
-    ges-options={\
+set-globals, media_dir="$(test_dir)/../../medias/defaults"
+meta, seek=true, handles-states=true,
+    tool = "ges-launch-$(gst_api_version)",
+    args = {
         --track-types, video,
-        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1"\
+        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1",
+        --videosink, "$(videosink) name=videosink",
     }
 
 include, location="../../medias/defaults/matroska/timed_frames_video_only_1fps.mkv.frames_checksums.scenario"
 
-set-vars,\
-    nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges",\
-    nested_timeline_depth2_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth2.xges",\
-    nested_timeline_depth3_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth3.xges",\
-    nested_timeline_depth4_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth4.xges",\
-    nested_timeline_depth5_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth5.xges",\
-    nested_timeline_depth6_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth6.xges",\
-    nested_timeline_depth7_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth7.xges"
+set-vars,
+    nested_timeline_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges",
+    nested_timeline_depth2_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth2.xges",
+    nested_timeline_depth3_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth3.xges",
+    nested_timeline_depth4_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth4.xges",
+    nested_timeline_depth5_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth5.xges",
+    nested_timeline_depth6_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth6.xges",
+    nested_timeline_depth7_uri="file://$(logsdir)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth7.xges"
 
 
 serialize-project, uri="$(nested_timeline_uri)"
@@ -24,7 +27,7 @@ serialize-project, uri="$(nested_timeline_depth5_uri)"
 serialize-project, uri="$(nested_timeline_depth6_uri)"
 serialize-project, uri="$(nested_timeline_depth7_uri)"
 
-add-clip, name=clip, asset-id=file:///timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip, duration=8.0, project-uri="$(nested_timeline_uri)", inpoint=2.0
+add-clip, name=clip, asset-id="file://$(media_dir)/matroska/timed_frames_video_only_1fps.mkv", layer-priority=0, type=GESUriClip, duration=8.0, project-uri="$(nested_timeline_uri)", inpoint=2.0
 add-clip, name=nested-clip1, asset-id="$(nested_timeline_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth2_uri)"
 add-clip, name=nested-clip2, asset-id="$(nested_timeline_depth2_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth3_uri)"
 add-clip, name=nested-clip3, asset-id="$(nested_timeline_depth3_uri)", layer-priority=0, type=GESUriClip, project-uri="$(nested_timeline_depth4_uri)", inpoint=2.0
