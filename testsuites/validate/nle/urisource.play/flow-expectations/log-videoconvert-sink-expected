@@ -1,7 +1,7 @@
 event flush-start: (no structure)
 event flush-stop: GstEventFlushStop, reset-time=(boolean)true;
 event stream-start: GstEventStreamStart, flags=(GstStreamFlags)GST_STREAM_FLAG_SELECT, group-id=(uint)2;
-event caps: video/x-raw, format=(string)I420, width=(int)320, height=(int)240, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, colorimetry=(string)2:0:0:0, framerate=(fraction)30/1;
+event caps: video/x-raw, format=(string)I420, width=(int)320, height=(int)240, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, chroma-site=(string)mpeg2, framerate=(fraction)30/1;
 event segment: format=TIME, start=0:00:01.066000000, offset=0:00:00.000000000, stop=0:00:02.066000000, flags=0x01, time=0:00:00.000000000, base=0:00:00.000000000, position=0:00:00.066000000, duration=0:00:02.500000000
 buffer: checksum=e50f6b4b8f6177668e437d9fb2957c43b1a5ca9e, pts=0:00:01.066000000, dur=0:00:00.000333333, flags=discont
 buffer: checksum=95c19a3dcb13126747d8147c1cc8b7678666798c, pts=0:00:01.066000000, dur=0:00:00.033333333
