@@ -13,8 +13,8 @@ meta,
 include, location="../../medias/defaults/matroska/timed_frames_video_only_1fps.mkv.frames_checksums.scenario"
 
 set-vars,
-    nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline.xges",
-    nested_timeline_depth2_uri="file://$(LOGSDIR)/ges/scenarios/$(SCENARIO_NAME)/nested_timeline_depth2.xges"
+    nested_timeline_uri="file://$(LOGSDIR)/ges/scenarios/$(test_name)/nested_timeline.xges",
+    nested_timeline_depth2_uri="file://$(LOGSDIR)/ges/scenarios/$(test_name)/nested_timeline_depth2.xges"
 
 serialize-project, uri="$(nested_timeline_uri)"
 serialize-project, uri="$(nested_timeline_depth2_uri)"
