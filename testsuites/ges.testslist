@@ -748,7 +748,7 @@ ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.opus_jpeg_mkv
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.raw_h264_mp4
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.vorbis_theora_ogg
 ges.render.vorbis_and_vp8_in_webm.test_transition.audio_video.vorbis_vp8_webm
-ges.scenario.add_effect_and_split
+ges.test.add_effect_and_split
 ges.test.check_edit_nested_timeline
 ges.test.check_seek_on_nested_clips
 ges.test.check_seek_on_nested_timelines

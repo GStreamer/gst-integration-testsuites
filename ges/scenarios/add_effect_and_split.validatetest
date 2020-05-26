@@ -1,4 +1,14 @@
-description, seek=true, handles-states=true, needs_preroll=true
+set-globals, media_file="$(test_dir)/../../medias/defaults/matroska/timed_frames_video_only_1fps.mkv"
+meta,
+    tool = "ges-launch-$(gst_api_version)",
+    handles-states=true,
+    seek=true,
+    needs_preroll=true,
+    args = {
+        --track-types, video,
+        --video-caps, "video/x-raw, format=(string)I420, width=(int)1080, height=(int)720, framerate=(fraction)1/1",
+        --videosink, "$(videosink) name=videosink",
+    }
 
 set-vars,\
     frame0=68cc0c0b6d6863a135f40297a54aec9f1593f34c,\
@@ -8,7 +18,7 @@ set-vars,\
 pause
 
 # Add a clip and check that the first frame is displayed
-add-clip, name=clip, asset-id=file://nothing/timed_frames_video_only_1fps.mkv, layer-priority=0, type=GESUriClip, name=(string)theclip
+add-clip, name=clip, asset-id="file://$(media_file)", layer-priority=0, type=GESUriClip, name=(string)theclip
 commit
 check-last-sample, sinkpad-caps="video/x-raw", checksum="$(frame0)"
 
@@ -20,7 +30,7 @@ check-last-sample, sinkpad-caps="video/x-raw", checksum="$(frame1)"
 container-add-child, container-name=(string)theclip, asset-id=(string)videoflip, child-type=(string)GESEffect;
 set-child-property, element-name=(string)effect0, property=(string)method, value=2;
 check-last-sample, sinkpad-caps="video/x-raw", checksum="$(frame1)"
-commit;
+commit
 check-last-sample, sinkpad-caps="video/x-raw", checksum="$(frame1_rotated)"
 
 # Split the clip and check that rotation is still applied
