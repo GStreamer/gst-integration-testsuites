@@ -871,6 +871,7 @@ validate.test.mp4.qtdemux_change_edit_list.default
 validate.test.mp4.qtdemux_reverse_playback_full_gop.reverse_playback_full_gop
 validate.test.mp4.redirect.play_15s
 validate.test.nle.urisource.play
+validate.test.playbin.check_active_stream
 validate.test.rtp.rtpsession_recv_simple
 validate.test.rtp.rtpsession_send_simple
 validate.test.scaletempo.playbin_audio_filter.fast_forward
