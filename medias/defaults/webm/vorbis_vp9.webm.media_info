@@ -1,6 +1,6 @@
 <file duration="5000000000" frame-detection="1" skip-parsers="0" uri="file:///home/thiblahute/devel/gstreamer/gst-build/gst-integration-testsuites/medias/defaults/webm/vorbis_vp9.webm" seekable="true">
   <streams caps="video/webm">
-    <stream type="video" caps="video/x-vp9, width=(int)320, height=(int)240, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)bt601" id="c2299285c7b5d2c2306fcc5729f7be93f2964a91b716a6ec3b07152946d1fa13/001:3742416710685218976">
+    <stream type="video" caps="video/x-vp9, width=(int)320, height=(int)240, framerate=(fraction)30/1, interlace-mode=(string)progressive, colorimetry=(string)2:4:5:4" id="c2299285c7b5d2c2306fcc5729f7be93f2964a91b716a6ec3b07152946d1fa13/001:3742416710685218976">
       <segments>
         <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="18446744073709551615" time="0" position="0" duration="5000000000"/>
       </segments>
