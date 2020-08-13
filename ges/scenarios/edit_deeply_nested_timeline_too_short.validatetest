@@ -10,7 +10,9 @@ meta,
         --video-caps, "video/x-raw,format=I420,chroma-site=mpeg2,colorimetry=bt709",
     },
     configs = {
-        "$(validateflow), pad=videosink:sink, record-buffers=true, ignored-fields=\"stream-start={stream-id,group-id,stream}\"",
+        "$(validateflow), pad=videosink:sink, record-buffers=true,
+            ignored-fields=\"stream-start={stream-id,group-id,stream}\",
+            caps-properties={height,width,framerate}",
     }
 
 set-vars,
