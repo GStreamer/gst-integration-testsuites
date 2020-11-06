@@ -115,11 +115,15 @@ def download_files(assets_dir):
 
 def update_assets(options, assets_dir):
     try:
+        if options.sync_version is not None:
+            sync_version = options.sync_version
+        else:
+            sync_version = GST_VALIDATE_TESTSUITE_VERSION
         CHECKOUT_BRANCH_COMMAND = "git fetch origin && (git checkout origin/%s || git checkout tags/%s)" % (
-            GST_VALIDATE_TESTSUITE_VERSION, GST_VALIDATE_TESTSUITE_VERSION)
+            sync_version, sync_version)
         if options.force_sync:
             subprocess.check_call(["git", "reset", "--hard"], cwd=assets_dir)
-        print("Checking out %s" % GST_VALIDATE_TESTSUITE_VERSION)
+        print("Checking out %s" % sync_version)
         subprocess.check_call(CHECKOUT_BRANCH_COMMAND, shell=True, cwd=assets_dir)
         download_files(os.path.basename(os.path.join(assets_dir)))
     except Exception as e:
