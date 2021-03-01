@@ -56,6 +56,8 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
               'The version of libav shipped by Fedora 29 crashes in various ways with these tests.'),
              ('validate.rtsp.*playback.seek.*GH1_00094_1920x1280_MTS',
               'Do not preroll after pause.'),
+             ('validate.file.playback.reverse_playback.sample_mpeg_program_stream_scr_mpg',
+              'Do not decode any frame in reverse playback with SCR.'),
              ]
 
 def add_accurate_seek_tests(test_manager, media_dir, extra_data):
