@@ -58,6 +58,8 @@ BLACKLIST = [('validate.file.transcode.to_vorbis_and_vp8_in_webm.GH1_00094_1920x
               'Do not preroll after pause.'),
              ('validate.file.playback.reverse_playback.sample_mpeg_program_stream_scr_mpg',
               'Do not decode any frame in reverse playback with SCR.'),
+             ('validate.rtsp.*playback.seek.*sample_mpeg_program_stream_scr_mpg',
+              'Racy with CI. No frames decoded before the end of the stream.'),
              ]
 
 def add_accurate_seek_tests(test_manager, media_dir, extra_data):
