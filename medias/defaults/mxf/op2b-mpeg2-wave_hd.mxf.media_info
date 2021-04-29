@@ -2,7 +2,7 @@
   <streams caps="application/mxf">
     <stream type="audio" caps="audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int)48000, channels=(int)2, channel-mask=(bitmask)0x0000000000000003" id="478d687e2b2043b17132f6070917fa58e7ad6b76decca51667437daf9f1d4cd2/003">
       <segments>
-        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="18446744073709551615" time="0" position="520000000" duration="18446744073709551615"/>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="18446744073709551615" time="0" position="440000000" duration="18446744073709551615"/>
       </segments>
        <frame duration="40000000" id="0" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="0" dts="0" running-time="0" checksum="9e3f39603975191aea53073532d00bae"/>
        <frame duration="40000000" id="1" is-keyframe="true" offset="18446744073709551615" offset-end="18446744073709551615" pts="40000000" dts="40000000" running-time="40000000" checksum="c475d9a9f90627f8d2d3f8b7a397df36"/>
