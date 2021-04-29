@@ -34,6 +34,7 @@ validate.file.glvideomixer.simple.seek_forward.bgra
 validate.file.glvideomixer.simple.seek_forward.synchronized
 validate.file.glvideomixer.simple.seek_with_stop.bgra
 validate.file.glvideomixer.simple.seek_with_stop.synchronized
+validate.file.media_check.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.media_check.GH1_00094_1920x1280_MTS
 validate.file.media_check.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.media_check.cm5000_hevc_1080i_colorbars_ts
@@ -73,6 +74,7 @@ validate.file.media_check.vorbis_vp9_webm
 validate.file.media_check.xdcam-pal-d10-imx30_mxf
 validate.file.media_check.xdcam-pal-d10-imx50_mxf
 validate.file.media_check.xdcam-pal-dv25_mxf
+validate.file.playback.change_state_intensive.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.change_state_intensive.GH1_00094_1920x1280_MTS
 validate.file.playback.change_state_intensive.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.change_state_intensive.cm5000_hevc_1080i_colorbars_ts
@@ -110,6 +112,7 @@ validate.file.playback.change_state_intensive.xdcam-pal-d10-imx30_mxf
 validate.file.playback.change_state_intensive.xdcam-pal-d10-imx50_mxf
 validate.file.playback.change_state_intensive.xdcam-pal-dv25_mxf
 validate.file.playback.disable_subtitle_track_while_paused.test5_mkv
+validate.file.playback.fast_forward.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.fast_forward.GH1_00094_1920x1280_MTS
 validate.file.playback.fast_forward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.fast_forward.cm5000_hevc_1080i_colorbars_ts
@@ -132,6 +135,7 @@ validate.file.playback.fast_forward.vorbis_theora_1_ogg
 validate.file.playback.fast_forward.vorbis_vp8_0_webm
 validate.file.playback.fast_forward.vorbis_vp8_1_webm
 validate.file.playback.fast_forward.vorbis_vp9_webm
+validate.file.playback.play_15s.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.play_15s.GH1_00094_1920x1280_MTS
 validate.file.playback.play_15s.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.play_15s.cm5000_hevc_1080i_colorbars_ts
@@ -185,6 +189,7 @@ validate.file.playback.reverse_playback.samples_multimedia_cx_flac_Yesterday_fla
 validate.file.playback.reverse_playback.samples_multimedia_cx_testsuite_iv31_avi
 validate.file.playback.reverse_playback.vorbis_theora_0_ogg
 validate.file.playback.reverse_playback.vorbis_theora_1_ogg
+validate.file.playback.scrub_forward_seeking.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.scrub_forward_seeking.GH1_00094_1920x1280_MTS
 validate.file.playback.scrub_forward_seeking.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.scrub_forward_seeking.cm5000_hevc_1080i_colorbars_ts
@@ -220,6 +225,7 @@ validate.file.playback.scrub_forward_seeking.vorbis_vp9_webm
 validate.file.playback.scrub_forward_seeking.xdcam-pal-d10-imx30_mxf
 validate.file.playback.scrub_forward_seeking.xdcam-pal-d10-imx50_mxf
 validate.file.playback.scrub_forward_seeking.xdcam-pal-dv25_mxf
+validate.file.playback.seek_backward.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.seek_backward.GH1_00094_1920x1280_MTS
 validate.file.playback.seek_backward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.seek_backward.cm5000_hevc_1080i_colorbars_ts
@@ -255,6 +261,7 @@ validate.file.playback.seek_backward.vorbis_vp9_webm
 validate.file.playback.seek_backward.xdcam-pal-d10-imx30_mxf
 validate.file.playback.seek_backward.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_backward.xdcam-pal-dv25_mxf
+validate.file.playback.seek_forward.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.seek_forward.GH1_00094_1920x1280_MTS
 validate.file.playback.seek_forward.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.seek_forward.cm5000_hevc_1080i_colorbars_ts
@@ -290,6 +297,7 @@ validate.file.playback.seek_forward.vorbis_vp9_webm
 validate.file.playback.seek_forward.xdcam-pal-d10-imx30_mxf
 validate.file.playback.seek_forward.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_forward.xdcam-pal-dv25_mxf
+validate.file.playback.seek_with_stop.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.seek_with_stop.GH1_00094_1920x1280_MTS
 validate.file.playback.seek_with_stop.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 validate.file.playback.seek_with_stop.cm5000_hevc_1080i_colorbars_ts
@@ -322,9 +330,11 @@ validate.file.playback.seek_with_stop.vorbis_vp8_1_webm
 validate.file.playback.seek_with_stop.vorbis_vp9_webm
 validate.file.playback.seek_with_stop.xdcam-pal-d10-imx50_mxf
 validate.file.playback.seek_with_stop.xdcam-pal-dv25_mxf
+validate.file.playback.switch_audio_track.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.switch_audio_track.sample_mpeg_program_stream_scr_mpg
 validate.file.playback.switch_audio_track.test5_mkv
 validate.file.playback.switch_audio_track.tron_en_ge_aac_h264_ts
+validate.file.playback.switch_audio_track_while_paused.1080p_xavc_audio_conforming_accuracy_mxf
 validate.file.playback.switch_audio_track_while_paused.sample_mpeg_program_stream_scr_mpg
 validate.file.playback.switch_audio_track_while_paused.test5_mkv
 validate.file.playback.switch_audio_track_while_paused.tron_en_ge_aac_h264_ts
@@ -597,6 +607,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.change_state_intensive.vorbis_vp8_1_webm
 ~validate.rtsp.playback.change_state_intensive.vorbis_vp9_webm
 ~validate.rtsp.playback.disable_subtitle_track_while_paused.test5_mkv
+~validate.rtsp.playback.play_15s.1080p_xavc_audio_conforming_accuracy_mxf
 ~validate.rtsp.playback.play_15s.GH1_00094_1920x1280_MTS
 ~validate.rtsp.playback.play_15s.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 ~validate.rtsp.playback.play_15s.cm5000_hevc_1080i_colorbars_ts
@@ -740,6 +751,7 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.fast_forward.vorbis_theora_1_ogg
 ~validate.rtsp2.playback.fast_forward.vorbis_vp8_0_webm
 ~validate.rtsp2.playback.fast_forward.vorbis_vp8_1_webm
+~validate.rtsp2.playback.play_15s.1080p_xavc_audio_conforming_accuracy_mxf
 ~validate.rtsp2.playback.play_15s.GH1_00094_1920x1280_MTS
 ~validate.rtsp2.playback.play_15s.bowlerhatdancer_sleepytom_SGP_mjpeg_avi
 ~validate.rtsp2.playback.play_15s.cm5000_hevc_1080i_colorbars_ts
