@@ -16,7 +16,7 @@ You need access to gstreamer.freedesktop.org to be able to upload media files an
 
 2) Add your media file in the tree and generate the media_info:
 
-  gst-validate-media-check-1.0 [--full] medias/path/to/your/new/file medias/path/to/your/new/file.media_info
+  gst-validate-media-check-1.0 [--full] file://full_path_to/path/to/your/new/file -o medias/path/to/your/new/file
 
 (you can also do it with gst-validate-launcher -G)
 
@@ -37,4 +37,9 @@ You need access to gstreamer.freedesktop.org to be able to upload media files an
 
   git add medias/files.json
 
-7) Commit and push
+7) Generate the new tests list
+
+  gst-validate-launcher -L
+  git add testsuites/validate.testslist
+
+8) Commit and push
