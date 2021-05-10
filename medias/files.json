@@ -276,12 +276,20 @@
         73294
     ],
     [
+        "defaults/webm/opus_vp9-alpha.webm",
+        178165
+    ],
+    [
         "defaults/webm/vorbis_vp8.0.webm",
         169985
     ],
     [
         "defaults/webm/vorbis_vp8.1.webm",
         355794
+    ],
+    [
+        "defaults/webm/vp8-alpha.webm",
+        1208096
     ],
     [
         "defaults/wmv-asf/samples.multimedia.cx_asf_wmv_elephant.asf",
