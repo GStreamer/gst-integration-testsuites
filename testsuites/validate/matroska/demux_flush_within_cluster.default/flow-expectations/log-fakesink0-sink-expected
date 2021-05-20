@@ -1,5 +1,5 @@
 event stream-start: GstEventStreamStart, flags=(GstStreamFlags)GST_STREAM_FLAG_SELECT, group-id=(uint)1;
-event caps: video/x-vp9, width=(int)426, height=(int)240, framerate=(fraction)0/1;
+event caps: video/x-vp9, framerate=(fraction)0/1, height=(int)240, width=(int)426;
 event segment: format=TIME, start=0:00:00.000000000, offset=0:00:00.000000000, stop=none, time=0:00:00.000000000, base=0:00:00.000000000, position=0:00:00.000000000, duration=0:02:15.469000000
 event tag: GstTagList-global, taglist=(taglist)"taglist\,\ container-format\=\(string\)Matroska\;";
 event tag: GstTagList-stream, taglist=(taglist)"taglist\,\ video-codec\=\(string\)\"On2\\\ VP9\"\;";

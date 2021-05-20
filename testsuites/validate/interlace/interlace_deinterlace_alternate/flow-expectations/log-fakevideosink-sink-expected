@@ -1,5 +1,5 @@
 event stream-start: GstEventStreamStart, flags=(GstStreamFlags)GST_STREAM_FLAG_NONE, group-id=(uint)1;
-event caps: video/x-raw, format=(string)I420, width=(int)320, height=(int)240, multiview-mode=(string)mono, interlace-mode=(string)progressive, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)75/1, field-order=(string)bottom-field-first;
+event caps: video/x-raw, field-order=(string)bottom-field-first, format=(string)I420, framerate=(fraction)75/1, height=(int)240, interlace-mode=(string)progressive, multiview-mode=(string)mono, pixel-aspect-ratio=(fraction)1/1, width=(int)320;
 event segment: format=TIME, start=0:00:00.000000000, offset=0:00:00.000000000, stop=none, time=0:00:00.000000000, base=0:00:00.000000000, position=0:00:00.000000000
 buffer: checksum=bf6625bbbe79889dff9c9b243d706889179e315e, pts=0:00:00.000000000, dur=0:00:00.013333333, flags=discont, meta=GstVideoMeta
 buffer: checksum=e2741266db11fcea33ce8308c228e786a707503a, pts=0:00:00.013333333, dur=0:00:00.013333333, meta=GstVideoMeta

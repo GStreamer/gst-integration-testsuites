@@ -1,5 +1,5 @@
 event stream-start: GstEventStreamStart, flags=(GstStreamFlags)GST_STREAM_FLAG_NONE;
-event caps: video/x-raw, width=(int)1080, height=(int)720, framerate=(fraction)1/1;
+event caps: video/x-raw, framerate=(fraction)1/1, height=(int)720, width=(int)1080;
 event segment: format=TIME, start=0:00:00.000000000, offset=0:00:00.000000000, stop=0:00:04.000000000, flags=0x01, time=0:00:00.000000000, base=0:00:00.000000000
 buffer: pts=0:00:00.000000000, dur=0:00:01.000000000
 event flush-start: (no structure)
@@ -11,8 +11,8 @@ CHECKPOINT: Paused pipeline, now editing nested timeline and committing.
 
 event flush-start: (no structure)
 event flush-stop: GstEventFlushStop, reset-time=(boolean)true;
+event caps: video/x-raw, framerate=(fraction)30/1, height=(int)720, width=(int)1080;
 event segment: format=TIME, start=0:00:03.000000000, offset=0:00:00.000000000, stop=0:00:04.000000000, flags=0x01, time=0:00:03.000000000, base=0:00:00.000000000
-event caps: video/x-raw, width=(int)1080, height=(int)720, framerate=(fraction)30/1;
 buffer: pts=0:00:03.000000000, dur=0:00:00.033333333
 buffer: pts=0:00:03.033333333, dur=0:00:00.033333334
 buffer: pts=0:00:03.066666667, dur=0:00:00.033333333
@@ -43,7 +43,7 @@ buffer: pts=0:00:03.866666667, dur=0:00:00.033333333
 buffer: pts=0:00:03.900000000, dur=0:00:00.033333333
 buffer: pts=0:00:03.933333333, dur=0:00:00.033333334
 buffer: pts=0:00:03.966666667, dur=0:00:00.033333333
-event caps: video/x-raw, width=(int)320, height=(int)240, framerate=(fraction)30/1;
+event caps: video/x-raw, framerate=(fraction)30/1, height=(int)720, width=(int)1080;
 event segment: format=TIME, start=0:00:04.000000000, offset=0:00:00.000000000, stop=0:00:04.000000001, flags=0x01, time=0:00:04.000000000, base=0:00:01.000000000
 buffer: pts=0:00:04.000000000, dur=0:00:00.000000001
 event eos: (no structure)
