@@ -62,8 +62,6 @@ validate.file.media_check.samples_multimedia_cx_asf_wmv_elephant_asf
 validate.file.media_check.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.media_check.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.media_check.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.media_check.test-mpeg2-mp2_mxf
-validate.file.media_check.test-mpeg2-mp3_mxf
 validate.file.media_check.test-uncompressed-rgb_mxf
 validate.file.media_check.test5_mkv
 validate.file.media_check.tron_en_ge_aac_h264_ts
@@ -101,8 +99,6 @@ validate.file.playback.change_state_intensive.samples_multimedia_cx_asf_wmv_elep
 validate.file.playback.change_state_intensive.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.change_state_intensive.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.change_state_intensive.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.change_state_intensive.test-mpeg2-mp2_mxf
-validate.file.playback.change_state_intensive.test-mpeg2-mp3_mxf
 validate.file.playback.change_state_intensive.test-uncompressed-rgb_mxf
 validate.file.playback.change_state_intensive.test5_mkv
 validate.file.playback.change_state_intensive.tron_en_ge_aac_h264_ts
@@ -166,8 +162,6 @@ validate.file.playback.play_15s.samples_multimedia_cx_asf_wmv_elephant_asf
 validate.file.playback.play_15s.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.play_15s.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.play_15s.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.play_15s.test-mpeg2-mp2_mxf
-validate.file.playback.play_15s.test-mpeg2-mp3_mxf
 validate.file.playback.play_15s.test-uncompressed-rgb_mxf
 validate.file.playback.play_15s.test5_mkv
 validate.file.playback.play_15s.tron_en_ge_aac_h264_ts
@@ -219,8 +213,6 @@ validate.file.playback.scrub_forward_seeking.samples_multimedia_cx_asf_wmv_eleph
 validate.file.playback.scrub_forward_seeking.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.scrub_forward_seeking.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.scrub_forward_seeking.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.scrub_forward_seeking.test-mpeg2-mp2_mxf
-validate.file.playback.scrub_forward_seeking.test-mpeg2-mp3_mxf
 validate.file.playback.scrub_forward_seeking.test-uncompressed-rgb_mxf
 validate.file.playback.scrub_forward_seeking.test5_mkv
 validate.file.playback.scrub_forward_seeking.tron_en_ge_aac_h264_ts
@@ -257,8 +249,6 @@ validate.file.playback.seek_backward.samples_multimedia_cx_asf_wmv_elephant_asf
 validate.file.playback.seek_backward.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.seek_backward.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.seek_backward.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.seek_backward.test-mpeg2-mp2_mxf
-validate.file.playback.seek_backward.test-mpeg2-mp3_mxf
 validate.file.playback.seek_backward.test-uncompressed-rgb_mxf
 validate.file.playback.seek_backward.test5_mkv
 validate.file.playback.seek_backward.tron_en_ge_aac_h264_ts
@@ -295,8 +285,6 @@ validate.file.playback.seek_forward.samples_multimedia_cx_asf_wmv_elephant_asf
 validate.file.playback.seek_forward.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.seek_forward.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.seek_forward.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.seek_forward.test-mpeg2-mp2_mxf
-validate.file.playback.seek_forward.test-mpeg2-mp3_mxf
 validate.file.playback.seek_forward.test-uncompressed-rgb_mxf
 validate.file.playback.seek_forward.test5_mkv
 validate.file.playback.seek_forward.tron_en_ge_aac_h264_ts
@@ -332,8 +320,6 @@ validate.file.playback.seek_with_stop.samples_multimedia_cx_asf_wmv_elephant_asf
 validate.file.playback.seek_with_stop.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 validate.file.playback.seek_with_stop.samples_multimedia_cx_flac_Yesterday_flac
 validate.file.playback.seek_with_stop.samples_multimedia_cx_testsuite_iv31_avi
-validate.file.playback.seek_with_stop.test-mpeg2-mp2_mxf
-validate.file.playback.seek_with_stop.test-mpeg2-mp3_mxf
 validate.file.playback.seek_with_stop.test5_mkv
 validate.file.playback.seek_with_stop.tron_en_ge_aac_h264_ts
 validate.file.playback.seek_with_stop.vorbis_theora_0_ogg
@@ -660,8 +646,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp.playback.play_15s.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp.playback.play_15s.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp.playback.play_15s.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp.playback.play_15s.test-mpeg2-mp2_mxf
-~validate.rtsp.playback.play_15s.test-mpeg2-mp3_mxf
 ~validate.rtsp.playback.play_15s.test-uncompressed-rgb_mxf
 ~validate.rtsp.playback.play_15s.test5_mkv
 ~validate.rtsp.playback.play_15s.tron_en_ge_aac_h264_ts
@@ -754,8 +738,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.change_state_intensive.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp2.playback.change_state_intensive.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp2.playback.change_state_intensive.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp2.playback.change_state_intensive.test-mpeg2-mp2_mxf
-~validate.rtsp2.playback.change_state_intensive.test-mpeg2-mp3_mxf
 ~validate.rtsp2.playback.change_state_intensive.test-uncompressed-rgb_mxf
 ~validate.rtsp2.playback.change_state_intensive.test5_mkv
 ~validate.rtsp2.playback.change_state_intensive.tron_en_ge_aac_h264_ts
@@ -812,8 +794,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.play_15s.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp2.playback.play_15s.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp2.playback.play_15s.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp2.playback.play_15s.test-mpeg2-mp2_mxf
-~validate.rtsp2.playback.play_15s.test-mpeg2-mp3_mxf
 ~validate.rtsp2.playback.play_15s.test-uncompressed-rgb_mxf
 ~validate.rtsp2.playback.play_15s.test5_mkv
 ~validate.rtsp2.playback.play_15s.tron_en_ge_aac_h264_ts
@@ -863,8 +843,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.seek_backward.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp2.playback.seek_backward.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp2.playback.seek_backward.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp2.playback.seek_backward.test-mpeg2-mp2_mxf
-~validate.rtsp2.playback.seek_backward.test-mpeg2-mp3_mxf
 ~validate.rtsp2.playback.seek_backward.test-uncompressed-rgb_mxf
 ~validate.rtsp2.playback.seek_backward.test5_mkv
 ~validate.rtsp2.playback.seek_backward.tron_en_ge_aac_h264_ts
@@ -900,8 +878,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.seek_forward.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp2.playback.seek_forward.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp2.playback.seek_forward.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp2.playback.seek_forward.test-mpeg2-mp2_mxf
-~validate.rtsp2.playback.seek_forward.test-mpeg2-mp3_mxf
 ~validate.rtsp2.playback.seek_forward.test-uncompressed-rgb_mxf
 ~validate.rtsp2.playback.seek_forward.test5_mkv
 ~validate.rtsp2.playback.seek_forward.tron_en_ge_aac_h264_ts
@@ -933,8 +909,6 @@ validate.pushfile.media_check.qtdemux-test-frag-basic_zero_dur_no_mehd_mp4
 ~validate.rtsp2.playback.seek_with_stop.samples_multimedia_cx_asf_wmv_low_fps_cheaterlow_wmv
 ~validate.rtsp2.playback.seek_with_stop.samples_multimedia_cx_flac_Yesterday_flac
 ~validate.rtsp2.playback.seek_with_stop.samples_multimedia_cx_testsuite_iv31_avi
-~validate.rtsp2.playback.seek_with_stop.test-mpeg2-mp2_mxf
-~validate.rtsp2.playback.seek_with_stop.test-mpeg2-mp3_mxf
 ~validate.rtsp2.playback.seek_with_stop.test5_mkv
 ~validate.rtsp2.playback.seek_with_stop.tron_en_ge_aac_h264_ts
 ~validate.rtsp2.playback.seek_with_stop.vorbis_theora_0_ogg
