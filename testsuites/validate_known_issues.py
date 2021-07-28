@@ -95,24 +95,6 @@ KNOWN_ISSUES = {
             }
         ]
     },
-    "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/744": {
-        "tests": [
-            "validate.file.playback.scrub_forward_seeking.op2b-mpeg2-wave_hd_mxf",
-        ],
-        "issues": [
-            {
-                "level": "critical",
-                "summary": "We got an ERROR message on the bus",
-                "details": ".*Got error: No valid frames decoded before end of stream.*",
-                "sometimes": True,
-            },
-            {
-                "level": "critical",
-                "summary": "The program stopped before some actions were executed",
-                "sometimes": True,
-            }
-        ]
-    },
     "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/issues/930": {
         "tests": [
             "validate.hls.playback.reverse_playback.*",
