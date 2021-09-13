@@ -930,6 +930,7 @@ validate.test.clock_sync.video_30fps
 validate.test.decryptor.cenc_audio_esds_property_overrides
 validate.test.flow.simple_test
 validate.test.flvdemux.audio_only.play_15s
+validate.test.flvdemux.seek_with_stop
 validate.test.h264.parse.trickmode_predicted.seek_trickmode_predicted
 validate.test.h264.x264enc_youtube_bitrate.fullhd_lowframerate
 validate.test.h265parse.alternate
