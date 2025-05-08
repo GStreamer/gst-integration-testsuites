@@ -697,7 +697,7 @@
        <frame duration="33333333" id="298" is-keyframe="false" offset="1927158" offset-end="18446744073709551615" pts="9933333333" dts="9933333333" running-time="9866666667" checksum="d71e206137c80e4056857a51becb0e66"/>
        <frame duration="33333333" id="299" is-keyframe="false" offset="1933767" offset-end="18446744073709551615" pts="10033333333" dts="9966666666" running-time="9966666667" checksum="2c48faefe1aae06028f56fb070103644"/>
       <tags>
-        <tag content="taglist, video-codec=(string)&quot;H.265\ /\ HEVC&quot;, encoder=(string)x265, bitrate=(uint)1547698, datetime=(datetime)2019-07-15T17:28:39Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;;"/>
+        <tag content="taglist, video-codec=(string)&quot;H.265\ /\ HEVC&quot;, encoder=(string)x265, maximum-bitrate=(uint)1937280, bitrate=(uint)1537413, datetime=(datetime)2019-07-15T17:28:39Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;;"/>
       </tags>
     </stream>
   </streams>
