@@ -1,6 +1,6 @@
 <file duration="2333000000" frame-detection="0" skip-parsers="0" uri="file:///home/nicolas/Sources/gst-build-master/gst-integration-testsuites/medias/defaults/webm/opus_vp9-alpha.webm" seekable="true">
   <streams caps="video/webm">
-    <stream type="video" caps="video/x-vp9, codec-alpha=(boolean)true, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true, alignment=(string)super-frame, profile=(string)0" id="53fc101edde58a7b8a9576feefb46a469ea6b68819671a62d07a48ddaf88035f/001:4232488308902414">
+    <stream type="video" caps="video/x-vp9, codec-alpha=(boolean)true, width=(int)1920, height=(int)1080, framerate=(fraction)60/1, chroma-format=(string)4:2:0, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true, alignment=(string)super-frame, profile=(string)0, level=(string)4.1" id="53fc101edde58a7b8a9576feefb46a469ea6b68819671a62d07a48ddaf88035f/001:4232488308902414">
       <segments>
       </segments>
       <tags>
