@@ -1,0 +1,25 @@
+<file duration="333333333" frame-detection="1" skip-parsers="0" uri="file:///home/ocrete/collabora/gstreamer/subprojects/gst-integration-testsuites/medias/defaults/mp4/av1-image-sequence.mp4" seekable="true">
+  <streams caps="video/quicktime, variant=(string)iso">
+    <stream type="video" caps="video/x-av1, stream-format=(string)obu-stream, alignment=(string)tu, codec_data=(buffer)81200000, width=(int)160, height=(int)120, framerate=(fraction)30/1, pixel-aspect-ratio=(fraction)1/1, colorimetry=(string)bt601, chroma-format=(string)4:4:4, bit-depth-luma=(uint)8, bit-depth-chroma=(uint)8, parsed=(boolean)true, profile=(string)high, level=(string)2.0, tier=(string)main" id="4633fbe395d502cd313824f2b671f301eb16de096261dc6446e53b18358a68f1/001">
+      <segments>
+        <segment next-frame-id="0" flags="0" rate="1.000000" applied-rate="1.000000" format="3" base="0" offset="0" start="0" stop="333333333" time="0" position="0" duration="18446744073709551615"/>
+      </segments>
+       <frame duration="33333333" id="0" is-keyframe="true" offset="15" offset-end="18446744073709551615" pts="0" dts="0" running-time="0" checksum="955a43d6b711f8b84729f98542b9e71e"/>
+       <frame duration="33333333" id="1" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="33333333" dts="33333333" running-time="33333333" checksum="8ccc9b16d9cac40a32c66fb3e04f75e6"/>
+       <frame duration="33333333" id="2" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="66666666" dts="66666666" running-time="66666666" checksum="a9a60e785131c065614c8858fd9a28f7"/>
+       <frame duration="33333333" id="3" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="100000000" dts="100000000" running-time="100000000" checksum="7bc25db6967cab1edaeb1015f161c55d"/>
+       <frame duration="33333333" id="4" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="133333333" dts="133333333" running-time="133333333" checksum="fc24b138757eb0187780d0e20e77aa0e"/>
+       <frame duration="33333333" id="5" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="166666666" dts="166666666" running-time="166666666" checksum="015ee45c19403d8a3dec0254e6d3d546"/>
+       <frame duration="33333333" id="6" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="200000000" dts="200000000" running-time="200000000" checksum="8941aca9bed34570d2f5252216268ea5"/>
+       <frame duration="33333333" id="7" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="233333333" dts="233333333" running-time="233333333" checksum="129d46853c2ff3f661dab8ded931f91a"/>
+       <frame duration="33333333" id="8" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="266666666" dts="266666666" running-time="266666666" checksum="bae9b47a537d91b5120210dc8fb81d56"/>
+       <frame duration="33333333" id="9" is-keyframe="false" offset="2" offset-end="18446744073709551615" pts="300000000" dts="300000000" running-time="300000000" checksum="ed151ad6d6d1932b2dc22efe3e5c3000"/>
+      <tags>
+        <tag content="taglist, video-codec=(string)AV1, maximum-bitrate=(uint)433200, bitrate=(uint)431208, container-specific-track-id=(string)1;"/>
+      </tags>
+    </stream>
+  </streams>
+  <tags>
+    <tag content="taglist, video-codec=(string)AV1, maximum-bitrate=(uint)433200, bitrate=(uint)431208, container-specific-track-id=(string)1, datetime=(datetime)2026-02-02T12:29:45Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;;"/>
+  </tags>
+</file>
